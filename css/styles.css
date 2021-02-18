@@ -1,0 +1,12 @@
+img {
+  width: 100%;
+  height: auto;
+}
+h1 {
+  color: rebeccapurple;
+  font-family: "Nunito", sans-serif;
+}
+body {
+  color: rgb(79, 38, 15);
+  font-family: "Nunito", sans-serif;
+}
