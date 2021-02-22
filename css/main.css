@@ -2,12 +2,30 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  font-family: futura-pt, sans-serif;
 }
 
 h1 {
   text-align: center;
+}
+.button {
+  background-color: #e6e7ee;
+  border: none;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: -27px 27px 54px #bebebe, 27px -27px 54px #ffffff;
+  font-size: 16px;
+  padding: 10px 20px;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+}
+
+.button:hover {
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: inset -27px 27px 54px #bebebe, inset 27px -27px 54px #ffffff;
 }
 
 /* Fixed header and footer.
@@ -18,31 +36,16 @@ h1 {
   display: contents;
   overflow: visible;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   width: 100%;
   text-align: center;
   background-color: #e0e0e0;
 }
 
-.header-right a {
-  line-height: 35px;
-  /*this number will likely need to be adjusted*/
-  margin: 10 10 10 10;
-  text-decoration: none;
-  border-radius: 47px;
-  background: #e0e0e0;
-  -webkit-box-shadow: 24px 24px 48px #bebebe, -24px -24px 48px #ffffff;
-          box-shadow: 24px 24px 48px #bebebe, -24px -24px 48px #ffffff;
-  padding: 0.5em 1em 0.5em 1em;
-  text-align: left;
-  overflow: visible;
-  margin: 1em 1em 1em 1em;
-}
-
 .s1 {
-  background-color: #e0e0e0;
   background-size: cover;
+  background-image: url(/img/blobbackground.png);
 }
 
 .s1 h1 {

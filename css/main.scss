@@ -5,6 +5,13 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+.button {
+  background-color: #1123b1;
+  border: 1px solid #d1d9e6;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+}
 
 h1 {
   text-align: center;
@@ -21,19 +28,6 @@ h1 {
   width: 100%;
   text-align: center;
   background-color: #e0e0e0;
-}
-
-.header-right a {
-  line-height: 35px; /*this number will likely need to be adjusted*/
-  margin: 10 10 10 10;
-  text-decoration: none;
-  border-radius: 47px;
-  background: #e0e0e0;
-  box-shadow: 24px 24px 48px #bebebe, -24px -24px 48px #ffffff;
-  padding: 0.5em 1em 0.5em 1em;
-  text-align: left;
-  overflow: visible;
-  margin: 1em 1em 1em 1em;
 }
 
 .s1 {
