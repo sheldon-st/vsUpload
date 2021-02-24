@@ -1,0 +1,22 @@
+{
+  "name": "artish",
+  "version": "1.0.0",
+  "description": "artish design",
+  "main": "index.js",
+  "scripts": {
+    "test": "tes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheldon-st/vsUpload.git"
+  },
+  "author": "Stephen Sheldon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sheldon-st/vsUpload/issues"
+  },
+  "homepage": "https://github.com/sheldon-st/vsUpload#readme",
+  "dependencies": {
+    "@haiku/ssheldon118-artish2": "^0.0.3"
+  }
+}

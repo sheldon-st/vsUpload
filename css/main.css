@@ -4,10 +4,10 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: futura-pt, sans-serif;
+  background-size: cover;
 }
 
 h1 {
-  text-align: center;
 }
 .button {
   background-color: #e6e7ee;
@@ -22,37 +22,39 @@ h1 {
   right: 1em;
 }
 
+.text-container {
+  border: none;
+  background: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+}
+
+.text-container h1 {
+  color: white;
+
+  font-size: 6rem;
+  position: relative;
+}
+
 .button:hover {
   border-radius: 50px;
   background: #e0e0e0;
   box-shadow: inset -27px 27px 54px #bebebe, inset 27px -27px 54px #ffffff;
 }
 
-/* Fixed header and footer.
-	* --------------------------------------- */
-#header,
-#footer {
-  position: fixed;
-  display: contents;
-  overflow: visible;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  width: 100%;
-  text-align: center;
-  background-color: #e0e0e0;
-}
-
 .s1 {
   background-size: cover;
-  /* background-image: url(/img/blobbackground.png); */
 }
 
 .s1 h1 {
   color: white;
 
   margin-left: 1.5em;
-  font-size: 4rem;
+  font-size: 6rem;
   position: absolute;
   top: 8px;
   right: 16px;
