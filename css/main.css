@@ -45,14 +45,17 @@ h1 {
 
 .s1 {
   background-size: cover;
-  background-image: url(/img/blobbackground.png);
+  /* background-image: url(/img/blobbackground.png); */
 }
 
 .s1 h1 {
   color: white;
-  text-align: left;
+
   margin-left: 1.5em;
   font-size: 4rem;
+  position: absolute;
+  top: 8px;
+  right: 16px;
 }
 
 .s1 h2 {
@@ -63,6 +66,8 @@ h1 {
 }
 
 .s2 {
+  background-size: cover;
+  background-image: url(/img/blobbackground2.png);
   background-color: #5495a0;
   background-size: cover;
 }
