@@ -11,15 +11,7 @@ body {
   background-color: #4bbfc3;
 }
 
-h1 {
-}
 .buttons {
-  /* background-color: #e6e7ee;
-  border: none;
-  border-radius: 50px;
-  background: #e0e0e0;
-  box-shadow: -27px 27px 54px #bebebe, 27px -27px 54px #ffffff; */
-
   position: fixed;
   top: 1em;
   right: 1em;
@@ -93,6 +85,9 @@ h1 {
 
   display: flexbox;
   margin-left: 5em;
+  animation: fadeInAnimation ease 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }
 @keyframes fadeInAnimation {
   0% {
@@ -143,8 +138,6 @@ h1 {
   color: white;
   text-align: left;
   font-size: 2rem;
-  animation: fadeInAnimation ease 2s;
-  animation-fill-mode: forwards;
 }
 
 .s2 {
