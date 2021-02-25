@@ -127,9 +127,7 @@ h1 {
   );
   background: -webkit-linear-gradient(#4bbfc3, #7baabe);
   background: linear-gradient(#4bbfc3, #7baabe);
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+
   width: 100%;
   height: 100%;
 }
