@@ -11,49 +11,36 @@
     <title>FullPage</title>
   </head>
   <body>
-    <!-- <div class="header">
-      <div class="header-right">
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div> -->
     <div id="fullpage">
-      <section id="mount" class="section s1"></section>
-    </div>
-    <!-- <section class="section s2">
+      <section id="mount" class="section s1">
+        <div class="text-container">
+          <h1>artish.</h1>
+          <h2>engaging design &</h2>
+          <h2>front end development</h2>
+          <div class="anim"></div>
+        </div>
+        <div class="bottom">
+          <i class="gg-chevron-down bounce"></i>
+        </div>
+      </section>
+      <section class="section s2">
         <h1>About</h1>
       </section>
-      <section class="section s3">
-        <h1>UI</h1>
-      </section>
-      <section class="section s4">
-        <h1>Graphic</h1>
-      </section>
-      <section class="section s5">
-        <h1>Studio</h1>
-      </section>
-      <section class="section s6">
-        <h1>Contact</h1>
-      </section> -->
+    </div>
+
+    <div class="buttons">
+      <button class="button">Contact</button>
+      <button class="button">Work</button>
+    </div>
 
     <script src="/js/fullpage.min.js"></script>
     <script src="/js/app.js"></script>
-    <!-- <script src="/js/package.json"></script> -->
 
-    <script src="https://code.haiku.ai/scripts/core/HaikuCore.5.1.1.min.js"></script>
-    <script src="https://cdn.haiku.ai/0bf79054-8c65-4d79-8666-a0b321515252/a9c7061caa2358d4d96b594fb491a0f432fbf454/index.embed.js"></script>
     <script>
-      HaikuComponentEmbed_ssheldon118_artish2(
-        document.getElementById("mount"),
-        { loop: false, sizing: "cover" }
-      );
+      import artish2 from "@haiku/ssheldon118-artish2";
+
+      const element = document.querySelector("s1");
+      artish2(element, { loop: true });
     </script>
-    <div class="text-container">
-      <h1>artish.</h1>
-      <h2>engaging design &</h2>
-      <h2>front end development</h2>
-    </div>
-    <button class="social"><i class="gg-mail"></i></button>
-    <button class="button">Portfolio</button>
   </body>
 </html>
