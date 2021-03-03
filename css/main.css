@@ -6,9 +6,14 @@
   font-family: futura-pt, sans-serif;
   background-size: cover;
 }
+a {
+  text-decoration: none;
+  color: #747475;
+}
 
 body {
-  background-color: #4bbfc3;
+  /* background-color: #4bbfc3; */
+  background-color: none;
 }
 
 .buttons {
@@ -17,23 +22,102 @@ body {
   right: 1em;
   display: flex;
   flex-direction: row;
+  border-radius: 10px;
 }
-
 .button {
   background: none;
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
+  color: white;
 }
 
-.button h1 {
-  color: gray;
+.bottom {
+  background: none;
+  font-size: 22px;
+  width: 100vw;
+
+  position: fixed;
+  bottom: 1em;
+
+  display: flexbox;
+  flex-direction: row;
 }
 
 .gg-chevron-down {
   margin-left: auto;
   margin-right: auto;
+  color: #262626;
+}
+
+.s1 {
+  background-image: linear-gradient(#4bbfc3, #7baabe),
+    url(/img/backgroundWaves.png);
+
+  background-blend-mode: multiply;
+  /* 
+  background-image: url(/img/texturedWaves.png); /* fallback */
+  /* background-image: url(/img/texturedWaves.png),
+    linear-gradient(#e0e5ec, #e0e5ec); */
+  /* background: linear-gradient(#4bbfc3, #7baabe); */
+
+  background-size: cover;
+  background-position: top right;
+}
+
+.text-container {
+  padding: 10px 20px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+  text-shadow: -8px -8px 12px rgba(255, 255, 255, 0.4),
+    8px 8px 12px rgba(0, 0, 0, 0.08);
+  caret-color: #262626;
+
+  display: flexbox;
+  margin-left: 5em;
+  animation: fadeInAnimation ease 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+.title {
+  color: #747475;
+  text-align: left;
+  font-size: 6rem;
+  text-shadow: 20px 20px 60px #40a2a6, -20px -20px 60px #56dce0;
+}
+
+.subtitle {
+  color: #747475;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.ish {
+  color: #e0e5ec;
+  background: none;
+  text-shadow: 20px 20px 60px #40a2a6, -20px -20px 60px #56dce0;
+}
+
+.s2 {
+  background: -webkit-gradient(
+    linear,
+    top left,
+    bottom left,
+    from(#7baabe),
+    to(#7baabe)
+  );
+  background: -webkit-linear-gradient(#7baabe, #7baabe);
+  background: linear-gradient(#7baabe, #7baabe);
+}
+
+.s2 h1 {
   color: white;
+  text-align: left;
+  margin-left: 2em;
+  font-size: 4rem;
 }
 
 .bounce {
@@ -62,33 +146,6 @@ body {
   }
 }
 
-.bottom {
-  background: none;
-  font-size: 22px;
-  width: 100vw;
-
-  position: fixed;
-  bottom: 1em;
-
-  display: flexbox;
-  flex-direction: row;
-}
-
-.text-container {
-  background: none;
-  font-size: 16px;
-  padding: 10px 20px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: left;
-
-  display: flexbox;
-  margin-left: 5em;
-  animation: fadeInAnimation ease 3s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-}
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -97,102 +154,3 @@ body {
     opacity: 1;
   }
 }
-
-.anim {
-  width: max-content;
-  height: max-content;
-  display: contents;
-  border-style: solid;
-  border-color: black;
-}
-
-.button:hover {
-  border-radius: 50px;
-  background: #e0e0e0;
-  box-shadow: inset -27px 27px 54px #bebebe, inset 27px -27px 54px #ffffff;
-}
-
-.s1 {
-  background: -webkit-gradient(
-    linear,
-    top left,
-    bottom left,
-    from(#4bbfc3),
-    to(#7baabe)
-  );
-  background: -webkit-linear-gradient(#4bbfc3, #7baabe);
-  background: linear-gradient(#4bbfc3, #7baabe);
-
-  width: 100%;
-  height: 100%;
-}
-
-.s1 h1 {
-  color: white;
-
-  text-align: left;
-  font-size: 6rem;
-}
-
-.s1 h2 {
-  color: white;
-  text-align: left;
-  font-size: 2rem;
-}
-
-.s2 {
-  background: -webkit-gradient(
-    linear,
-    top left,
-    bottom left,
-    from(#7baabe),
-    to(#969ac6)
-  );
-  background: -webkit-linear-gradient(#7baabe, #969ac6);
-  background: linear-gradient(#7baabe, #969ac6);
-}
-
-.s2 h1 {
-  color: white;
-  text-align: left;
-  margin-left: 2em;
-  font-size: 4rem;
-}
-
-.s3 {
-  background-color: #8269dd;
-  background-size: cover;
-}
-
-.s3 h1 {
-  color: white;
-}
-
-.s4 {
-  background-color: #9e5168;
-  background-size: cover;
-}
-
-.s4 h1 {
-  color: white;
-}
-
-.s5 {
-  background-color: #7eaf77;
-  background-size: cover;
-}
-
-.s5 h1 {
-  color: white;
-}
-
-.s6 {
-  background-color: #c681c9;
-  background-size: cover;
-}
-
-.s6 h1 {
-  color: white;
-}
-
-/*# sourceMappingURL=main.css.map */
