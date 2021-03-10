@@ -1,65 +1,3 @@
-@font-face {
-  font-family: punkBottom;
-  src: url(/css/fonts/Punk\ Lover\ -\ Bottom\ Layer.ttf);
-}
-
-@font-face {
-  font-family: punkTop;
-  src: url(/css/fonts/Punk\ Lover\ -\ Top\ Layer.ttf);
-}
-
-@font-face {
-  font-family: CraftyFont-CandyStripes-Regular;
-  src: url(/css/fonts/Crafty\ Font\ -\ Candy\ Stripes.otf);
-}
-
-@font-face {
-  font-family: CraftyFont-Shading-Regular;
-  src: url(/css/fonts/Crafty\ Font\ -\ Shading.otf);
-}
-
-@font-face {
-  font-family: CraftyFont-PolkaDot-Regular;
-  src: url(/css/fonts/Crafty\ Font\ -\ Polka\ Dot.otf);
-}
-
-@font-face {
-  font-family: CraftyFont-Chevron-Regular;
-  src: url(/css/fonts/Crafty\ Font\ -\ Chevron.otf);
-}
-
-@font-face {
-  font-family: CraftyFont-Regular-Regular;
-  src: url(/css/fonts/Crafty\ Font\ -\ Regular.otf);
-}
-
-@font-face {
-  font-family: CraftyFont-Sprinkles1-Regular;
-  src: url(/css/fonts/Crafty\ Font\ -\ Sprinkles\ 1.otf);
-}
-
-@font-face {
-  font-family: CraftyFont-Stitched-Regular;
-  src: url(/css/fonts/Crafty\ Font\ -\ Stitched.otf);
-}
-
-.doublefont {
-  position: relative;
-  color: #4e598c;
-  font-family: punkBottom;
-  background: none;
-  font-size: 9rem;
-}
-.doublefont:after {
-  content: "ISH";
-  color: #d98496;
-  font-family: punkTop;
-  font-size: 9rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -68,6 +6,7 @@
   font-family: futura-pt, sans-serif;
   background-size: cover;
 }
+
 a {
   text-decoration: none;
   color: #4e598c;
@@ -79,17 +18,10 @@ body {
   color: #4e598c;
 }
 
-.processImg {
-  position: fixed;
-  bottom: 3em;
-  right: 2em;
-  width: 35%;
-}
-
 .buttons {
   position: fixed;
-  top: 1em;
-  right: 0em;
+  top: 1.6em;
+  right: -1.2em;
   display: flex;
   flex-direction: column;
 }
@@ -99,6 +31,39 @@ body {
   padding: 50px 0px;
   transform: rotate(90deg);
   color: white;
+}
+
+.bottom {
+  background: none;
+  font-size: 22px;
+  width: 100vw;
+
+  position: fixed;
+  bottom: 1em;
+
+  display: flexbox;
+  flex-direction: row;
+}
+.gg-chevron-down {
+  margin-left: auto;
+  margin-right: auto;
+  color: #262626;
+}
+
+.s1 {
+  background-image: linear-gradient(#e0e5ec, #e0e5ec),
+    url(/img/Group\ 165@2x.png);
+
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: top right;
+}
+
+.processImg {
+  position: fixed;
+  bottom: 3em;
+  right: 2em;
+  width: 35%;
 }
 
 .work {
@@ -118,11 +83,6 @@ body {
   left: 0;
 }
 
-#Workpage {
-  height: 100vh;
-  width: 100vw;
-}
-
 .contact {
   position: relative;
   color: #d98496;
@@ -138,41 +98,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.bottom {
-  background: none;
-  font-size: 22px;
-  width: 100vw;
-
-  position: fixed;
-  bottom: 1em;
-
-  display: flexbox;
-  flex-direction: row;
-}
-
-.gg-chevron-down {
-  margin-left: auto;
-  margin-right: auto;
-  color: #262626;
-}
-
-.s1 {
-  background-image: linear-gradient(#e0e5ec, #e0e5ec),
-    url(/img/Group\ 165@2x.png);
-
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: top right;
-}
-
-.s1b {
-  background-image: linear-gradient(red, #e0e5ec), url(/img/Group\ 165@2x.png);
-
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: top right;
 }
 
 .text-container {
