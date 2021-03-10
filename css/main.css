@@ -116,6 +116,30 @@ body {
   animation-iteration-count: 1;
 }
 
+.text-container-2 {
+  position: relative;
+  top: 30%;
+  -webkit-top: 30%;
+  -webkit-transform: translateY(-30%);
+  text-align: left;
+
+  display: flexbox;
+  margin-left: 5em;
+  animation: fadeInAnimation ease 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+.card {
+  border-radius: 50px;
+  background: #e0e5ec;
+  box-shadow: 26px 26px 51px #bec3c9, -26px -26px 51px #ffffff;
+  height: 70vh;
+  width: 70vw;
+  color: black;
+  margin-left: 12rem;
+}
+
 .title {
   text-align: left;
   font-size: 10rem;
