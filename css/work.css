@@ -1,0 +1,88 @@
+@font-face {
+  font-family: punkBottom;
+  src: url(/css/fonts/Punk\ Lover\ -\ Bottom\ Layer.ttf);
+}
+
+@font-face {
+  font-family: punkTop;
+  src: url(/css/fonts/Punk\ Lover\ -\ Top\ Layer.ttf);
+}
+
+@font-face {
+  font-family: CraftyFont-CandyStripes-Regular;
+  src: url(/css/fonts/Crafty\ Font\ -\ Candy\ Stripes.otf);
+}
+
+@font-face {
+  font-family: CraftyFont-Shading-Regular;
+  src: url(/css/fonts/Crafty\ Font\ -\ Shading.otf);
+}
+
+@font-face {
+  font-family: CraftyFont-PolkaDot-Regular;
+  src: url(/css/fonts/Crafty\ Font\ -\ Polka\ Dot.otf);
+}
+
+@font-face {
+  font-family: CraftyFont-Chevron-Regular;
+  src: url(/css/fonts/Crafty\ Font\ -\ Chevron.otf);
+}
+
+@font-face {
+  font-family: CraftyFont-Regular-Regular;
+  src: url(/css/fonts/Crafty\ Font\ -\ Regular.otf);
+}
+
+@font-face {
+  font-family: CraftyFont-Sprinkles1-Regular;
+  src: url(/css/fonts/Crafty\ Font\ -\ Sprinkles\ 1.otf);
+}
+
+@font-face {
+  font-family: CraftyFont-Stitched-Regular;
+  src: url(/css/fonts/Crafty\ Font\ -\ Stitched.otf);
+}
+
+.doublefont {
+  position: relative;
+  color: #4e598c;
+  font-family: punkBottom;
+  background: none;
+  font-size: 9rem;
+}
+.doublefont:after {
+  content: "ISH";
+  color: #d98496;
+  font-family: punkTop;
+  font-size: 9rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: futura-pt, sans-serif;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+  color: #4e598c;
+}
+
+body {
+  /* background-color: #4bbfc3; */
+  background-color: none;
+  color: #4e598c;
+}
+
+.w1 {
+  background-image: linear-gradient(red, #e0e5ec), url(/img/Group\ 165@2x.png);
+
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: top right;
+}

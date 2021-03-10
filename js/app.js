@@ -2,7 +2,8 @@ new fullpage("#Artish", {
   autoScrolling: true,
   navigation: false,
 });
-new fullpage("#Artish2", {
+new fullpage("#fullpage", {
   autoScrolling: true,
-  navigation: false,
+  navigation: true,
+  navigationPosition: "left",
 });
