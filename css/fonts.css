@@ -59,30 +59,3 @@
   top: 0;
   left: 0;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: futura-pt, sans-serif;
-  background-size: cover;
-}
-a {
-  text-decoration: none;
-  color: #4e598c;
-}
-
-body {
-  /* background-color: #4bbfc3; */
-  background-color: none;
-  color: #4e598c;
-}
-
-.w1 {
-  background-image: linear-gradient(red, #e0e5ec), url(/img/Group\ 165@2x.png);
-
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: top right;
-}
