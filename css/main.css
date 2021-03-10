@@ -16,6 +16,7 @@ body {
   /* background-color: #4bbfc3; */
   background-color: none;
   color: #4e598c;
+  background-color: #e0e5ec;
 }
 
 .buttons {
@@ -24,6 +25,7 @@ body {
   right: -2.3em;
   display: flex;
   flex-direction: column;
+  background: none;
 }
 .button {
   background: none;
@@ -31,6 +33,7 @@ body {
   padding: 60px 0px;
   transform: rotate(90deg);
   color: white;
+  background: none;
 }
 
 .bottom {
@@ -114,6 +117,7 @@ body {
   animation: fadeInAnimation ease 3s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
+  background: none;
 }
 
 .text-container-2 {
@@ -134,10 +138,10 @@ body {
   border-radius: 50px;
   background: #e0e5ec;
   box-shadow: 26px 26px 51px #bec3c9, -26px -26px 51px #ffffff;
-  height: 70vh;
-  width: 70vw;
+  height: 80vh;
+  width: 85vw;
   color: black;
-  margin-left: 12rem;
+  margin-left: 6rem;
 }
 
 .title {
