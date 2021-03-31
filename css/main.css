@@ -238,7 +238,6 @@ body {
   font-size: 50px;
   color: #ed1234;
 }
-
 /* Image Pins */
 
 #pin1 {
@@ -266,19 +265,11 @@ body {
   top: 160px;
 }
 
-#pin4 .tooltip-content {
-  top: auto;
-  left: auto;
-
-  bottom: 0;
-  right: 0;
-}
-
 #pin5 .tooltip-content {
   top: auto;
-  left: auto;
+  right: auto;
   bottom: 0;
-  right: 0;
+  left: 0;
 }
 
 #pin2 .tooltip-content,
@@ -286,6 +277,8 @@ body {
   width: 60vw;
   right: 0;
   left: auto;
+  top: auto;
+  bottom: 0;
 }
 
 /* Max Media Query */
@@ -317,6 +310,13 @@ body {
   #pin5 {
     left: 650px;
     top: 450px;
+  }
+
+  #pin1 .tooltip-content {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: auto;
   }
 }
 
@@ -350,6 +350,35 @@ body {
   #pin2 {
     left: 245px;
     top: 223px;
+  }
+
+  #pin3 .tooltip-content {
+    right: 0;
+    left: auto;
+    top: 0;
+    bottom: auto;
+  }
+
+  #pin4 .tooltip-content {
+    top: auto;
+    left: auto;
+
+    bottom: 0;
+    right: 0;
+  }
+
+  #pin5 .tooltip-content {
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 0;
+  }
+
+  #pin1 .tooltip-content {
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 0;
   }
 }
 
