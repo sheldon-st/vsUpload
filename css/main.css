@@ -375,20 +375,25 @@ body {
 
 .doublefont2 {
   position: relative;
-  color: #262626;
+  color: #ed1234;
   font-family: punkBottom;
   background: none;
   font-size: 6rem;
+
   text-align: center;
 }
+
 .doublefont2:after {
   font-size: 6rem;
   content: "BANKSY?";
-  color: #ed1234;
+  color: #262626;
   font-family: punkTop;
 
+  text-align: center;
   position: absolute;
-  right: 0;
+  width: 100vw;
+  top: 0;
+  left: 0;
 }
 
 /* Puls Effect For Pins */
