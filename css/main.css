@@ -272,7 +272,6 @@ body {
   left: 0;
 }
 
-#pin2 .tooltip-content,
 #pin3 .tooltip-content {
   width: 60vw;
   right: 0;
@@ -352,6 +351,7 @@ body {
     top: 223px;
   }
 
+  #pin2 .tooltip-content,
   #pin3 .tooltip-content {
     right: 0;
     left: auto;
