@@ -217,6 +217,7 @@ body {
   font-size: 40px;
   line-height: 60px;
   transition: all 0.3s;
+  opacity: 70%;
 }
 
 .route-pin:hover .tooltip-content,
@@ -260,6 +261,28 @@ body {
   top: 160px;
 }
 
+#pin4 .tooltip-content {
+  top: auto;
+  left: auto;
+
+  bottom: 0;
+  right: 0;
+}
+
+#pin5 .tooltip-content {
+  top: auto;
+  left: auto;
+  bottom: 0;
+  right: 0;
+}
+
+#pin2 .tooltip-content,
+#pin3 .tooltip-content {
+  width: 60vw;
+  right: 0;
+  left: auto;
+}
+
 /* Max Media Query */
 
 @media (max-width: 1500px) {
@@ -299,22 +322,22 @@ body {
     width: 500px;
   }
 
-  #pin5 {
+  #pin3 {
     left: 225px;
     top: 100px;
   }
 
   #pin1 {
-    left: 55px;
+    left: 70px;
     top: 261px;
   }
 
-  #pin3 {
+  #pin4 {
     left: 350px;
     top: 40px;
   }
 
-  #pin4 {
+  #pin5 {
     left: 370px;
     top: 410px;
   }
@@ -335,7 +358,7 @@ body {
   max-width: 300px;
   opacity: 0;
   pointer-events: none;
-  /* left: -50%; */
+
   z-index: 2;
   top: 0;
   left: 0;
