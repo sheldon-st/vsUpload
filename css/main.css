@@ -245,7 +245,8 @@ body {
   transition: all 0.3s;
 }
 
-.route-pin:hover i {
+.route-pin:hover i,
+.route-pin:active i {
   cursor: pointer;
   font-size: 50px;
   color: #ed1234;
@@ -322,7 +323,12 @@ body {
   }
 
   #pin4 {
-    left: 360px;
-    top: 400px;
+    left: 370px;
+    top: 410px;
+  }
+
+  #pin5 {
+    left: 245px;
+    top: 223px;
   }
 }
