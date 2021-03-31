@@ -208,7 +208,8 @@ body {
   background-size: cover;
   background-position: top right;
 }
-.route-bg {
+
+.img-bg {
   width: 100%;
   height: 100vh;
   background-image: url(/img/banksy.png);
@@ -250,7 +251,10 @@ body {
   opacity: 1;
   pointer-events: all;
   display: block;
+}
 
+.route-pin:hover i,
+.route-pin:active i {
   cursor: pointer;
   font-size: 50px;
   color: #ed1234;
