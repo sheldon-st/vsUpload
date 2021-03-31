@@ -205,6 +205,11 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.title2 {
+  position: relative;
+  align-self: center;
+}
+
 .route-pin {
   width: 60px;
   height: 60px;
@@ -366,6 +371,24 @@ body {
 
 .tooltip-content .content {
   color: black;
+}
+
+.doublefont2 {
+  position: relative;
+  color: #262626;
+  font-family: punkBottom;
+  background: none;
+  font-size: 6rem;
+  text-align: center;
+}
+.doublefont2:after {
+  font-size: 6rem;
+  content: "BANKSY?";
+  color: #ed1234;
+  font-family: punkTop;
+
+  position: absolute;
+  right: 0;
 }
 
 /* Puls Effect For Pins */
