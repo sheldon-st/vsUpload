@@ -59,3 +59,26 @@
   top: 0;
   left: 0;
 }
+
+.doublefont2 {
+  position: relative;
+  color: #ed1234;
+  font-family: punkBottom;
+  background: none;
+  font-size: 6rem;
+
+  text-align: center;
+}
+
+.doublefont2:after {
+  font-size: 6rem;
+  content: "BANKSY?";
+  color: #262626;
+  font-family: punkTop;
+
+  text-align: center;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
