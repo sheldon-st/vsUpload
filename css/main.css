@@ -488,10 +488,12 @@ body {
 
   border-color: #bec3c9;
 
-  bottom: 0;
+  top: -10vw;
   left: 0;
   position: fixed;
   pointer-events: none;
+  border-style: solid;
+  border-color: rebeccapurple;
 }
 
 .img-bg3 {
@@ -505,13 +507,14 @@ body {
   background-position: center;
   position: relative;
   overflow: hidden;
+  top: -10vw;
 }
 
 .doodle-container {
   margin: 0;
   position: absolute;
   width: fit-content;
-  top: 52%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-color: rebeccapurple;
@@ -521,6 +524,7 @@ body {
 .doodlefont:hover,
 .doodlefont:active {
   color: azure;
+  animation: fadeInAnimation ease 1;
 }
 
 .doodlefont {
