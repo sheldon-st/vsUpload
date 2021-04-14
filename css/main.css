@@ -528,5 +528,5 @@ body {
   font-size: 18rem;
 
   align-self: center;
-  display: contents;
+  display: inline-block;
 }
