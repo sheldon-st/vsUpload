@@ -389,8 +389,14 @@ body {
     width: 60vw;
   }
 
-  #pin2 .tooltip-content,
   #pin1 .tooltip-content {
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 0;
+  }
+
+  #pin2 .tooltip-content {
     top: 0;
     right: auto;
     bottom: auto;
@@ -465,4 +471,49 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+/* Doodle */
+
+.img-fg {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url(/img/doodleFG.png);
+
+  background-size: cover;
+  background-position: center;
+
+  border-style: solid;
+
+  border-color: #bec3c9;
+
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  pointer-events: none;
+}
+
+.img-bg3 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/doodleBG.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.doodle-container {
+  margin: 0;
+  position: absolute;
+  width: fit-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-color: rebeccapurple;
+}
+
+#G1 {
+  animation: fadeInAnimation ease s;
 }

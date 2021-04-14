@@ -1,4 +1,9 @@
 @font-face {
+  font-family: forestFont;
+  src: url(/css/fonts/Forest.otf);
+}
+
+@font-face {
   font-family: punkBottom;
   src: url(/css/fonts/Punk\ Lover\ -\ Bottom\ Layer.ttf);
 }
@@ -81,4 +86,15 @@
   width: 100vw;
   top: 0;
   left: 0;
+}
+
+.doodlefont {
+  position: relative;
+  color: darkolivegreen;
+  font-family: forestFont;
+  background: none;
+  font-size: 18rem;
+
+  align-self: center;
+  display: contents;
 }
