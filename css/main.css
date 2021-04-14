@@ -512,8 +512,21 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border-color: rebeccapurple;
+  animation: fadeInAnimation ease 2;
 }
 
-#G1 {
-  animation: fadeInAnimation ease s;
+.doodlefont:hover,
+.doodlefont:active {
+  color: azure;
+}
+
+.doodlefont {
+  position: relative;
+  color: darkolivegreen;
+  font-family: forestFont;
+  background: none;
+  font-size: 18rem;
+
+  align-self: center;
+  display: contents;
 }

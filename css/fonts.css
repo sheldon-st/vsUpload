@@ -87,14 +87,3 @@
   top: 0;
   left: 0;
 }
-
-.doodlefont {
-  position: relative;
-  color: darkolivegreen;
-  font-family: forestFont;
-  background: none;
-  font-size: 18rem;
-
-  align-self: center;
-  display: contents;
-}
