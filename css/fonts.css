@@ -4,6 +4,16 @@
 }
 
 @font-face {
+  font-family: oceanFont;
+  src: url(/css/fonts/ocean.otf);
+}
+
+@font-face {
+  font-family: safariFont;
+  src: url(/css/fonts/safari.otf);
+}
+
+@font-face {
   font-family: punkBottom;
   src: url(/css/fonts/Punk\ Lover\ -\ Bottom\ Layer.ttf);
 }

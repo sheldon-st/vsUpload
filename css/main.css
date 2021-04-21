@@ -499,7 +499,7 @@ body {
 .img-bg3 {
   width: 100%;
   height: 100vh;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(/img/doodleBG.png);
@@ -519,21 +519,32 @@ body {
   transform: translate(-50%, -50%);
   border-color: rebeccapurple;
   animation: fadeInAnimation ease 2;
+  color: white;
+  mix-blend-mode: exclusion;
 }
 
 .doodlefont:hover,
 .doodlefont:active {
-  color: azure;
+  color: darkgreen;
   animation: fadeInAnimation ease 1;
 }
 
 .doodlefont {
   position: relative;
-  color: darkolivegreen;
+  color: pink;
+  mix-blend-mode: exclusion;
   font-family: forestFont;
   background: none;
   font-size: 18rem;
 
   align-self: center;
   display: inline-block;
+}
+
+.style2 {
+  font-family: safariFont;
+}
+
+.style3 {
+  font-family: oceanFont;
 }
