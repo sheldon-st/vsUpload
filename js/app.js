@@ -20,4 +20,5 @@ new fullpage("#fullpage", {
     "assignment 7",
   ],
   showActiveTooltip: true,
+  continuousHorizontal: true,
 });
