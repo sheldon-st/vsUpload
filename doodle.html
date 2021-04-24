@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/fullpage.min.css" />
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/doodle.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="https://use.typekit.net/dxb2njt.css" />
     <link href="https://css.gg/css" rel="stylesheet" />
@@ -17,44 +17,62 @@
     <title>Google Doodle</title>
   </head>
   <body ontouchstart="">
-    <div class="img-bg3">
-      <h1 class="doodle-container">
-        <a
-          class="doodlefont"
-          href="https://www.google.com/search?q=wolf+conservation+organizations"
-          >G</a
-        >
-        <a
-          class="doodlefont"
-          href="https://www.google.com/search?q=waterfowl+conservation+organizations"
-          >O</a
-        >
-        <a
-          class="doodlefont style2"
-          href="https://www.google.com/search?q=rainforest+conservation+organizations"
-          >O</a
-        >
-        <a
-          class="doodlefont style3"
-          href="https://www.google.com/search?q=reef+conservation+organizations"
-          >G</a
-        >
-        <a
-          class="doodlefont"
-          href="https://www.google.com/search?q=insect+conservation+organizations"
-          >L</a
-        >
-        <a
-          class="doodlefont"
-          href="https://www.google.com/search?q=cottontail+conservation+organizations"
-          >E</a
-        >
-      </h1>
+    <div id="app">
+      <nav class="main-nav" style="--total: 4">
+        <a href="#" class="image-hover" style="--i: 0">
+          <span class="title" data-title="G">G</span>
+          <img src="/img/doodle/G.jpeg" alt="" />
+        </a>
+        <a href="#" class="image-hover" style="--i: 1">
+          <span class="title" data-title="O">O</span>
+          <img src="/img/doodle/O1.jpeg" alt="" />
+        </a>
+        <a href="#" class="image-hover" style="--i: 2">
+          <span class="title" data-title="O">O</span>
+          <img src="/img/doodle/O2.jpeg" alt="" />
+        </a>
+        <a href="#" class="image-hover" style="--i: 3">
+          <span class="title" data-title="G">G</span>
+          <img src="/img/doodle/G2.jpeg" alt="" />
+        </a>
+        <a href="#" class="image-hover" style="--i: 4">
+          <span class="title" data-title="L">L</span>
+          <img src="/img/doodle/L.jpeg" alt="" />
+        </a>
+
+        <a href="#" class="image-hover" style="--i: 4">
+          <span class="title" data-title="E">E</span>
+          <img src="/img/doodle/E.jpeg" alt="" />
+        </a>
+      </nav>
     </div>
-    <div class="img-fg"></div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+      console.clear();
+      const elApp = document.querySelector("#app");
 
-    <script src="/js/app2.js"></script>
+      // What we need...
+      // Mouse position
+      // Currently hovered item
+
+      document.body.addEventListener("mousemove", (event) => {
+        console.log({
+          x: event.clientX,
+          y: event.clientY,
+        });
+
+        elApp.style.setProperty("--x", event.clientX);
+        elApp.style.setProperty("--y", event.clientY);
+      });
+
+      // Replay animation by hiding & showing the element again
+      let el = document.body;
+      el.addEventListener("click", function (e) {
+        el.hidden = true;
+        requestAnimationFrame(() => {
+          el.hidden = false;
+        });
+      });
+    </script>
   </body>
 </html>
