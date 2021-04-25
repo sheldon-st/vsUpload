@@ -34,8 +34,8 @@ body {
 /* Navigation */
 .buttons {
   position: fixed;
-  top: 0.5em;
-  right: -2.3em;
+  top: 0.2em;
+  right: -2.7em;
   display: flex;
   flex-direction: column;
   background: none;
@@ -55,14 +55,14 @@ body {
   color: #4e598c;
   font-family: CraftyFont-Regular-Regular;
   background: none;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
 }
 
 .work:after {
   content: "WORK";
   color: #d98496;
   font-family: CraftyFont-PolkaDot-Regular;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -73,14 +73,14 @@ body {
   color: #d98496;
   font-family: CraftyFont-Regular-Regular;
   background: none;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
 }
 
 .contact:after {
   content: "CONTACT";
   color: #4e598c;
   font-family: CraftyFont-PolkaDot-Regular;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -174,9 +174,11 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
 
   height: 75vh;
-  width: 85vw;
+  width: 84vw;
 
-  margin-left: 6rem;
+  margin-left: 8vw;
+
+  margin-top: 2.5em;
 }
 
 .wMain2 {
@@ -670,7 +672,7 @@ body {
 .logoButton {
   position: fixed;
   top: 0.2em;
-  left: 0.3em;
+  left: 0.4em;
   display: flex;
   flex-direction: row;
   background: none;
