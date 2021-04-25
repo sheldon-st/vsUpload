@@ -75,9 +75,8 @@ html {
 }
 
 .image-hover .title {
-  font-family: forestFont;
   font-weight: 900;
-  font-size: 15em;
+  font-size: 16em;
   letter-spacing: 0.05ch;
 }
 
@@ -130,5 +129,17 @@ html {
   left: 0;
   -webkit-transform: translate(var(--x-px), var(--y-px)) translate(-50%, -50%);
           transform: translate(var(--x-px), var(--y-px)) translate(-50%, -50%);
+}
+
+.style1 {
+  font-family: forestFont;
+}
+
+.style2 {
+  font-family: safariFont;
+}
+
+.style3 {
+  font-family: oceanFont;
 }
 /*# sourceMappingURL=doodle.css.map */

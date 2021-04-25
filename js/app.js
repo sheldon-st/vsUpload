@@ -4,14 +4,14 @@ new fullpage("#Artish", {
 });
 new fullpage("#fullpage", {
   autoScrolling: true,
-  navigation: false,
+  navigation: true,
   navigationPosition: "left",
   scrollHorizontally: true,
   slidesNavigation: true,
 
   slidesNavPosition: "bottom",
   navigationTooltips: [
-    "assignment 1",
+    "ui/ux",
     "assignment 2",
     "assignment 3",
     "assignment 4",
