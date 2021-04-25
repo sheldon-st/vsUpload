@@ -21,4 +21,5 @@ new fullpage("#fullpage", {
   ],
   showActiveTooltip: true,
   continuousHorizontal: true,
+  controlArrows: false,
 });

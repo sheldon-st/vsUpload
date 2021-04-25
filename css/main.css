@@ -173,7 +173,7 @@ body {
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 
-  height: 80vh;
+  height: 75vh;
   width: 85vw;
 
   margin-left: 6rem;
@@ -664,4 +664,38 @@ body {
 
 .section {
   text-align: center;
+}
+
+/* Navigation */
+.logoButton {
+  position: fixed;
+  top: 0.2em;
+  left: 0.3em;
+  display: flex;
+  flex-direction: row;
+  background: none;
+
+  border: none;
+
+  color: white;
+  background: none;
+  font-size: 4rem;
+}
+
+.doublefont3 {
+  position: relative;
+  color: #4e598c;
+  font-family: punkBottom;
+  background: none;
+  font-size: 4rem;
+}
+
+.doublefont3:after {
+  content: "ISH";
+  color: #d98496;
+  font-family: punkTop;
+  font-size: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
