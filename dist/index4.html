@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Horizontal Smooth Scroll Layout | Demo 4 | Codrops</title>
+    <meta
+      name="description"
+      content="A horizontal smooth scroll layout powered by Locomotive Scroll"
+    />
+    <meta
+      name="keywords"
+      content="locomotive scroll, smooth scroll, horizontal, layout, web design, javascript, css"
+    />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="favicon.26242483.ico" />
+    <link rel="stylesheet" href="https://use.typekit.net/vxy2fer.css" />
+    <link rel="stylesheet" type="text/css" href="base.98fd6c19.css" />
+    <link rel="stylesheet" type="text/css" href="demo4.7fb5a017.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      document.documentElement.className = "js";
+
+      var supportsCssVars = function supportsCssVars() {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+  </head>
+  <body class="demo-4 loading">
+    <main data-scroll-container="">
+      <div class="content">
+        <div class="gallery" id="gallery">
+          <div class="gallery__text">
+            <span
+              class="gallery__text-inner"
+              data-scroll=""
+              data-scroll-speed="3"
+              data-scroll-direction="vertical"
+              >ARTF</span
+            ><span
+              data-scroll=""
+              data-scroll-speed="-4"
+              data-scroll-direction="vertical"
+              class="gallery__text-inner"
+              >2223</span
+            >
+          </div>
+          <figure class="gallery__item" data-scroll="" data-scroll-speed="1">
+            <div class="gallery__item-img">
+              <div
+                class="gallery__item-imginner"
+                style="background-image: url(12.0aa60765.jpg)"
+              ></div>
+            </div>
+            <figcaption class="gallery__item-caption">
+              <h2 class="gallery__item-title">
+                Affordances in <br />Handheld Devices
+              </h2>
+              <span class="gallery__item-number">01</span>
+              <p class="gallery__item-tags">
+                <span>#house</span>
+                <span>#green</span>
+                <span>#chair</span>
+              </p>
+              <a class="gallery__item-link">explore</a>
+            </figcaption>
+          </figure>
+          <figure class="gallery__item" data-scroll="" data-scroll-speed="1">
+            <div class="gallery__item-img">
+              <div
+                class="gallery__item-imginner"
+                style="background-image: url(11.1201dde3.jpg)"
+              ></div>
+            </div>
+            <figcaption class="gallery__item-caption">
+              <h2 class="gallery__item-title">Signifiers</h2>
+              <span class="gallery__item-number">02</span>
+              <p class="gallery__item-tags">
+                <span>#love</span>
+                <span>#hug</span>
+                <span>#people</span>
+              </p>
+              <a class="gallery__item-link">explore</a>
+            </figcaption>
+          </figure>
+          <figure class="gallery__item" data-scroll="" data-scroll-speed="1">
+            <div class="gallery__item-img">
+              <div
+                class="gallery__item-imginner"
+                style="background-image: url(10.821b07c9.jpg)"
+              ></div>
+            </div>
+            <figcaption class="gallery__item-caption">
+              <h2 class="gallery__item-title">Signifiers & <br />Mapping</h2>
+              <span class="gallery__item-number">03</span>
+              <p class="gallery__item-tags">
+                <span>#hike</span>
+                <span>#nature</span>
+                <span>#rain</span>
+              </p>
+              <a class="gallery__item-link">explore</a>
+            </figcaption>
+          </figure>
+          <figure class="gallery__item" data-scroll="" data-scroll-speed="1">
+            <div class="gallery__item-img">
+              <div
+                class="gallery__item-imginner"
+                style="background-image: url(9.c1ab683f.jpg)"
+              ></div>
+            </div>
+            <figcaption class="gallery__item-caption">
+              <h2 class="gallery__item-title">
+                Signifiers, Mapping, <br />Affordances, & Nonsense
+              </h2>
+              <span class="gallery__item-number">04</span>
+              <p class="gallery__item-tags">
+                <span>#free</span>
+                <span>#wood</span>
+                <span>#fire</span>
+              </p>
+              <a class="gallery__item-link">explore</a>
+            </figcaption>
+          </figure>
+          <figure
+            class="gallery__item"
+            data-scroll=""
+            data-scroll-speed="1"
+            -target="#gallery"
+            -speed="1"
+          >
+            <div class="gallery__item-img">
+              <div
+                class="gallery__item-imginner"
+                style="background-image: url(8.029c7dba.jpg)"
+              ></div>
+            </div>
+            <figcaption class="gallery__item-caption">
+              <h2 class="gallery__item-title">Midterm Menu</h2>
+              <span class="gallery__item-number">05</span>
+              <p class="gallery__item-tags">
+                <span>#cloud</span>
+                <span>#lake</span>
+                <span>#frog</span>
+              </p>
+              <a class="gallery__item-link">explore</a>
+            </figcaption>
+          </figure>
+          <figure
+            class="gallery__item"
+            data-scroll=""
+            data-scroll-speed="1"
+            -speed="2.5"
+          >
+            <div class="gallery__item-img">
+              <div
+                class="gallery__item-imginner"
+                style="background-image: url(7.92c49dce.jpg)"
+              ></div>
+            </div>
+            <figcaption class="gallery__item-caption">
+              <h2 class="gallery__item-title">Banksy</h2>
+              <span class="gallery__item-number">06</span>
+              <p class="gallery__item-tags">
+                <span>#tent</span>
+                <span>#flower</span>
+                <span>#love</span>
+              </p>
+              <a class="gallery__item-link">explore</a>
+            </figcaption>
+          </figure>
+          <figure
+            class="gallery__item"
+            data-scroll=""
+            data-scroll-speed="1"
+            -speed="0.5"
+          >
+            <div class="gallery__item-img">
+              <div
+                class="gallery__item-imginner"
+                style="background-image: url(6.dae49e4f.jpg)"
+              ></div>
+            </div>
+            <figcaption class="gallery__item-caption">
+              <h2 class="gallery__item-title">Google Doodle</h2>
+              <span class="gallery__item-number">07</span>
+              <p class="gallery__item-tags">
+                <span>#water</span>
+                <span>#bottle</span>
+                <span>#hand</span>
+              </p>
+              <a class="gallery__item-link">explore</a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </main>
+
+    <a class="logoButton" href="/index.html"
+      >ART<mark class="doublefont3">ish. </mark><br
+    /></a>
+    <div class="buttons">
+      <button class="button">
+        <a class="work" href="/work.html">Work</a>
+      </button>
+      <button class="button">
+        <a class="contact" href="/work.html">Contact</a>
+      </button>
+    </div>
+    <svg class="cursor" width="20" height="20" viewBox="0 0 20 20">
+      <circle class="cursor__inner" cx="10" cy="10" r="5"></circle>
+    </svg>
+    <script src="demo4.e22d7780.js"></script>
+  </body>
+</html>
