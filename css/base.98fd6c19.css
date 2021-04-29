@@ -137,7 +137,6 @@ a:focus {
     pointer-events: none;
     grid-template-columns: auto 1fr 1fr auto;
     grid-template-rows: auto;
-    grid-template-areas: "title demos demos links";
   }
   .frame__title {
     margin: 0 4rem 0 0;
@@ -145,9 +144,6 @@ a:focus {
   }
   .frame__info {
     grid-area: info;
-  }
-  .frame__demos {
-    grid-area: demos;
   }
   .frame__links {
     grid-area: links;

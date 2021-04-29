@@ -136,8 +136,8 @@ body {
   font-size: 2vw;
 
   color: transparent;
-  -webkit-text-stroke: 1px var(--color-gallery-text);
-  text-stroke: 1px var(--color-gallery-text);
+  -webkit-text-stroke: 1px var(--color-gallery-title);
+  text-stroke: 1px var(--color-gallery-title);
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
   overflow: visible;
@@ -161,15 +161,10 @@ body {
   position: fixed;
 }
 
-.arrow-dowm {
-  align-self: center;
-
-  position: fixed;
-}
-
 ion-icon {
   font-size: 100px;
-  color: white;
+  color: var(--color-gallery-number);
+  opacity: 50%;
 }
 
 .gallery__text-inner {
