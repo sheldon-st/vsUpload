@@ -3,7 +3,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: relative;
 }
 
@@ -22,15 +22,15 @@ body,
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 100vh;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 html {
@@ -48,13 +48,13 @@ html {
   text-align: center;
   padding: 2vh 0;
   -webkit-transform-origin: top left;
-          transform-origin: top left;
+  transform-origin: top left;
   -webkit-animation: skwoop 0.7s var(--easing) backwards;
-          animation: skwoop 0.7s var(--easing) backwards;
+  animation: skwoop 0.7s var(--easing) backwards;
   -webkit-animation-duration: calc(0.6s + (var(--i) * 0.1s));
-          animation-duration: calc(0.6s + (var(--i) * 0.1s));
+  animation-duration: calc(0.6s + (var(--i) * 0.1s));
   -webkit-animation-delay: calc((var(--i) * 50ms));
-          animation-delay: calc((var(--i) * 50ms));
+  animation-delay: calc((var(--i) * 50ms));
   cursor: pointer;
 }
 
@@ -62,7 +62,7 @@ html {
   from {
     opacity: 0;
     -webkit-transform: translateY(5vh) skewY(5deg);
-            transform: translateY(5vh) skewY(5deg);
+    transform: translateY(5vh) skewY(5deg);
   }
 }
 
@@ -70,7 +70,7 @@ html {
   from {
     opacity: 0;
     -webkit-transform: translateY(5vh) skewY(5deg);
-            transform: translateY(5vh) skewY(5deg);
+    transform: translateY(5vh) skewY(5deg);
   }
 }
 
@@ -95,7 +95,7 @@ html {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   max-width: 40%;
   max-height: 60vh;
   pointer-events: none;
@@ -107,17 +107,20 @@ html {
   transition: opacity 0.2s linear, visibility 0s linear 0.2s;
 }
 
-.image-hover:hover, .image-hover:focus {
+.image-hover:hover,
+.image-hover:focus {
   z-index: 10;
 }
 
-.image-hover:hover .title::after, .image-hover:focus .title::after {
+.image-hover:hover .title::after,
+.image-hover:focus .title::after {
   display: block;
 }
 
-.image-hover:hover > img, .image-hover:focus > img {
+.image-hover:hover > img,
+.image-hover:focus > img {
   -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+  transition-delay: 0s;
   visibility: visible;
   opacity: 1;
 }
@@ -128,7 +131,7 @@ html {
   top: 0;
   left: 0;
   -webkit-transform: translate(var(--x-px), var(--y-px)) translate(-50%, -50%);
-          transform: translate(var(--x-px), var(--y-px)) translate(-50%, -50%);
+  transform: translate(var(--x-px), var(--y-px)) translate(-50%, -50%);
 }
 
 .style1 {

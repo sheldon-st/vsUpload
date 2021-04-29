@@ -1,0 +1,33 @@
+{
+  "name": "locomotive-scroll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "npm",
+  "dependencies": {
+    "js-tokens": "^4.0.0",
+    "locomotive-scroll": "^4.1.1",
+    "loose-envify": "^1.4.0",
+    "object-assign": "^4.1.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-is": "^16.13.1",
+    "rxjs": "^6.6.3",
+    "scheduler": "^0.19.1",
+    "tslib": "^1.14.1",
+    "zone.js": "^0.8.29"
+  },
+  "scripts": {
+    "test": "cd \"/Users/stephensheldon/Documents/Artish\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheldon-st/vsUpload.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sheldon-st/vsUpload/issues"
+  },
+  "homepage": "https://github.com/sheldon-st/vsUpload#readme"
+}
