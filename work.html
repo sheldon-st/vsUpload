@@ -52,7 +52,19 @@
     <main data-scroll-container="">
       <div class="content">
         <div class="gallery" id="gallery">
+            <div data-scroll=""
+              data-scroll-speed="3"
+              data-scroll-direction="vertical"
+              class="gt2">
+              <span id="rotated"> 
+                scroll • down • to • explore • scroll • down • to • explore •
+              
+              </span>
+              <ion-icon name="arrow-down"></ion-icon>
+            </div>
           <div class="gallery__text">
+            
+            
             <span
               class="gallery__text-inner"
               data-scroll=""
@@ -61,11 +73,13 @@
               >ARTF</span
             ><span
               data-scroll=""
-              data-scroll-speed="-4"
+              data-scroll-speed="-3"
               data-scroll-direction="vertical"
               class="gallery__text-inner"
               >2223</span
             >
+            
+        
           </div>
           <figure class="gallery__item" data-scroll="" data-scroll-speed="1">
             <div class="gallery__item-img">
@@ -227,7 +241,8 @@
     </main>
 
     <h1> 
-    <a data-scroll data-scroll-speed="3" class="logoButton" href="/index.html">ART<mark class="doublefont3">ish. </mark><br /></a>
+
+<a data-scroll data-scroll-speed="3" class="logoButton" href="/index.html">ART<mark class="doublefont3">ish. </mark><br /></a>
     </h1>
 
    
@@ -241,10 +256,16 @@
         <a class="button2 href="/work.html">Contact</a>
       
     </div>
+
+     
+      
+
     <svg class="cursor" width="20" height="20" viewBox="0 0 20 20">
       <circle class="cursor__inner" cx="10" cy="10" r="5"></circle>
     </svg>
 
+    
+    <script src="/js/demo4.e22d7780.js"></script>
     <script>
         const circleType = new CircleType(
             document.getElementById("rotated")
@@ -263,6 +284,5 @@
             });
         });
     </script>
-    <script src="/js/demo4.e22d7780.js"></script>
   </body>
 </html>

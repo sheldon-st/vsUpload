@@ -129,10 +129,49 @@ body {
   text-stroke: 1px var(--color-gallery-text);
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
+  overflow: visible;
+}
+
+.gt2 {
+  font-size: 2vw;
+
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-gallery-text);
+  text-stroke: 1px var(--color-gallery-text);
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  overflow: visible;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+  display: flex;
+
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  align-self: flex-end;
+  bottom: -15vh;
+}
+
+#rotated {
+  align-self: center;
+
+  position: fixed;
+}
+
+.arrow-dowm {
+  align-self: center;
+
+  position: fixed;
 }
 
 .gallery__text-inner {
   display: block;
+  overflow: visible;
 }
 
 .button2 {
