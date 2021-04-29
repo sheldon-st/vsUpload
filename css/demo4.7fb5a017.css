@@ -4,14 +4,14 @@ body {
   --color-link: #b2366f;
   --color-link-hover: #fff;
   --color-gallery-title: #4a525e;
-  --color-gallery-number: #54d7e4;
+  --color-gallery-number: #4bbfc3;
   --color-gallery-link: #fff;
-  --color-gallery-link-bg: #e95499;
-  --color-gallery-link-hover: #e95499;
+  --color-gallery-link-bg: #d98496;
+  --color-gallery-link-hover: #d98496;
   --color-gallery-link-bg-hover: #fff;
-  --color-gallery-text: #e95499;
+  --color-gallery-text: #d98496;
   --cursor-stroke: none;
-  --cursor-fill: #79e2e6;
+  --cursor-fill: #4bbfc3;
   --cursor-stroke-width: 1px;
 }
 
@@ -141,8 +141,6 @@ body {
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
   overflow: visible;
-  margin-bottom: 0;
-  padding-bottom: 0;
 
   display: flex;
 
@@ -154,7 +152,7 @@ body {
   cursor: pointer;
 
   align-self: flex-end;
-  bottom: -15vh;
+  bottom: -20vh;
 }
 
 #rotated {
@@ -167,6 +165,11 @@ body {
   align-self: center;
 
   position: fixed;
+}
+
+ion-icon {
+  font-size: 100px;
+  color: white;
 }
 
 .gallery__text-inner {
