@@ -15,6 +15,8 @@
     <link rel="shortcut icon" href="favicon.26242483.ico" />
     <link rel="stylesheet" href="https://use.typekit.net/vxy2fer.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+
     <script>
       document.documentElement.className = "js";
 
@@ -39,6 +41,12 @@
           "Please view this demo in a modern browser that supports CSS Variables."
         );
     </script>
+
+    <link rel="stylesheet" href="/css/circleStyle.css" />
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="/js/circletype.min.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js">
+        </script>
   </head>
   <body class="demo-4 loading">
     <main data-scroll-container="">
@@ -63,7 +71,7 @@
             <div class="gallery__item-img">
               <div
                 class="gallery__item-imginner"
-                style="background-image: url(/img/red.jpg)"
+                style="background-image: url(/img/01.png)"
               ></div>
             </div>
             <figcaption class="gallery__item-caption">
@@ -86,7 +94,7 @@
             <div class="gallery__item-img">
               <div
                 class="gallery__item-imginner"
-                style="background-image: url(/img/red.jpg)"
+                style="background-image: url(/img/02.png)"
               ></div>
             </div>
             <figcaption class="gallery__item-caption">
@@ -103,7 +111,7 @@
             <div class="gallery__item-img">
               <div
                 class="gallery__item-imginner"
-                style="background-image: url(/img/red.jpg)"
+                style="background-image: url(/img/03.png)"
               ></div>
             </div>
             <figcaption class="gallery__item-caption">
@@ -119,7 +127,7 @@
             <div class="gallery__item-img">
               <div
                 class="gallery__item-imginner"
-                style="background-image: url(/img/red.jpg)"
+                style="background-image: url(/img/04.png)"
               ></div>
             </div>
             <figcaption class="gallery__item-caption">
@@ -135,7 +143,7 @@
               <a
                 class="gallery__item-link"
                 href="https://xd.adobe.com/view/c8c4983a-4526-42ee-9cd9-09277c49e67e-9d97/screen/a3b39ad8-bfb5-49b3-99ff-aba1784b9b29"
-                >demo</a
+                >prototype</a
               >
             </figcaption>
           </figure>
@@ -159,10 +167,13 @@
               <span class="gallery__item-number">05</span>
               <p class="gallery__item-tags">
                 <a href="/img/artf2223/ExperienceInteractionAssignment4v2.pdf"
+                  >prototype
+                </a>
+                <a href="/img/artf2223/ExperienceInteractionAssignment4v2.pdf"
                   >project brief
                 </a>
               </p>
-              <a class="gallery__item-link" href="/banksy.html">view</a>
+              <a class="gallery__item-link" href="/banksy.html">demo</a>
             </figcaption>
           </figure>
           <figure
@@ -197,38 +208,61 @@
             <div class="gallery__item-img">
               <div
                 class="gallery__item-imginner"
-                style="background-image: url(/img/red.jpg)"
+                style="background-image: url(/img/07.png)"
               ></div>
             </div>
             <figcaption class="gallery__item-caption">
               <h2 class="gallery__item-title">Google Doodle</h2>
               <span class="gallery__item-number">07</span>
               <p class="gallery__item-tags">
-                <span>#water</span>
-                <span>#bottle</span>
-                <span>#hand</span>
+                <a href="/img/artf2223/ExperienceInteractionAssignment4v2.pdf"
+                  >project brief
+                </a>
               </p>
-              <a class="gallery__item-link">explore</a>
+              <a class="gallery__item-link">view</a>
             </figcaption>
           </figure>
         </div>
       </div>
     </main>
 
-    <a class="logoButton" href="/index.html"
-      >ART<mark class="doublefont3">ish. </mark><br
-    /></a>
-    <div class="buttons">
-      <button class="button">
-        <a class="work" href="/work.html">Work</a>
-      </button>
-      <button class="button">
-        <a class="contact" href="/work.html">Contact</a>
-      </button>
+    <h1> 
+    <a data-scroll data-scroll-speed="3" class="logoButton" href="/index.html">ART<mark class="doublefont3">ish. </mark><br /></a>
+    </h1>
+
+   
+      
+
+    <div class="buttons2">
+      
+        <a class="button2 href="/work.html">Work</a>
+      
+      
+        <a class="button2 href="/work.html">Contact</a>
+      
     </div>
     <svg class="cursor" width="20" height="20" viewBox="0 0 20 20">
       <circle class="cursor__inner" cx="10" cy="10" r="5"></circle>
     </svg>
+
+    <script>
+        const circleType = new CircleType(
+            document.getElementById("rotated")
+        ).radius(80);
+
+        $(window).scroll(function() {
+            var offset = $(window).scrollTop();
+            offset = offset * 0.4;
+
+            $(".circular-text").css({
+                "-moz-transform": "rotate(" + offset + "deg)",
+                "-webkit-transform": "rotate(" + offset + "deg)",
+                "-o-transform": "rotate(" + offset + "deg)",
+                "-ms-transform": "rotate(" + offset + "deg)",
+                transform: "rotate(" + offset + "deg)"
+            });
+        });
+    </script>
     <script src="/js/demo4.e22d7780.js"></script>
   </body>
 </html>
