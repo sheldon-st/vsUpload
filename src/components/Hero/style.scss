@@ -1,0 +1,60 @@
+@import "../../styles/vars.css";
+.header-container {
+  position: relative;
+
+  .header-menu {
+    position: absolute;
+    left: 0;
+    top: 100px;
+
+    letter-spacing: 1px;
+    font-family: "Syncopate", sans-serif;
+    color: var(--button-1);
+    font-weight: 600;
+
+    li {
+      margin: 10px 0;
+    }
+  }
+
+  #section-text {
+    font-size: 18vw;
+    text-align: right;
+
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+
+    color: var(--text-1);
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #heroDF {
+    position: relative;
+    color: var(--accent-1);
+    font-family: avocado;
+    background: none;
+    font-size: 18vw;
+  }
+
+  p {
+    font-size: 8vw;
+    text-align: right;
+
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+
+    color: var(--text-2);
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.lineParent {
+  overflow: hidden;
+}
+.lineChildren {
+  transform: translate(0, 500px);
+}

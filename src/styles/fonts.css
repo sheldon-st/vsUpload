@@ -1,0 +1,60 @@
+@font-face {
+  font-family: punkBottom;
+  src: url(fonts/punkBottom.ttf);
+}
+
+@font-face {
+  font-family: punkTop;
+  src: url(fonts/punkTop.ttf);
+}
+
+@font-face {
+  font-family: avocado;
+  src: url(fonts/avocadoRegular.ttf);
+}
+
+@font-face {
+  font-family: avocadoBold;
+  src: url(fonts/avocadoBold.ttf);
+}
+
+@font-face {
+  font-family: bilingual;
+  src: url(fonts/bilingual.ttf);
+}
+
+.doublefont3 {
+  position: relative;
+  color: var(--accent-1);
+  font-family: avocado;
+  background: none;
+}
+
+.headerart {
+  font-size: 18.5vw;
+}
+
+.doublefont3 {
+  position: relative;
+  color: var(--accent-1);
+  font-family: avocado;
+  background: none;
+}
+
+/* 
+.doublefont3:after {
+  content: "ART";
+  color: var(--text-1);
+  font-family: punkTop;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+ */
+.logoHeading {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-decoration: none;
+  font-family: bilingual;
+  color: var(--bg);
+}

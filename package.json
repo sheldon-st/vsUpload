@@ -1,33 +1,50 @@
 {
-  "name": "locomotive-scroll",
-  "version": "1.0.0",
-  "description": "",
-  "main": "npm",
+  "name": "router-portfolio",
+  "version": "0.1.0",
+  "license": "UNLICENSED",
+  "private": true,
   "dependencies": {
-    "js-tokens": "^4.0.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "classnames": "^2.3.1",
+    "gsap": "^3.7.1",
     "locomotive-scroll": "^4.1.1",
-    "loose-envify": "^1.4.0",
-    "object-assign": "^4.1.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-is": "^16.13.1",
-    "rxjs": "^6.6.3",
-    "scheduler": "^0.19.1",
-    "tslib": "^1.14.1",
-    "zone.js": "^0.8.29"
+    "react": "^17.0.2",
+    "react-animated-cursor": "^2.2.0",
+    "react-dom": "^17.0.2",
+    "react-locomotive-scroll": "^0.1.8",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-transition-group": "^4.4.2",
+    "web-vitals": "^1.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "sass-loader": "^11.1.1"
   },
   "scripts": {
-    "test": "cd \"/Users/stephensheldon/Documents/Artish\""
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sheldon-st/vsUpload.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sheldon-st/vsUpload/issues"
-  },
-  "homepage": "https://github.com/sheldon-st/vsUpload#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

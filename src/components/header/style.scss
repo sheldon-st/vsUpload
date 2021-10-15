@@ -1,0 +1,150 @@
+@import "../../styles/vars.css";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  top: 0;
+
+  padding: 50px 0;
+  font-size: 24px;
+
+  letter-spacing: 1px;
+  font-family: "Syncopate", sans-serif;
+  color: --text-1;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+.headerButtons {
+  width: 15vw;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  // background-color: #303036;
+
+  padding-left: 0em;
+  border-radius: 10px;
+  display: flex;
+
+  width: 2.6em;
+
+  position: sticky;
+
+  display: flex;
+  justify-content: flex-start;
+  border: solid;
+}
+
+// links
+
+a {
+  text-decoration: none;
+
+  outline: none;
+
+  color: var(--button-1);
+}
+
+a:hover {
+  outline: none;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
+a:focus {
+  /* Provide a fallback style for browsers
+ that don't support :focus-visible */
+  outline: none;
+  background: lightgrey;
+}
+
+a:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+ that do support :focus-visible */
+  background: transparent;
+}
+
+a:focus-visible {
+  /* Draw a very noticeable focus style for
+ keyboard-focus on browsers that do support
+ :focus-visible */
+  outline: 2px solid red;
+  background: transparent;
+}
+
+.link {
+  font-size: 18px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.link::before,
+.link::after {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+}
+
+.link::before {
+  content: "";
+  /* show by default */
+}
+
+.link--elara {
+  font-family: avocadoBold;
+  font-size: 1.375rem;
+}
+
+.link--elara::before {
+  transform-origin: 50% 100%;
+  transition: clip-path 0.3s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    0 100%,
+    0 0,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 100%,
+    100% 100%,
+    100% 0%
+  );
+}
+
+.link--elara:hover::before {
+  transform: translate3d(0, 2px, 0) scale3d(1.08, 3, 1);
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    50% 100%,
+    50% 0,
+    50% 0,
+    50% 100%,
+    50% 100%,
+    0 100%,
+    100% 100%,
+    100% 0%
+  );
+}
+
+.link--elara span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+}
+
+.link--elara:hover span {
+  transform: translate3d(0, -2px, 0);
+}
+
+.logoImg {
+  height: 6vh;
+}
