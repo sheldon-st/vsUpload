@@ -32,6 +32,7 @@ import Project1 from "./pages/workProjects/projects";
 // with `path` and `component` props, ordered the same
 // way as inside a `<Switch>`.
 export const routes = [
+  
   // main
   { path: "/home", component: Home, exact: true, name: "Home" },
   {
