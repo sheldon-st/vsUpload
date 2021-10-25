@@ -48,7 +48,7 @@ if(onScreen) setReveal(onScreen);
 
   return <section className={"footer"}
   data-scroll-section> 
-    <SectionHeader title="Made in" />
-    <h1 className={cn("location", {'is-reveal': reveal})} id="location-text" ref={ref}>Boston ma</h1>
+    <SectionHeader title="Written By" />
+    <h1 className={cn("location", {'is-reveal': reveal})} id="location-text" ref={ref}>Stevie Sheldon</h1>
   </section>
 }

@@ -22,6 +22,8 @@ import SectionMenu from "./components/workMenu/index.jsx";
 // page imports
 import Home from "./pages/home";
 import About from "./pages/about";
+import Blog from "./pages/blog"
+import Banksy from "./pages/banksy";
 
 import Project1 from "./pages/workProjects/projects";
 
@@ -32,13 +34,22 @@ import Project1 from "./pages/workProjects/projects";
 // with `path` and `component` props, ordered the same
 // way as inside a `<Switch>`.
 export const routes = [
-  
   // main
   { path: "/home", component: Home, exact: true, name: "Home" },
   {
     path: "/about",
     component: About,
     name: "About",
+  },
+  {
+    path: "/banksy",
+    component: Banksy,
+    name: "Banksy",
+  },
+  {
+    path: "/blog",
+    component: Blog,
+    name: "Blog",
   },
   {
     path: "/work",
@@ -49,7 +60,7 @@ export const routes = [
       {
         path: "/work/ux",
         component: UxMenu,
-        name: "UX",
+        name: "ui",
       },
       {
         path: "/work/web",
@@ -84,7 +95,58 @@ export const routes = [
 // all projects, with subititle, topic & path
 const projects = [
   // { h1: "album redesign", h2: "typography", to: "/work", topics: ["graphics"] },
-  { h1: "logo design", h2: "typography", to: "/work", topics: ["graphics"] },
+
+  {
+    h1: "website & brother database",
+    h2: "for pi kappa phi @ northeastern | next(react)js, firebase",
+    to: "/work",
+    topics: ["web"],
+  },
+
+  {
+    h1: "logo design",
+    h2: "typography | adobe illustrator",
+    to: "/work",
+    topics: ["graphics"],
+  },
+  {
+    h1: "album redesign",
+    h2: "typography | adobe illustrator",
+    to: "/work",
+    topics: ["graphics"],
+  },
+
+  {
+    h1: "student hub 2.0",
+    h2: "prototyping | adobe xd",
+    to: "/work",
+    topics: ["ux"],
+  },
+  {
+    h1: "google doodle",
+    h2: "prototypes & frontend | adobe xd, html, css, vanilla js",
+    to: "/work",
+    topics: ["ux", "web"],
+  },
+
+  {
+    h1: "nonsense ui",
+    h2: "prototyping | adobe xd",
+    to: "/work",
+    topics: ["ux"],
+  },
+  {
+    h1: "banksy?",
+    h2: "prototypes & frontend | adobe xd, html, css, vanilla js",
+    to: "/work",
+    topics: ["ux", "web"],
+  },
+  {
+    h1: "portfolio",
+    h2: "prototyping and development | adobe xd, reactjs (at the moment)",
+    to: "/work",
+    topics: ["ux", "web"],
+  },
 
   {
     h1: "floodIt",
@@ -98,53 +160,24 @@ const projects = [
     to: "/work",
     topics: ["java"],
   },
+
   {
     h1: "portrait",
-    h2: "things done",
+    h2: "some photos i've taken",
     to: "/work",
     topics: ["photo"],
   },
   {
     h1: "landscape",
-    h2: "things done",
+    h2: "just for fun",
     to: "/work",
     topics: ["photo"],
   },
   {
     h1: "wildlife",
-    h2: "things done",
+    h2: "from all over",
     to: "/work",
     topics: ["photo"],
-  },
-  {
-    h1: "student hub 2.0",
-    h2: "prototyping | adobe xd",
-    to: "/work",
-    topics: ["ux"],
-  },
-  {
-    h1: "nonsense ui",
-    h2: "things done",
-    to: "/work",
-    topics: ["ux"],
-  },
-  {
-    h1: "google doodle",
-    h2: "things done",
-    to: "/work",
-    topics: ["ux", "web"],
-  },
-  {
-    h1: "banksy?",
-    h2: "things done",
-    to: "/work",
-    topics: ["ux", "web"],
-  },
-  {
-    h1: "portfolio",
-    h2: "things done",
-    to: "/work",
-    topics: ["ux", "web"],
   },
 ];
 
@@ -249,16 +282,7 @@ function Work({ routes }) {
               all work
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              className="workLink"
-              activeClassName="activeWorkLink"
-              to="/work/ux"
-              id="section-item"
-            >
-              ux
-            </NavLink>
-          </li>
+
           <li>
             <NavLink
               className="workLink"
@@ -267,6 +291,16 @@ function Work({ routes }) {
               id="section-item"
             >
               web
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="workLink"
+              activeClassName="activeWorkLink"
+              to="/work/ux"
+              id="section-item"
+            >
+              ui/ux
             </NavLink>
           </li>
           <li>

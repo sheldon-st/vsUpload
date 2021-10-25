@@ -44,6 +44,10 @@ export default function ParagraphSection() {
       className={cn("about-section", { "is-reveal": reveal })}
       data-scroll-section
     >
+      <h1>Exploring the Epistemic and economic advantages of apples stance on privacy </h1>
+
+    
+
       <SectionHeader title="about" />
       <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
         Flirty Flowers is a blog about flowers and the floral designers who make
@@ -51,6 +55,15 @@ export default function ParagraphSection() {
         full purpose of the Flirty Flowers blog is to encourage and inspire. We
         value art, we value insight, and we value opinion.
       </p>
+
+      <SectionHeader title="about" />
+      <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
+        Flirty Flowers is a blog about flowers and the floral designers who make
+        them into art. Creativity and the art of ‘making’ require dialogue. The
+        full purpose of the Flirty Flowers blog is to encourage and inspire. We
+        value art, we value insight, and we value opinion.
+      </p>
+       
     </section>
   );
 }

@@ -49,7 +49,7 @@ export default function Work({ routes }) {
               }}
               to="/work/ux"
             >
-              ux
+              ui
             </NavLink>
           </li>
           <li>
@@ -65,6 +65,8 @@ export default function Work({ routes }) {
               web
             </NavLink>
           </li>
+          
+            
           <li>
             <NavLink
               className="workLink"
@@ -75,7 +77,7 @@ export default function Work({ routes }) {
               }}
               to="/work/graphics"
             >
-              graphics
+              graphicsas
             </NavLink>
           </li>
           <li>
