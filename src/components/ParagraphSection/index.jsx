@@ -49,18 +49,12 @@ export default function ParagraphSection() {
 
       <SectionHeader title="The Bentham Panopticon of Tech" />
       <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
-        Flirty Flowers is a blog about flowers and the floral designers who make
-        them into art. Creativity and the art of ‘making’ require dialogue. The
-        full purpose of the Flirty Flowers blog is to encourage and inspire. We
-        value art, we value insight, and we value opinion.
+       
       </p>
 
-      <SectionHeader title="about" />
+      <SectionHeader title="The Right to Privacy" />
       <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
-        Flirty Flowers is a blog about flowers and the floral designers who make
-        them into art. Creativity and the art of ‘making’ require dialogue. The
-        full purpose of the Flirty Flowers blog is to encourage and inspire. We
-        value art, we value insight, and we value opinion.
+        
       </p>
        
     </section>
