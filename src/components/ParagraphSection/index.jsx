@@ -42,7 +42,7 @@ export default function ParagraphSection() {
   return (
     <section
       data-scroll-section
-      className="blogContainer"
+      className="about-section"
     >
       <h1> Hello! </h1>
       <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
