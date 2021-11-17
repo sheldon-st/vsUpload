@@ -28,14 +28,13 @@ const StudentHubPage = () => {
 
               {/* <h2 id="headline">Prompt</h2> */}
 
-              <h2 id="Mock-Ups">
-                <a href="https://xd.adobe.com/view/d149dbbb-8b00-4c8d-accc-d6ceb9b28914-841a/">
-                  Prototypes
+              <h2 id="Proposal">
+                <a href="https://www.beautiful.ai/player/-Mois434CvqzRV5NWVBF">
+                  Proposal
                 </a>
               </h2>
-
-              <h2 id="Proposal">
-                <a href="https://xd.adobe.com/view/d149dbbb-8b00-4c8d-accc-d6ceb9b28914-841a/">
+              <h2 id="Mock-Ups">
+                <a href="https://xd.adobe.com/view/663f76a2-7818-408e-b875-31ba2773cdae-336c/">
                   Prototypes
                 </a>
               </h2>
