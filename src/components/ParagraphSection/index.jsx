@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import cn from "classnames";
 
-import SplitText from "../../utils/Split3.min"; 
+import SplitText from "../../utils/Split3.min";
 
 import gsap from "gsap";
 
@@ -46,9 +46,8 @@ export default function ParagraphSection() {
     >
       <h1> Hello! </h1>
       <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
-      I’m a student, designer, and developer from Boston, Massachusetts - who is passionate about finding creative and beautiful solutions to all kinds of problems. I work mostly with UI/UX design and front-end web development.
+        I’m a student, designer, and developer from Boston, Massachusetts - who is passionate about finding creative and beautiful solutions to all kinds of problems. I work mostly with UI/UX design and front-end web development.
 
-      <p>Checks out of some my work</p>
       </p>
 
 
