@@ -29,6 +29,10 @@ import DoodlePage from "./pages/DoodlePage";
 import StudentHubPage from "./pages/StudentHubPage";
 import BanksyPage from "./pages/BanksyPage";
 import NonsenseUIPage from "./pages/NonesenseUIPage";
+import AlbumPage from "./pages/AlbumPage";
+import LogoPage from "./pages/LogoPage";
+import KruskalPage from "./pages/KruskalPage";
+import FloodPage from "./pages/FloodPage";
 
 import Project1 from "./pages/workProjects/projects";
 
@@ -70,6 +74,26 @@ export const routes = [
     path: "/studenthub",
     component: StudentHubPage,
     name: "Student Hub 2.0",
+  },
+  {
+    path: "/albumcover",
+    component: AlbumPage,
+    name: "Album Cover Redesign",
+  },
+  {
+    path: "/logo",
+    component: LogoPage,
+    name: "Logo Design",
+  },
+  {
+    path: "/kruskal",
+    component: KruskalPage,
+    name: "Kruskal's Maze",
+  },
+  {
+    path: "/floodit",
+    component: FloodPage,
+    name: "Flood It",
   },
   {
     path: "/work",
@@ -126,20 +150,20 @@ const projects = [
   {
     h1: "logo design",
     h2: "typography | adobe illustrator",
-    to: "/work",
+    to: "/logo",
     topics: ["graphics"],
   },
   {
     h1: "album redesign",
     h2: "typography | adobe illustrator",
-    to: "/work",
+    to: "/albumcover",
     topics: ["graphics"],
   },
 
   {
     h1: "student hub 2.0",
     h2: "prototyping | adobe xd",
-    to: "/work",
+    to: "/studenthub",
     topics: ["ux"],
   },
   {
@@ -152,33 +176,34 @@ const projects = [
   {
     h1: "nonsense ui",
     h2: "prototyping | adobe xd",
-    to: "/work",
+    to: "/nonsenseui",
     topics: ["ux"],
   },
   {
     h1: "banksy?",
     h2: "prototypes & frontend | adobe xd, html, css, vanilla js",
-    to: "/work",
-    topics: ["ux", "web"],
-  },
-  {
-    h1: "portfolio",
-    h2: "prototyping and development | adobe xd, reactjs (at the moment)",
-    to: "/work",
+    to: "/banksy",
     topics: ["ux", "web"],
   },
 
   {
     h1: "floodIt",
     h2: "things done",
-    to: "/work",
+    to: "/floodit",
     topics: ["java"],
   },
   {
     h1: "kruskal's maze",
     h2: "things done",
-    to: "/work",
+    to: "/kruskal",
     topics: ["java"],
+  },
+
+  {
+    h1: "portfolio",
+    h2: "prototyping and development | adobe xd, reactjs (at the moment)",
+    to: "/work",
+    topics: ["ux", "web"],
   },
 
   {

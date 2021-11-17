@@ -11,7 +11,7 @@ import ParagraphSectionWork from "../components/ParagraphSectionWork";
 import Hero from "../components/Hero";
 import useLocoScroll from "../hooks/useLocoScroll";
 
-const DoodlePage = () => {
+const BanksyPage = () => {
   const ref = useRef(null);
 
   return (
@@ -20,7 +20,7 @@ const DoodlePage = () => {
         <ParagraphSectionWork
           content={
             <div id="headline" data-scroll-container ref={ref}>
-              <h1 id="headline">Google Doodle</h1>
+              <h1 id="headline">Banksy</h1>
               <ul id="headline">
                 <li>ARTG 3333 Experience & Interaction</li>
                 <li>Prototyping in Adobe XD</li>
@@ -29,7 +29,7 @@ const DoodlePage = () => {
               {/* <h2 id="headline">Prompt</h2> */}
               <h2 id="Mock-Ups">
                 <a href="https://xd.adobe.com/view/d149dbbb-8b00-4c8d-accc-d6ceb9b28914-841a/">
-                  Desktop Prototype
+                  Desktop Prototype - fix
                 </a>
               </h2>
               <h2 id="Mock-Ups">
@@ -46,4 +46,4 @@ const DoodlePage = () => {
     </>
   );
 };
-export default DoodlePage;
+export default BanksyPage;

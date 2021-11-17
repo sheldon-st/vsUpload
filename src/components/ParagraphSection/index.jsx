@@ -16,13 +16,24 @@ import "./style.scss";
 
 export default function ParagraphSection() {
   const ref = useRef(null);
+  const ref2 = useRef(null);
 
   const [reveal, setReveal] = useState(false);
+
+ 
   const onScreen = useOnScreen(ref);
 
   useEffect(() => {
     if (onScreen) setReveal(onScreen);
   }, [onScreen]);
+
+
+  const [reveal2, setReveal2] = useState(false);
+  const onScreen2 = useOnScreen(ref2);
+
+  useEffect(() => {
+    if (onScreen2) setReveal2(onScreen2);
+  }, [onScreen2]);
 
   useEffect(() => {
     if (reveal) {
@@ -39,6 +50,21 @@ export default function ParagraphSection() {
     }
   }, [reveal]);
 
+  useEffect(() => {
+    if (reveal2) {
+      const split = new SplitText("#headline2", { type: "lines" });
+
+      gsap.to(split.lines, {
+        duration: 1,
+        y: -20,
+        opacity: 1,
+        stagger: 0.1,
+        ease: "power4.out",
+        // onComplete: () => split.revert(),
+      });
+    }
+  }, [reveal2]);
+
   return (
     <section
       data-scroll-section
@@ -50,8 +76,14 @@ export default function ParagraphSection() {
 
       </p>
 
+      <p ref={ref2} id="headline2" className={cn({ "is-reveal2": reveal2 }) }>
+        Here you can find some of my work, <br/> and get in touch if you’d like to work together or have any questions.
+      </p>
+
 
 
     </section>
+
+    
   );
 }

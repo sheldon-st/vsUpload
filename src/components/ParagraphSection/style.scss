@@ -9,7 +9,14 @@
       transform: translate(0);
     }
 
+
     &.is-reveal {
+      opacity: 1;
+    }
+
+    &.is-reveal2 {
+      text-align: right;
+
       opacity: 1;
     }
   }
