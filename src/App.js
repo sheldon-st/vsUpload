@@ -22,8 +22,13 @@ import SectionMenu from "./components/workMenu/index.jsx";
 // page imports
 import Home from "./pages/home";
 import About from "./pages/about";
-import Blog from "./pages/blog"
+import Blog from "./pages/blog";
 import Banksy from "./pages/banksy";
+
+import DoodlePage from "./pages/DoodlePage";
+import StudentHubPage from "./pages/StudentHubPage";
+import BanksyPage from "./pages/BanksyPage";
+import NonsenseUIPage from "./pages/NonesenseUIPage";
 
 import Project1 from "./pages/workProjects/projects";
 
@@ -43,13 +48,28 @@ export const routes = [
   },
   {
     path: "/banksy",
-    component: Banksy,
+    component: BanksyPage,
     name: "Banksy",
   },
   {
     path: "/blog",
     component: Blog,
     name: "Blog",
+  },
+  {
+    path: "/doodle",
+    component: DoodlePage,
+    name: "DoodlePage",
+  },
+  {
+    path: "/nonsenseui",
+    component: NonsenseUIPage,
+    name: "Nonsense UI",
+  },
+  {
+    path: "/studenthub",
+    component: StudentHubPage,
+    name: "Student Hub 2.0",
   },
   {
     path: "/work",
@@ -125,7 +145,7 @@ const projects = [
   {
     h1: "google doodle",
     h2: "prototypes & frontend | adobe xd, html, css, vanilla js",
-    to: "/work",
+    to: "/doodle",
     topics: ["ux", "web"],
   },
 

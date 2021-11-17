@@ -65,7 +65,7 @@ export default function Hero() {
   
   <h1 id="section-text">
           {/* <mark id="heroDF">art</mark>ish */}
-          <mark class="doublefont3 headerart">art</mark>ish
+          <mark class="doublefont3">art</mark>ish
 
           <br />
         </h1>

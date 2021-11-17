@@ -13,6 +13,7 @@ import useLocoScroll from "../hooks/useLocoScroll";
 
 const Home = () => {
   const ref = useRef(null);
+  
 
   return (
     <>
@@ -23,12 +24,9 @@ const Home = () => {
         ref={ref}
       >
         <Hero />
-        
-        <Featured />
         <ParagraphSection />
-
+        <Featured />
         {/* <Gallery /> */}
-
         <Footer />
       </div>
     </>

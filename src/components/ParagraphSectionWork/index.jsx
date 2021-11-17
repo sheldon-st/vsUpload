@@ -10,11 +10,7 @@ import useOnScreen from "../../hooks/useOnScreen";
 import "./style.scss";
 import SectionHeader from "../SectionHeader/SectionHeader.js";
 
-
-
-import "./style.scss";
-
-export default function ParagraphSection() {
+export default function ParagraphSectionWork({content}) {
   const ref = useRef(null);
 
   const [reveal, setReveal] = useState(false);
@@ -39,19 +35,15 @@ export default function ParagraphSection() {
     }
   }, [reveal]);
 
+
+
   return (
     <section
-      className={cn("about-section", { "is-reveal": reveal })}
       data-scroll-section
+      className="workContainerPage"
+      
     >
-      <h1> Hello! </h1>
-      <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
-      I’m a student, designer, and developer from Boston, Massachusetts - who is passionate about finding creative and beautiful solutions to all kinds of problems. I work mostly with UI/UX design and front-end web development.
-
-      <p>Checks out of some my work</p>
-      </p>
-
-
+    {content}
 
     </section>
   );

@@ -8,6 +8,7 @@ body {
   background-color: var(--bg);
   margin-left: 5vw;
   margin-right: 5vw;
+  font-family: avocado;
 }
 
 main {
@@ -37,7 +38,7 @@ main {
       justify-content: center;
 
       h1 {
-        font-family: "Bebas Neue";
+        font-family: avocado;
         font-size: 52px;
         letter-spacing: 0.1rem;
         .line-wrap {
@@ -47,7 +48,7 @@ main {
         }
       }
       p {
-        font-family: "Poppins";
+        font-family: avocado;
         margin-top: 200px;
         width: 340px;
         font-weight: 300;

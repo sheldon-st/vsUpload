@@ -638,24 +638,6 @@ body {
   mix-blend-mode: exclusion;
 }
 
-.doublefont3 {
-  position: relative;
-  color: #4e598c;
-  font-family: punkBottom;
-  background: none;
-  font-size: 3.5rem;
-}
-
-.doublefont3:after {
-  content: "ISH";
-  color: #d98496;
-  font-family: punkTop;
-  font-size: 3.5rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .fp-controlArrow.fp-prev {
   left: 15px;
   width: 0;
