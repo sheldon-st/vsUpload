@@ -15,22 +15,22 @@
   transform: scale(0.8);
 }
 .social-btns .btn.email:before {
-  background-color: #3b5998;
+  background-color: #b7b7b7;
 }
-.social-btns .btn.email .fa {
-  color: #3b5998;
+.social-btns .btn.email {
+  color: #b7b7b7;
 }
 .social-btns .btn.linkedin:before {
-  background-color: #3cf;
+  background-color: #0077b5;
 }
-.social-btns .btn.linkedin .fa {
-  color: #3cf;
+.social-btns .btn.linkedin {
+  color: #0077b5;
 }
 .social-btns .btn.github:before {
-  background-color: #dc4a38;
+  background-color: #333;
 }
-.social-btns .btn.github .fa {
-  color: #dc4a38;
+.social-btns .btn.github fa {
+  color: #333;
 }
 .social-btns .btn:focus:before,
 .social-btns .btn:hover:before {
@@ -83,8 +83,6 @@
 }
 
 .fa {
-  color: #f4f1de;
-
   width: 30px;
   height: 40px;
 
@@ -94,4 +92,14 @@
   z-index: 100;
 
   --fa-border-color: WhiteSmoke;
+}
+
+.btn svg path::before {
+  color: #e07a5f;
+  opacity: 0.6;
+}
+
+.btn svg path {
+  color: #beb7a4;
+  opacity: 1;
 }
