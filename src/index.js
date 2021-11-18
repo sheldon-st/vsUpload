@@ -11,6 +11,7 @@ import {
   Link,
   Redirect,
 } from "react-router-dom";
+import Social from "./components/social/social";
 
 ReactDOM.render(
   <Router>

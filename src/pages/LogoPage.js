@@ -23,20 +23,50 @@ const LogoPage = () => {
         <ParagraphSectionWork
           content={
             <div id="headline" data-scroll-container ref={ref}>
-              <h1 id="headline">Logo Design</h1>
-              <ul id="headline">
-                <li>Typography I</li>
-                <li>Design in Adobe Illustrator</li>
+              <h1 id="Logo Design">Logo Design</h1>
+              <h6 id="Typography I">Typography I</h6>
+              <h6 id="Designed in Adobe Illustrator">
+                Designed in Adobe Illustrator
+              </h6>
+              <h2 id="Objective">Objective </h2>
+              <h5 id="Design an App icon for that effectively reflect your company’s nature and values through typography">
+                Design an App icon for that effectively reflect your company’s
+                nature and values through typography.
+              </h5>
+              <h3 id="Design Restrictions">Design Restrictions </h3>
+              <h6 id="The icon needs to consist of 1 letter only using or based off one of the following typefaces:">
+                The icon must be based off of a character from one of the
+                following typefaces:{" "}
+              </h6>
+              <ul>
+                <li>Garamond</li>
+                <li>Times New Roman</li>
+                <li>Didot (or Bodoni)</li>
+                <li>Clarendon</li>
+                <li>Futura</li>
+                <li>Helvetica</li>
+                <li>Univers</li>
               </ul>
 
-              <a
-                href={logofile}
-                without
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <h2 id="headline">Artifacts</h2>{" "}
-              </a>
+              <h3>
+                <a
+                  class="animated-arrow"
+                  href={logofile}
+                  without
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span class="the-arrow -left">
+                    <span class="shaft"></span>
+                  </span>
+                  <span class="main">
+                    <span class="text">Process Artifacts</span>
+                    <span class="the-arrow -right">
+                      <span class="shaft"></span>
+                    </span>
+                  </span>
+                </a>
+              </h3>
             </div>
           }
         />

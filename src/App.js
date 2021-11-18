@@ -36,6 +36,8 @@ import FloodPage from "./pages/FloodPage";
 
 import Project1 from "./pages/workProjects/projects";
 
+import Social from "./components/social/social";
+
 // import Work from "./pages/work";
 // import RouteWithSubRoutes from "./pages/work";
 
@@ -248,6 +250,7 @@ export default function App() {
           <div className="main-container" id="app">
             {/* // <AnimatedCursor /> */}
             <Header />
+            <Social />
 
             <div className="container">
               {routes.map((route, i, path, Component) => (

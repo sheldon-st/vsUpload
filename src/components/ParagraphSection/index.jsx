@@ -70,6 +70,7 @@ export default function ParagraphSection() {
       data-scroll-section
       className="about-section"
     >
+      
       <h1> Hello! </h1>
       <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
         I’m a student, designer, and developer from Boston, Massachusetts who is passionate about finding creative and beautiful solutions to all kinds of problems. I work mostly with UI/UX design and front-end web development. 
