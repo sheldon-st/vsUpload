@@ -1,0 +1,149 @@
+.blog-container {
+  ul {
+    align-self: flex-start;
+    flex-direction: column;
+    display: flexbox;
+    direction: ltr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+  }
+
+  li {
+    align-self: flex-start;
+    align-content: flex-start;
+    text-align: left;
+  }
+
+  div {
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 7vw;
+    margin-bottom: 0;
+    margin-top: 0.5vw;
+  }
+
+  h2 {
+    align-self: flex-start;
+    text-align: left;
+
+    font-size: 3vw;
+    margin-bottom: 0;
+    margin-top: 0.5vw;
+  }
+
+  h3 {
+    align-self: flex-start;
+    text-align: left;
+
+    font-size: 3vw;
+    margin-bottom: 0;
+    margin-top: 0.5vw;
+  }
+
+  h4 {
+    align-self: flex-start;
+    text-align: left;
+
+    font-size: 1vw;
+    margin-bottom: 0;
+    margin-top: 0.5vw;
+  }
+
+  h5 {
+    align-self: flex-start;
+    text-align: left;
+
+    font-size: 1vw;
+    margin-bottom: 0;
+    margin-top: 0.5vw;
+  }
+
+  h6 {
+    font-size: 1vw;
+    margin-bottom: 0;
+    margin-top: 0;
+    align-self: flex-start;
+    width: 60vw;
+    text-align: left;
+  }
+}
+
+ul {
+  align-self: flex-start;
+  flex-direction: column;
+  display: flexbox;
+  direction: ltr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+li {
+  align-self: flex-start;
+  align-content: flex-start;
+  text-align: left;
+}
+
+div {
+  align-items: baseline;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 7vw;
+  margin-bottom: 0;
+  margin-top: 0.5vw;
+}
+
+h2 {
+  align-self: flex-start;
+  text-align: left;
+
+  font-size: 3vw;
+  margin-bottom: 0;
+  margin-top: 0.5vw;
+}
+
+h3 {
+  align-self: flex-start;
+  text-align: left;
+
+  font-size: 3vw;
+  margin-bottom: 0;
+  margin-top: 0.5vw;
+}
+
+h4 {
+  align-self: flex-start;
+  text-align: left;
+
+  font-size: 1vw;
+  margin-bottom: 0;
+  margin-top: 0.5vw;
+}
+
+h5 {
+  align-self: flex-start;
+  text-align: left;
+
+  font-size: 1vw;
+  margin-bottom: 0;
+  margin-top: 0.5vw;
+}
+
+h6 {
+  font-size: 1vw;
+  margin-bottom: 0;
+  margin-top: 0;
+  align-self: flex-start;
+  width: 60vw;
+  text-align: left;
+}

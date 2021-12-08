@@ -22,7 +22,7 @@ import SectionMenu from "./components/workMenu/index.jsx";
 // page imports
 import Home from "./pages/home";
 import About from "./pages/about";
-import Blog from "./pages/blog";
+import EpistemologyProject from "./pages/blog/EpistemologyProject";
 import Banksy from "./pages/banksy";
 
 import DoodlePage from "./pages/DoodlePage";
@@ -58,9 +58,9 @@ export const routes = [
     name: "Banksy",
   },
   {
-    path: "/blog",
-    component: Blog,
-    name: "Blog",
+    path: "/epistemologyofprivacy",
+    component: EpistemologyProject,
+    name: "EpistemologyProject",
   },
   {
     path: "/doodle",

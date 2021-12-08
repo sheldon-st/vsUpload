@@ -18,6 +18,7 @@ export default function Featured() {
       </div>
       <div className='featured-column-layout'>
       <NavLink to="/booklet" className="featured-link" data-scroll>
+      
       <img src={booklet} />
         NYFF Booklet Design
       </NavLink>
