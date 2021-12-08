@@ -39,6 +39,8 @@ const Blog = () => {
               <h6 id="December 2021">December 2021</h6>
               <h6 id="Stephen Sheldon">Stephen Sheldon</h6>
               <h6 id="PHIL1300 Final Project">PHIL1300 Final Project</h6>
+              <h6 id="PHIL1300 Final Project">Rough Outline</h6>
+
 
               <ul>
                 <li>
