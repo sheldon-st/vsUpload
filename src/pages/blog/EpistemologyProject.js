@@ -33,7 +33,8 @@ const Blog = () => {
           content={
             <div className="blog-container" id="blog-container">
               <h1 id="A Detailed Epistemic Evaluation of Apple’s Approach to Privacy">
-                A Detailed Epistemic Evaluation of Apple’s Approach to Privacy
+                Apple: A Detailed Epistemic Evaluation of an Alternative
+                Approach to Privacy
               </h1>
               <h6 id="December 2021">December 2021</h6>
               <h6 id="Stephen Sheldon">Stephen Sheldon</h6>
