@@ -13,10 +13,13 @@ const Social = () => {
       <a class="btn email" href="mailto:sheldon.st@northeastern.edu">
         <FontAwesomeIcon className="fa" icon={faPaperPlane} color="E07A5F" />
       </a>
-      <a class="btn linkedin" href="https://www.linkedin.com/in/stephen-sheldon">
+      <a
+        class="btn linkedin"
+        href="https://www.linkedin.com/in/stephen-sheldon"
+      >
         <FontAwesomeIcon className="fa" icon={faLinkedinIn} color="#E07A5F" />
       </a>
-      <a class="btn github" href="https://github.com/sheldon-st">
+      <a class="btn github" href="">
         <FontAwesomeIcon
           className="fa githubIcon"
           icon={faGithubAlt}

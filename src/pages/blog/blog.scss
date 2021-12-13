@@ -1,25 +1,10 @@
 .blog-container {
-  ul {
-    align-self: flex-start;
-    flex-direction: column;
-    display: flexbox;
-    direction: ltr;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: left;
-  }
-
-  li {
-    align-self: flex-start;
-    align-content: flex-start;
-    text-align: left;
-  }
-
-  div {
+  color: transparent;
+  text div {
     align-items: baseline;
     display: flex;
     flex-direction: column;
+    color: transparent;
   }
 
   h1 {

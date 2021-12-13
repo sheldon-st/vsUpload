@@ -41,7 +41,6 @@ const Blog = () => {
               <h6 id="PHIL1300 Final Project">PHIL1300 Final Project</h6>
               <h6 id="PHIL1300 Final Project">Rough Outline</h6>
 
-
               <ul>
                 <li>
                   Intro to technology
@@ -410,10 +409,150 @@ const Blog = () => {
                     speed to take advantage of it; and are presented with the
                     option rather than having to seek it out
                   </p>
+
+                  <h5 id="Data Minimization">Data Minimization</h5>
+                  <ul>
+                    <li>
+                      Services … Collecting only the minimum amount of data
+                      required to deliver what you need for a given service.
+                      <ul>
+                        <li> Siri</li>
+                        <li> …</li>
+                      </ul>
+                    </li>
+                    <li className="circle-checkmark">Do not observe him</li>
+                    <li className="circle-checkmark">
+                      Do not come to know his personal info
+                    </li>
+                  </ul>
+                  <h5 id="On-device Processing">On-device Processing </h5>
+                  <ul>
+                    <li>
+                      Processing data on the device, wherever possible, rather
+                      than sending it to Apple servers, to protect user privacy
+                      and minimize data collection.
+                      <ul>
+                        <li> Siri m</li>
+                        <li> messages</li>
+                        <li> …</li>
+                      </ul>
+                    </li>
+                    <li className="circle-checkmark"> Do not observe him</li>
+                    <li className="circle-checkmark">
+                      {" "}
+                      Do not to interfere with his control of his personal
+                      information
+                    </li>
+                    <li className="circle-checkmark">
+                      {" "}
+                      Do not come to know his personal info
+                    </li>
+                  </ul>
+
+                  <h5 id="User Transparency and Control">
+                    User Transparency and Control{" "}
+                  </h5>
+                  <p>
+                    Services to help Making sure that users know what data is
+                    shared and how it is used, and that they can exercise
+                    control over it.
+                  </p>
+                  <ul>
+                    <li> IDFA Opt-In</li>
+                    <li> …</li>
+                  </ul>
+                  <li className="circle-checkmark">
+                    {" "}
+                    Do not to interfere with his control of his personal
+                    information
+                  </li>
+
+                  <h5 id="Security">Security </h5>
+                  <ul>
+                    <li>
+                      Hardware and software working together to keep data
+                      secure.
+                      <ul>
+                        <li> vpn</li>
+                        <li> private relay</li>
+                        <li> encrypted messaging</li>
+                        <li> …</li>
+                      </ul>
+                    </li>
+                    <li className="circle-checkmark">
+                      {" "}
+                      Do not to interfere with his control of his personal
+                      information
+                    </li>
+                    <li className="circle-checkmark">
+                      {" "}
+                      Do not come to know his personal info
+                    </li>
+                  </ul>
                 </div>
 
                 <img src={privacy} />
               </div>
+              <div className="image-container2" data-scroll>
+                <div>
+                  <h2 id="Jail Break">Jail Break</h2>
+
+                  <p>
+                    If we were to think about this in the context of Bentham’s
+                    Panopticon, what Apple is attempting would be like letting
+                    the prisoners know when the guards are watching them, and
+                    giving the prisoners a set of blinds for their cell if they
+                    would prefer not be watched.
+                    <p>
+                      While it does not come close to eliminating all data
+                      collection on the internet; Apple is making progress in
+                      returning all 3 of the ‘rights’ mentioned above to their
+                      users.{" "}
+                    </p>
+                    <ol start="1">
+                      <li>They allow users to easily prevent all tracking.</li>
+                      <li>
+                        They disclose what trackers software and websites are
+                        using and allow the user to choose which they are okay
+                        with.
+                      </li>
+                      <li>
+                        They still collect a basic level of information, but
+                        encrypt the majority of private data (passwords,
+                        contacts, main, etc) so it is only accessible by the
+                        user.
+                      </li>
+                    </ol>
+                    <p>
+                      Through this set of beliefs they are serving as the
+                      “librarians of the tech industry in some sense.” Apple
+                      does not directly provide the vast amount of information
+                      that companies like Google or Facebook do, but they allow
+                      you to access it, and while doing so keep your information
+                      confidential. And, quite literally they have been the
+                      “thin blue line{" "}
+                      <a href="https://www.inc.com/jason-aten/apple-wont-help-fbi-unlock-a-terrorists-iphone-heres-why-it-shouldnt.html">
+                        between you and the FBI
+                      </a>{" "}
+                      ” on multiple occasions.{" "}
+                    </p>
+                    <ul>
+                      <li>
+                        Clear that giving users knowledge of how their data is
+                        being used is epistemic benefit
+                      </li>
+                      <li>
+                        Control over how its used and freedom all benefit people
+                        using tech
+                      </li>
+                    </ul>
+                  </p>
+                </div>
+
+                <img src={appstore} />
+                <img src={opt} />
+              </div>
+              {/* <img src={dataImage} /> */}
 
               <p>
                 Notably they made the{" "}
@@ -430,46 +569,6 @@ const Blog = () => {
               </p>
 
               <p>List features?</p>
-
-              <p>
-                While all of these features have been implanted before, it was
-                limited to techies and people often had to make sacrifices or
-                pay addition services.{" "}
-              </p>
-
-              <p>
-                {" "}
-                Apples efforts to bring the capability to controls to the
-                broader public are so far unprecendted. Instead of having to
-                seek it out; these options are presented by default and
-                information about how data is being used it proactively shared
-              </p>
-
-              <p>
-                While the number of people using apple devices is much small
-                portion of the market (16.14% august); it{" "}
-              </p>
-              <p>Large percent of mobile devices (stat)</p>
-
-              <p>
-                Apple has announced that it will give users the ability to
-                choose to block the sharing of this unique identifier at the App
-                level. Previously, consumers had to opt-out. Now when a user
-                installs or updates the new iOS, a prompt will appear alerting
-                the user to opt-in or opt-out of the sharing of this
-                information.  
-              </p>
-              <p>
-                <b>
-                  Currently, about 70% of IOS users share their IDFA with app
-                  publ
-                </b>
-              </p>
-
-              <p>
-                Shows that people either weren’t aware of the tracking or how to
-                disable it as Now its like 5 (stat)
-              </p>
 
               <ul>
                 <li>Do not observe him</li>
@@ -526,8 +625,6 @@ const Blog = () => {
                 </li>
               </ul>
 
-              <h3 id="Obsfucation">Obsfucation</h3>
-
               <ul>
                 <li> Ask App Not to track</li>
                 <li> Private Relay</li>
@@ -535,61 +632,49 @@ const Blog = () => {
                 <li> Inject Noise</li>
               </ul>
               <p> </p>
-              <h2 id="Jail Break">Jail Break</h2>
-
-              <p>
-                If we were to think about this in the context of Bentham’s
-                Panopticon, what Apple is attempting would be like letting the
-                prisoners know when the guards are watching them, and giving the
-                prisoners a set of blinds for their cell if they would prefer
-                not be watched.{" "}
-              </p>
-
-              <h2 id="Giving back your ‘rights’ to privacy">
-                Giving back your ‘rights’ to privacy
-              </h2>
-
-              <p>
-                While it does not come close to eliminating all data collection
-                on the internet; Apple is making progress in returning all 3 of
-                the ‘rights’ mentioned above to their users.{" "}
-              </p>
-              <ol start="1">
-                <li>They allow users to easily prevent all tracking.</li>
-                <li>
-                  They disclose what trackers software and websites are using
-                  and allow the user to choose which they are okay with.
-                </li>
-                <li>
-                  They still collect a basic level of information, but encrypt
-                  the majority of private data (passwords, contacts, main, etc)
-                  so it is only accessible by the user.
-                </li>
-              </ol>
-              <p>
-                Through this set of beliefs they are serving as the “librarians
-                of the tech industry in some sense.” Apple does not directly
-                provide the vast amount of information that companies like
-                Google or Facebook do, but they allow you to access it, and
-                while doing so keep your information confidential. And, quite
-                literally they have been the “thin blue line{" "}
-                <a href="https://www.inc.com/jason-aten/apple-wont-help-fbi-unlock-a-terrorists-iphone-heres-why-it-shouldnt.html">
-                  between you and the FBI
-                </a>{" "}
-                ” on multiple occasions.{" "}
-              </p>
-              <ul>
-                <li>
-                  Clear that giving users knowledge of how their data is being
-                  used is epistemic benefit
-                </li>
-                <li>
-                  Control over how its used and freedom all benefit people using
-                  tech
-                </li>
-              </ul>
 
               <h2 id="Fecundity">Fecundity </h2>
+
+              <p>
+                While all of these features have been implanted before, it was
+                limited to techies and people often had to make sacrifices or
+                pay addition services.{" "}
+              </p>
+
+              <p>
+                {" "}
+                Apples efforts to bring the capability to controls to the
+                broader public are so far unprecendted. Instead of having to
+                seek it out; these options are presented by default and
+                information about how data is being used it proactively shared
+              </p>
+
+              <p>
+                While the number of people using apple devices is much small
+                portion of the market (16.14% august); it{" "}
+              </p>
+              <p>Large percent of mobile devices (stat)</p>
+
+              <p>
+                Apple has announced that it will give users the ability to
+                choose to block the sharing of this unique identifier at the App
+                level. Previously, consumers had to opt-out. Now when a user
+                installs or updates the new iOS, a prompt will appear alerting
+                the user to opt-in or opt-out of the sharing of this
+                information.  
+              </p>
+              <p>
+                <b>
+                  Currently, about 70% of IOS users share their IDFA with app
+                  publ
+                </b>
+              </p>
+
+              <p>
+                Shows that people either weren’t aware of the tracking or how to
+                disable it as Now its like 5 (stat)
+              </p>
+
               <p>Tough question </p>
               <p>
                 One side is like mentioned this brings the awareness and control
@@ -695,6 +780,32 @@ const Blog = () => {
                 have to restate, but connect to some of the bigger things you
                 have discussed in this class and you will have tied everything
                 up in a neat bow
+              </p>
+
+              <p>
+                . First, do you think that this technology (policy, institution
+              </p>
+              <p>, or practice) is a good thing all things considered</p>
+              <p>? </p>
+
+              <p>
+                Second, you used a particular epistemological theory to carry
+                out the epistemic evaluation of this technology (policy,
+                institution, or practice). Were you able to identify any
+                strengths or weaknesses of this theory as a result of carrying
+                out this evaluation?
+              </p>
+
+              <p>Tough topic to consider given debate on privacy</p>
+              <p>
+                I like bantams contradictory principles as a guideline for
+                evaluating but disagree that privacy falls outside the epistemic
+                realm.{" "}
+              </p>
+
+              <p>
+                However, there is a strong argument for privacy expanding for …
+                and apple brings to masses ………{" "}
               </p>
 
               <h2 id="h2"> h2</h2>

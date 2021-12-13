@@ -1,11 +1,40 @@
 @import "../../styles/vars.css";
 
+li.circle-checkmark::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  border: solid 8px #f9dd94;
+  border-radius: 8px;
+}
+
+li.circle-checkmark::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 3px;
+  height: 6px;
+  border: solid #7eb4e2;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+li {
+  list-style: none;
+  position: relative;
+  padding: 0 0 0 20px;
+  opacity: 0;
+}
+
 .workContainerPage {
   width: 90vw;
   top: 0;
 
   p {
     width: auto;
+    opacity: 0;
   }
 
   .p2 {
@@ -15,17 +44,10 @@
 
   ul {
     align-self: flex-start;
-    flex-direction: column;
-    display: flexbox;
+
     direction: ltr;
     margin: 0;
     padding: 0;
-    list-style: none;
-  }
-
-  li {
-    align-self: flex-start;
-    align-content: flex-end;
   }
 
   div {
@@ -40,6 +62,7 @@
     margin-top: 0;
     margin-bottom: 0rem;
     align-self: flex-end;
+    opacity: 0;
   }
 
   h2 {
@@ -93,6 +116,7 @@
     flex-direction: row;
     width: 100%;
   }
+  color: wheat;
 }
 
 // arrrroowww
@@ -134,6 +158,27 @@ $arrow-head-thickness: $shaft-thickness;
         transform: rotate(0);
       }
     }
+  }
+
+  li.circle-checkmark::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    border: solid 8px #f9dd94;
+    border-radius: 8px;
+  }
+
+  li.circle-checkmark::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 3px;
+    height: 6px;
+    border: solid #7eb4e2;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
   }
 
   &.-right {
