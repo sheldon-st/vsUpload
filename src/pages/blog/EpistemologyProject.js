@@ -39,241 +39,166 @@ const Blog = () => {
               <h6 id="December 2021">December 2021</h6>
               <h6 id="Stephen Sheldon">Stephen Sheldon</h6>
               <h6 id="PHIL1300 Final Project">PHIL1300 Final Project</h6>
-              <h6 id="PHIL1300 Final Project">Rough Outline</h6>
-
-              <ul>
-                <li>
-                  Intro to technology
-                  <ul>
-                    <li> what google / Facebook do</li>
-                    <li> apples stance and 2 sides</li>
-                    <li> business models</li>
-                  </ul>
-                </li>
-                <li>
-                  Will use Goldmans framework to evaluate … in terms of …’s
-                  ability to acquire … true beliefs. Also examine …
-                  <ul>
-                    <li>
-                      {" "}
-                      how apple is challenging Goldmans suggestion that
-                      “protecting privacy usually leads to less knowledge being
-                      acquired” (Fallis)
-                      <ul>
-                        <li>
-                          {" "}
-                          both stance on privacy and user control of information
-                        </li>
-                        <li>
-                          {" "}
-                          practices of anonymizing data to enable big data
-                          processing without relying on information about the
-                          individual
-                          <ul>
-                            <li>
-                              {" "}
-                              strategies adopted to provide info and big data
-                              without personal
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      {" "}
-                      THESIS: Apples Privacy technology represents
-                      XXXXXXXXXXXXXX (connecting to the philosophy/rights
-                      concepts you will explore)
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  5 objectives - Apple does not act as a source of knowledge but
-                  the way in which their services change how you access other
-                  services have an impact on how effective these 5 objectives
-                  are accomplished.
-                </li>
-                <li>
-                  directly act a source for the compilation of information but
-                  rather … However; apple’s model allows access to other
-                  services on the internet that provide
-                  <ul>
-                    <li>
-                      {" "}
-                      Reliability
-                      <ul>
-                        <li> Ratio of truths to total number of beliefs</li>
-                        <li> prevents error but does not combat ignorance</li>
-                      </ul>
-                    </li>
-                    <li>
-                      {" "}
-                      Power
-                      <ul>
-                        <li>
-                          {" "}
-                          problem solving or question answering power of a
-                          practices
-                        </li>
-                        <li>
-                          {" "}
-                          ability of practice to help people find and believe
-                          true answers to topics that interest them
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <p> </p>
-
-              <p>What type of knowledge - general but not direct … </p>
-              <p>What type of people - </p>
-              <p> General consumer market; </p>
-              <p> Speed </p>
-              <ul>
-                <li> relative speed of getting answers</li>
-                <li> Efficiency</li>
-                <li> promote acquisition at a lower cost</li>
-                <li> apple is both very and not at all efficient</li>
-                <li>
-                  {" "}
-                  Taken privacy from something that mostly technologically
-                  skilled could requires users to make sacrifices, pay
-                  additional fees or go through complicated process to being
-                  bundled with devices and on by default to general public
-                </li>
-                <li>
-                  {" "}
-                  users who are not buying these devices for this purpose or are
-                  not aware are made aware through proactive …
-                </li>
-                <li></li>
-              </ul>
-
+              <h6 id="PHIL1300 Final Project">
+                <a id="PHIL1300 Final Project">Rough Outline</a>
+              </h6>
+              <h6 id="PHIL1300 Final Project">
+                <a id="PHIL1300 Final Project">Bibliography</a>
+              </h6>
               <p>
-                Detrimental to Fecundity the ability to precipitate truths to a
-                large and diverse group of people not just the elite in a
-                certain field{" "}
+                As our lives become increasingly digital, a complex system of
+                social media companies, websites, apps, and ad tech firms has
+                been amassing increasingly frightening amounts of personal data
+                that powers a $227 billion-a-year industry. At the center of
+                this are most big tech companies we have become dependent on.
+                However, outliers remain; while major tech players like Google
+                and Facebook have a business model centered around the
+                collection and sale of user data in order to offer a range of
+                mostly free services; Apple has a different strategy. By
+                focusing on device, software and subscription sales they are
+                able to treat users as the customer instead of product and
+                prioritize privacy. The transparency and control of how user’s
+                digital information is treated has always been a core value of
+                the company,{" "}
+              </p>
+              <blockquote>
+                <p>
+                  “I believe people are smart and some people want to share more
+                  data than other people do. Ask them. Ask them every time. Make
+                  them tell you to stop asking them if they get tired of your
+                  asking them. Let them know precisely what you’re going to do
+                  with their data.”
+                </p>
+                <p>-Steve Jobs</p>
+              </blockquote>
+              <p>
+                but as concerns regarding big data become more prevalent and
+                controversial they have doubled down on their stance. Recent
+                software updates have introduced a variety of features intended
+                to enhance user privacy. As part of this examination we will use
+                Goldmans framework to evaluate the effectiveness of these
+                features in terms of the publics ability to acquire true beliefs
+                freely; but also consider how Apple’s stance is challenging
+                Goldmans suggestion that “protecting privacy usually leads to
+                less knowledge being acquired” (Fallis). Apple does not act as a
+                source of knowledge but the way in which their services change
+                how you access other services have an impact on how effectively
+                the user is able to obtain information. We will focus on effects
+                to the speed, effeciency and fecundity of how individuals
+                acquire information as a result of Apple’s protections and
+                insights for using 3rd party services on their hardware, as well
+                as their practices of anonymization to enable big data
+                processing without relying on specific information about the
+                individual.{" "}
               </p>
 
               <h1 id="Moral vs. Epistemic">Moral vs. Epistemic</h1>
-
-              <p className="p2">
-                Some (Goldman) might say it is entirely of a moral issue but
-                there are serious epistemic consequences as well …{" "}
+              <p>
+                Before evaluating Apple’s values and policies in regard to
+                privacy we must first establish the relevance of privacy to the
+                field of Epistemology. Philosophers, including Goldman, have
+                argued that while morally important - the discussion of privacy
+                falls outside of the epistemic realm. In his words:{" "}
               </p>
+              <blockquote>
+                <p>
+                  “epistemology focuses on the means to knowledge enhancement,
+                  whereas privacy studies focus on the means to knowledge
+                  curtailment… For this reason, I shall not explore this topic.
+                  I do not belittle the importance of privacy as a moral issue;
+                  it simply falls, for the most part, outside the scope of
+                  epistemology. (Goldman 1999: 173),
+                </p>
+              </blockquote>
 
               <p>
-                State of our privacy has created a “chilling effect” (Garoogian
-                1991) where the fear of being monitored makes people hesitant to
-                quire information they otherwise would have. Although we
-                typically consider the an “Epistemic Advesaries” detrimental to
-                our acquisition of knowledge; this phenonmem allows for
-                particular situations where they can be helpful.{" "}
+                I agree with much of Goldman’s work, and think his epistemic
+                objectives are an excellent framework for analysis, but this
+                flawed for two reasons. The practice of privacy would still be
+                epistemically consequential even if it was exclusively tied to
+                knowledge curtailment it would still be epistemically
+                consequential; and more importantly this understanding of
+                privacy is a broad generalization.{" "}
               </p>
-
-              <p>The classic example of this is a librarian; </p>
-              <p>
-                considering librarians example they provide their patrons enough
-                sense{" "}
-              </p>
-              <ul>
-                <li>
-                  people can feel more free and confident knowing exactly what
-                  information about them is being collected while using the web
-                  and can overcome the “chilling effect”
-                </li>
-                <li>
-                  benefits of anonymity
-                  <ul>
-                    <li>
-                      {" "}
-                      whistleblowers and ability to share information that one
-                      wouldn’t otherwise
-                    </li>
-                    <li>
-                      {" "}
-                      <b>
-                        About 74% of Americans have limited their internet use
-                        due to privacy concerns.
-                      </b>
-                    </li>
-                    <li> (TrustArc, National Cyber Security Alliance)</li>
-                    <li>
-                      {" "}
-                      US internet usage statistics show that internet users in
-                      America are becoming more{" "}
-                      <a href="https://dataprot.net/articles/biggest-data-breaches/">
-                        cautious about sharing their data online
-                      </a>{" "}
-                      . Out of 74% of users who said that they limit their
-                      internet use, about 51% have done so by not clicking on
-                      ads, 44% withheld personal information, and 32% haven’t
-                      downloaded an app or product due to privacy concerns.
-                      What’s more, out of all internet users in the USA who
-                      stopped using a website or mobile app, 47% said they did
-                      so because they were asked to provide too much personal
-                      information.
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-
-              <ul>
-                <li>
-                  promotes knowledge on behalf of the people using it for the
-                  above reasons
-                </li>
-                <li></li>
-              </ul>
 
               <h2 id="Bentham Panopticon">Bentham Panopticon</h2>
+              <p>
+                Bentham’s concept of the ‘Panopticon’ is a fitting analogy for
+                the surveillance system that has developed through the use of
+                technology. In this scenario of a hypothetical prison the
+                central guard tower can see into any cell to see what is going
+                at their convenience; while the prisoners have no way of knowing
+                whether or not they are being watched at any given moment. In
+                the context of technology big tech companies like Google and
+                Facebook become the guards - with seemingly unlimited access to
+                any personal information at any time; while users are the
+                prisoners - having no knowledge about what aspects of their
+                online lives are being monitored; when and by whom. People will
+                limit how and what knowledge they acquire if always unsure who
+                is monitoring them and fearful of the consequences. In a 1991
+                paper philosopher Garoogian describes this as a ‘chilling
+                effect.’ This fear of being monitored makes people hesitant to
+                quire information they otherwise would have.{" "}
+              </p>
 
-              <ul>
-                <li>
-                  Bentham’s concept of the ‘Panopticon’ is a fitting analogy for
-                  the surveillance system that has developed through the use of
-                  technology. In this scenario of a hypothetical prison the
-                  central guard tower can see into any cell to see what is going
-                  at their convenience; while the prisoners have no way of
-                  knowing whether or not they are being watched at any given
-                  moment. In the context of technology big tech companies like
-                  Google and Facebook become the guards - with seemingly
-                  unlimited access to any personal information at any time;
-                  while users are the prisoners - having no knowledge about what
-                  aspects of their online lives are being monitored; when and by
-                  whom.
-                </li>
-              </ul>
+              <p>
+                With concerns about online privacy becoming more and more
+                prevalent today, the impact of this effect can be clearly seen.
+                According to a study by the National Cyber Security Alliance,
+                nearly 74% of Americans have limited their internet use due to
+                privacy concerns (TrustArc, National Cyber Security Alliance).{" "}
+              </p>
 
-              <ul>
-                <li>
-                  {" "}
-                  People will limit how and what knowledge they aquire if always
-                  unsure who is monitoring them and fearful of the consequences
-                  <ul>
-                    <li>
-                      {" "}
-                      Detrimental to the power efficiency and reliability of
-                      tools people are using as a result
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  {" "}
-                  they are the librarians allowing you access to the information
-                  without selling you out
-                </li>
-              </ul>
+              <p>
+                Although we typically consider an “Epistemic Advesary”
+                detrimental to our acquisition of knowledge; this phenonmem
+                illustrates particular situations where they can be helpful. A
+                lack of privacy may become detrimental to the power efficiency
+                and reliability of the tools people, and adversaries protecting
+                your privacy help to protect that. In a 2013 paper titled
+                ‘Privacy and Lack of Knowledge’ Fallis brings up the the a
+                librarian as an effective example of how one of these
+                adversaries can be epistemically consequential:
+              </p>
+
+              <blockquote>
+                <p>
+                  “Librarians take very seriously the privacy of their patrons.
+                  Indeed, it is a core principle in their code of ethics (see
+                  Garoogian 1991 : 230). So, librarians will not release patron
+                  borrowing records without a subpoena. In addition, they set up
+                  library computers so that internet caches are automatically
+                  erased after each patron. Thus, a record of the websites that
+                  a patron has visited will not exist even if it is subpoenaed.
+                  There is certainly one respect in which such practices curtail
+                  knowledge acquisition. They involve withholding information
+                  from people who would like to know it. For instance, in their
+                  search for terrorists, the FBI would like to know which people
+                  are looking up information about bomb making, but library
+                  privacy measures make it more difficult for them to acquire
+                  this knowledge. However, such practices also make it more
+                  likely that library patrons will acquire knowledge on all
+                  sorts of topics. This is because, if people are worried that
+                  other people (such as FBI agents) can easily and out what
+                  books they have checked out, there can be a chilling effect on
+                  their use of libraries.
+                </p>
+              </blockquote>
+              <p>
+                There is certainly a cost that comes with hiding information
+                when certain parties are looking for it, but as a result of
+                these librarians people can feel more free and confident knowing
+                exactly what information about them is being collected while
+                using the web and start to overcome this “chilling effect.”{" "}
+              </p>
 
               <h2 id="Right to Privacy">Right to Privacy</h2>
-
-              <ul>
-                <li>Right to a private space that others can’t invade</li>
-              </ul>
               <p>
-                To make things easy we can look at these three basic ‘rights’:
+                In order to preserve the indiviudal's online freedom we should
+                define the criteria that will help reduce this 'chilling
+                effect.' There are a number of different criteria that can be
+                used to determine the right to privacy; but to make things
+                easier we will focus these three basic 'rights' (Fallis).
               </p>
               <ol start="1">
                 <li>Do not observe him</li>
@@ -281,143 +206,62 @@ const Blog = () => {
                   Do not to interfere with his control of his personal
                   information
                 </li>
-                <li>
-                  Do not come to know his personal info
-                  <ol start="1">
-                    <li>Defined by Fallis</li>
-                  </ol>
-                </li>
+                <li>Do not come to know his personal info</li>
               </ol>
-
               <h1 id="Taking Back Control">Taking Back Control</h1>
-
-              <p className="p2">
+              <p>
                 Apple has certainly got a lot of attention for their recent
                 efforts in privacy; but by no means are they the first company
                 address this issue, nor did they pioneer the techniques they now
-                hope to bring to the masses. Although there have been countless
-                attempts with varying success - a few particular strategies have
-                proven to be effective at some level in returning these rights
-                to the individual.{" "}
-              </p>
-
-              <h2 id="Virtual Private Networks">Virtual Private Networks</h2>
-
-              <p>
-                Information is routed through an encrypted service that prevents
-                observers from seeing personal information. However, one still
-                has to put trust in the company providing this service; and
-                choosing to use a VPN has often come with a complicated setup
-                process, network slowdowns and other technical barriers that are
-                detrimental to the epistemic objectives of speed, efficiency and
-                reliability.{" "}
+                hope to bring to the masses. There have been countless attempts
+                of obfuscation dating back to World War II with varying success,
+                but a few particular strategies have proven to be effective in
+                returning these rights to the individual at some level.{" "}
               </p>
 
               <h2 id="Obfuscation and Chaff">Obfuscation and Chaff</h2>
-
               <p>
-                The example of chaff also helps us to distinguish, at the most
-                basic level, between approaches to obfuscation. Chaff relies on
-                producing echoes—imitations of the real thing—that exploit the
-                limited scope of the observer. (Cohen “decoy strategy.”<b>2</b>)
-                As we will see, some forms of obfuscation{" "}
-                <i>generate genuine but misleading signals</i>“much as you would
-                protect the contents of one vehicle by sending it out
+                A 2017 article by Finn Brunton & Helen Nissenbaum examines some
+                of these different strategies and how they compare. They group
+                these into 3 main categories: ones that{" "}
+              </p>
+              <p>
+                <i>generate genuine but misleading signals</i> - “much as you
+                would protect the contents of one vehicle by sending it out
                 accompanied by several other identical vehicles, or defend a
-                particular plane by filling the sky with other planes—whereas
-                other forms <i>shuffle genuine signals</i>, mixing data in an
-                effort to make the extraction of patterns more difficult Because
-                those who scatter chaff have exact knowledge of their adversary,
-                chaff doesn’t have to do either of these things.” (Nissenbaum)
+                particular plane by filling the sky with other planes”
               </p>
-
-              <h3 id="TrackMeNot">TrackMeNot</h3>
-
-              <p className="p2">
-                The solution TrackMeNot offers is not to hide users’ queries
-                from search engines (an impractical method, in view of the need
-                for query satisfaction), but to obfuscate by automatically
-                generating queries from a “seed list” of terms. Initially culled
-                from RSS feeds, these terms evolve so that different users
-                develop different seed lists. The precision of the imitation is
-                continually refined by repopulating the seed list with new terms
-                generated from returns to search queries. TrackMeNot submits
-                queries in a manner that tries to mimic real users’ search
-                behaviors. For example, a user who has searched for “good
-                wifi-cafe Chelsea” may also have searched for “Savannah
-                kennels,” “freshly pressed juice Miami,” “Asian property firm,”
-                “exercise delays dementia,” and “telescoping halogen light.” The
-                activities of individuals are masked by those of many ghosts,
-                making the pattern harder to discern so that it becomes much
-                more difficult to say of any query that it was a product of
-                human intention rather than an automatic output of TrackMeNot.
-                In this way, TrackMeNot extends the role of obfuscation, in some
-                situations, to include plausible deniability.
-              </p>
-
-              <h3 id="AdNauseam">AdNauseam</h3>
-
-              <p className="p2">
-                Efforts to find some middle ground through a Do Not Track
-                technical standard had been frustrated by powerful actors in the
-                political economy of targeted advertising. In this climate of no
-                compromise, AdNauseam was born. Its design was inspired by a
-                slender insight into the prevailing business model, which
-                charges prospective advertisers a premium for delivering viewers
-                with proven interest in their products. What more telling
-                evidence is there of interest than clicks on particular ads?
-                Clicks also sometimes constitute the basis of payment to an ad
-                network and to the ad-hosting website. Clicks on ads, in
-                combination with other data streams, build up the profiles of
-                tracked users. Like the French radar decoy systems, AdNauseam
-                isn’t aiming to destroy the ability to track clicks; instead it
-                functions by diminishing the value of those clicks by
-                obfuscating the real clicks with clicks that it generates
-                automatically.
-              </p>
-
-              <h2 id="What worked or didn’t">What worked or didn’t</h2>
               <p>
-                These all provided value but were either hard to use or blah
-                blah
+                <i>shuffle genuine signals</i> - “mixing data in an effort to
+                make the extraction of patterns more difficult”
               </p>
-
-              <h2 id="Differential Privacy and Data Anonymization">
-                Differential Privacy and Data Anonymization
-              </h2>
-
               <p>
-                An effective way to protect the identity of individuals within a
-                data set. This has to go beyond just changing one or two
-                variables as (like in the case of Netflix) connections can be
-                made to reveal information. With just 3 pieces of information,
-                87 percent of Americans can be uniquely identified zip code
-                gender and birthdate. <b>…. add here</b> Introducing randomness
-                into data set allows for big data analysis to create meaningful
-                insights while preventing specific individuals from being
-                identified and targeted.{" "}
+                <i>chaff</i> - first used to describe small bits of paper
+                released from planes to throw off radar systems; Chaff relies on
+                producing imitations of the signal being observed that take
+                advantage of scope of the information available (Cohen).
+                However, this only works if the target has a comprehensive
+                understanding of their observer’s techniques.{" "}
               </p>
 
               <div className="image-container2" data-scroll>
                 <div>
                   <h2 id="Apple’s Approach">Apple’s Approach</h2>
                   <p>
-                    Seem remarkably similar to these humans rights and take full
-                    advantage of .. Despite not revolutionizing they have taken
-                    these features and included them in devices that people
-                    enjoy using so they do not have to sacrifice convenience or
-                    speed to take advantage of it; and are presented with the
-                    option rather than having to seek it out
+                    As a part of recent privacy efforts, Apple has released a
+                    number of white papers and documents outlining their
+                    objectives. Taking a look at their core ‘privacy
+                    principles,’ connections can clearly be drawn to the
+                    aforementioned strategies and rights we defined earlier.
                   </p>
-
                   <h5 id="Data Minimization">Data Minimization</h5>
                   <ul>
                     <li>
                       Services … Collecting only the minimum amount of data
                       required to deliver what you need for a given service.
                       <ul>
-                        <li> Siri</li>
-                        <li> …</li>
+                        <li>Ask App Not to Track (IDFA)</li>
+                        <li>Local Differtial Privacy </li>
                       </ul>
                     </li>
                     <li className="circle-checkmark">Do not observe him</li>
@@ -432,60 +276,54 @@ const Blog = () => {
                       than sending it to Apple servers, to protect user privacy
                       and minimize data collection.
                       <ul>
-                        <li> Siri m</li>
-                        <li> messages</li>
-                        <li> …</li>
+                        <li> Siri Voice Processing</li>
+                        <li> Encrypted Messages</li>
                       </ul>
                     </li>
                     <li className="circle-checkmark"> Do not observe him</li>
                     <li className="circle-checkmark">
-                      {" "}
                       Do not to interfere with his control of his personal
                       information
                     </li>
                     <li className="circle-checkmark">
-                      {" "}
                       Do not come to know his personal info
                     </li>
                   </ul>
-
                   <h5 id="User Transparency and Control">
-                    User Transparency and Control{" "}
+                    User Transparency and Control
                   </h5>
-                  <p>
-                    Services to help Making sure that users know what data is
-                    shared and how it is used, and that they can exercise
-                    control over it.
-                  </p>
                   <ul>
-                    <li> IDFA Opt-In</li>
-                    <li> …</li>
+                    <li>
+                      Services to help Making sure that users know what data is
+                      shared and how it is used, and that they can exercise
+                      control over it.
+                    </li>
+                  </ul>
+
+                  <ul>
+                    <li>Ask App Not to Track (IDFA)</li>
+                    <li>Safari Privacy Report</li>
+                    <li>App Store Privacy Permissions</li>
                   </ul>
                   <li className="circle-checkmark">
-                    {" "}
                     Do not to interfere with his control of his personal
                     information
                   </li>
-
                   <h5 id="Security">Security </h5>
                   <ul>
                     <li>
                       Hardware and software working together to keep data
                       secure.
                       <ul>
-                        <li> vpn</li>
-                        <li> private relay</li>
-                        <li> encrypted messaging</li>
-                        <li> …</li>
+                        <li> Included VPN/ Private Relay on all devices</li>
+                        <li> Encrypted Messaging</li>
                       </ul>
                     </li>
                     <li className="circle-checkmark">
-                      {" "}
                       Do not to interfere with his control of his personal
                       information
                     </li>
                     <li className="circle-checkmark">
-                      {" "}
                       Do not come to know his personal info
                     </li>
                   </ul>
@@ -552,6 +390,18 @@ const Blog = () => {
                 <img src={appstore} />
                 <img src={opt} />
               </div>
+
+              <h3 id="Virtual Private Networks">Virtual Private Networks</h3>
+              <p>
+                Information is routed through an encrypted service that prevents
+                observers from seeing personal information. However, one still
+                has to put trust in the company providing this service; and
+                choosing to use a VPN has often come with a complicated setup
+                process, network slowdowns and other technical barriers that are
+                detrimental to the epistemic objectives of speed, efficiency and
+                reliability.{" "}
+              </p>
+
               {/* <img src={dataImage} /> */}
 
               <p>
@@ -688,6 +538,23 @@ const Blog = () => {
               <h2 id="Bentham argument hiding like FBI example">
                 Bentham argument hiding like FBI example{" "}
               </h2>
+
+              <h3 id="Differential Privacy and Data Anonymization">
+                Differential Privacy and Data Anonymization
+              </h3>
+
+              <p>
+                An effective way to protect the identity of individuals within a
+                data set. This has to go beyond just changing one or two
+                variables as (like in the case of Netflix) connections can be
+                made to reveal information. With just 3 pieces of information,
+                87 percent of Americans can be uniquely identified zip code
+                gender and birthdate. <b>…. add here</b> Introducing randomness
+                into data set allows for big data analysis to create meaningful
+                insights while preventing specific individuals from being
+                identified and targeted.{" "}
+              </p>
+
               <ul>
                 <li>
                   Services like google Facebook create epistemic benefit from
@@ -813,6 +680,96 @@ const Blog = () => {
               <h4 id="h4"> h4</h4>
               <h5 id="h5"> h5</h5>
               <h6 id="h6"> h6</h6>
+
+              <div class="csl-bib-body">
+                <div class="csl-entry">
+                  <i>A Day in the Life of Your Data</i>. (n.d.). 13.
+                </div>
+                <span
+                  class="Z3988"
+                  title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=A%20Day%20in%20the%20Life%20of%20Your%20Data&amp;rft.pages=13&amp;rft.language=en"
+                ></span>
+                <div class="csl-entry">
+                  Fallis, D. (2006). Epistemic Value Theory and Social
+                  Epistemology. <i>Episteme</i>, <i>2</i>(3), 177–188.{" "}
+                  <a href="https://doi.org/10.3366/epi.2005.2.3.177">
+                    https://doi.org/10.3366/epi.2005.2.3.177
+                  </a>
+                </div>
+                <span
+                  class="Z3988"
+                  title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.3366%2Fepi.2005.2.3.177&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Epistemic%20Value%20Theory%20and%20Social%20Epistemology&amp;rft.jtitle=Episteme&amp;rft.stitle=Episteme&amp;rft.volume=2&amp;rft.issue=3&amp;rft.aufirst=Don&amp;rft.aulast=Fallis&amp;rft.au=Don%20Fallis&amp;rft.date=2006-10&amp;rft.pages=177-188&amp;rft.spage=177&amp;rft.epage=188&amp;rft.issn=1742-3600%2C%201750-0117&amp;rft.language=en"
+                ></span>
+                <div class="csl-entry">
+                  Fallis, D. (2013). PRIVACY AND LACK OF KNOWLEDGE.{" "}
+                  <i>Episteme</i>, <i>10</i>(2), 153–166.{" "}
+                  <a href="https://doi.org/10.1017/epi.2013.13">
+                    https://doi.org/10.1017/epi.2013.13
+                  </a>
+                </div>
+                <span
+                  class="Z3988"
+                  title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1017%2Fepi.2013.13&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=PRIVACY%20AND%20LACK%20OF%20KNOWLEDGE&amp;rft.jtitle=Episteme&amp;rft.stitle=Episteme&amp;rft.volume=10&amp;rft.issue=2&amp;rft.aufirst=Don&amp;rft.aulast=Fallis&amp;rft.au=Don%20Fallis&amp;rft.date=2013-06&amp;rft.pages=153-166&amp;rft.spage=153&amp;rft.epage=166&amp;rft.issn=1742-3600%2C%201750-0117&amp;rft.language=en"
+                ></span>
+                <div class="csl-entry">
+                  Goldman, A. I. (1987). Foundations of social epistemics.{" "}
+                  <i>Synthese</i>, <i>73</i>(1), 109–144.{" "}
+                  <a href="https://doi.org/10.1007/BF00485444">
+                    https://doi.org/10.1007/BF00485444
+                  </a>
+                </div>
+                <span
+                  class="Z3988"
+                  title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1007%2FBF00485444&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Foundations%20of%20social%20epistemics&amp;rft.jtitle=Synthese&amp;rft.stitle=Synthese&amp;rft.volume=73&amp;rft.issue=1&amp;rft.aufirst=Alvin%20I.&amp;rft.aulast=Goldman&amp;rft.au=Alvin%20I.%20Goldman&amp;rft.date=1987-10&amp;rft.pages=109-144&amp;rft.spage=109&amp;rft.epage=144&amp;rft.issn=0039-7857%2C%201573-0964&amp;rft.language=en"
+                ></span>
+                <div class="csl-entry">
+                  Goldman, A., &amp; O’Connor, C. (2021). Social Epistemology.
+                  In E. N. Zalta (Ed.),{" "}
+                  <i>The Stanford Encyclopedia of Philosophy</i> (Winter 2021).
+                  Metaphysics Research Lab, Stanford University.{" "}
+                  <a href="https://plato.stanford.edu/archives/win2021/entries/epistemology-social/">
+                    https://plato.stanford.edu/archives/win2021/entries/epistemology-social/
+                  </a>
+                </div>
+                <span
+                  class="Z3988"
+                  title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Social%20Epistemology&amp;rft.publisher=Metaphysics%20Research%20Lab%2C%20Stanford%20University&amp;rft.edition=Winter%202021&amp;rft.aufirst=Alvin&amp;rft.aulast=Goldman&amp;rft.au=Alvin%20Goldman&amp;rft.au=Cailin%20O%E2%80%99Connor&amp;rft.au=Edward%20N.%20Zalta&amp;rft.date=2021"
+                ></span>
+                <div class="csl-entry">
+                  Nissenbaum, F. B. &amp; H. (2017, June 29).{" "}
+                  <i>How to Obfuscate</i>. Nautilus.{" "}
+                  <a href="http://nautil.us/issue/49/the-absurd/how-to-obfuscate">
+                    http://nautil.us/issue/49/the-absurd/how-to-obfuscate
+                  </a>
+                </div>
+                <span
+                  class="Z3988"
+                  title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=How%20to%20Obfuscate&amp;rft.description=During%20World%20War%20II%2C%20a%20radar%20operator%20tracks%20an%20airplane%20over%20Hamburg%2C%20guiding%20searchlights%20and%20anti-aircraft%20guns%20in%20relation%20to%26%238230%3B&amp;rft.identifier=http%3A%2F%2Fnautil.us%2Fissue%2F49%2Fthe-absurd%2Fhow-to-obfuscate&amp;rft.aufirst=Finn%20Brunton%20%26%20Helen&amp;rft.aulast=Nissenbaum&amp;rft.au=Finn%20Brunton%20%26%20Helen%20Nissenbaum&amp;rft.date=2017-06-29"
+                ></span>
+                <div class="csl-entry">
+                  <i>Privacy</i>. (n.d.). Retrieved December 6, 2021, from{" "}
+                  <a href="https://northeastern.instructure.com/courses/88824/modules/items/5914371">
+                    https://northeastern.instructure.com/courses/88824/modules/items/5914371
+                  </a>
+                </div>
+                <span
+                  class="Z3988"
+                  title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Privacy&amp;rft.identifier=https%3A%2F%2Fnortheastern.instructure.com%2Fcourses%2F88824%2Fmodules%2Fitems%2F5914371"
+                ></span>
+                <div class="csl-entry">
+                  van den Hoven, J., Blaauw, M., Pieters, W., &amp; Warnier, M.
+                  (2020). Privacy and Information Technology. In E. N. Zalta
+                  (Ed.), <i>The Stanford Encyclopedia of Philosophy</i> (Summer
+                  2020). Metaphysics Research Lab, Stanford University.{" "}
+                  <a href="https://plato.stanford.edu/archives/sum2020/entries/it-privacy/">
+                    https://plato.stanford.edu/archives/sum2020/entries/it-privacy/
+                  </a>
+                </div>
+                <span
+                  class="Z3988"
+                  title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Privacy%20and%20Information%20Technology&amp;rft.publisher=Metaphysics%20Research%20Lab%2C%20Stanford%20University&amp;rft.edition=Summer%202020&amp;rft.aufirst=Jeroen&amp;rft.aulast=van%20den%20Hoven&amp;rft.au=Jeroen%20van%20den%20Hoven&amp;rft.au=Martijn%20Blaauw&amp;rft.au=Wolter%20Pieters&amp;rft.au=Martijn%20Warnier&amp;rft.au=Edward%20N.%20Zalta&amp;rft.date=2020"
+                ></span>
+              </div>
             </div>
           }
         />
