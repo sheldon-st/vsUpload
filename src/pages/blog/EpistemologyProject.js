@@ -18,6 +18,11 @@ import privacy from "../../img/privacy.png";
 import appstore from "../../img/appstore.png";
 import dataImage from "../../img/dataImage.png";
 
+import appcard from "../../img/appcard.png";
+import siricard from "../../img/siricard.png";
+import messagecard from "../../img/messagecard.png";
+import safaricard from "../../img/safaricard.png";
+
 const Blog = () => {
   const ref = useRef(null);
 
@@ -61,6 +66,7 @@ const Blog = () => {
                 digital information is treated has always been a core value of
                 the company,{" "}
               </p>
+              <p></p>
               <blockquote>
                 <p>
                   “I believe people are smart and some people want to share more
@@ -385,294 +391,72 @@ const Blog = () => {
                       </li>
                     </ul>
                   </p>
+                  <img className="card2" src={appcard} />
+                  <img className="card2" src={siricard} />
                 </div>
 
-                <img src={appstore} />
-                <img src={opt} />
+                <div data-scroll>
+                  <div className="image4 phone">
+                    <img classname="phone" src={appstore} />
+                    <img classname="phone" src={opt} />
+                  </div>
+
+                  <img className="card2" src={safaricard} />
+                  <img className="card2" src={messagecard} />
+                </div>
               </div>
-
-              <h3 id="Virtual Private Networks">Virtual Private Networks</h3>
-              <p>
-                Information is routed through an encrypted service that prevents
-                observers from seeing personal information. However, one still
-                has to put trust in the company providing this service; and
-                choosing to use a VPN has often come with a complicated setup
-                process, network slowdowns and other technical barriers that are
-                detrimental to the epistemic objectives of speed, efficiency and
-                reliability.{" "}
-              </p>
-
-              {/* <img src={dataImage} /> */}
-
-              <p>
-                Notably they made the{" "}
-                <a href="https://www.forbes.com/sites/johnkoetsier/2020/06/24/apple-just-made-idfa-opt-in-sending-an-80-billion-industry-into-upheaval/?sh=736c6fa712c9">
-                  IDFA (Identifier For Advertisers) strictly opt-in
-                </a>{" "}
-                for mobile applications, integrated a VPN-like private relay
-                that identifies and blocks services attempting to track you, and
-                added the option to redirect your email address while creating
-                accounts on their devices. Their goal is to give users a better
-                picture of the entities tracking them, and allow them to make
-                better informed decisions what information they choose to share
-                with these other companies.{" "}
-              </p>
-
-              <p>List features?</p>
-
-              <ul>
-                <li>Do not observe him</li>
-              </ul>
-              <ol start="2">
-                <li>
-                  Do not to interfere with his control of his personal
-                  information
-                </li>
-                <li>Do not come to know his personal info</li>
-              </ol>
-
-              <ul>
-                <li>
-                  Data Minimization
-                  <ul>
-                    <li>
-                      {" "}
-                      Collecting only the minimum amount of data required to
-                      deliver what you need for a given service.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  On-device Processing
-                  <ul>
-                    <li>
-                      {" "}
-                      Processing data on the device, wherever possible, rather
-                      than sending it to Apple servers, to protect user privacy
-                      and minimize data collection.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  User Transparency and Control
-                  <ul>
-                    <li>
-                      {" "}
-                      Making sure that users know what data is shared and how it
-                      is used, and that they can exercise control over it.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  Security
-                  <ul>
-                    <li>
-                      {" "}
-                      Hardware and software working together to keep data
-                      secure.
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-
-              <ul>
-                <li> Ask App Not to track</li>
-                <li> Private Relay</li>
-                <li> Encrypted Messaging</li>
-                <li> Inject Noise</li>
-              </ul>
-              <p> </p>
-
-              <h2 id="Fecundity">Fecundity </h2>
-
-              <p>
-                While all of these features have been implanted before, it was
-                limited to techies and people often had to make sacrifices or
-                pay addition services.{" "}
-              </p>
-
-              <p>
-                {" "}
-                Apples efforts to bring the capability to controls to the
-                broader public are so far unprecendted. Instead of having to
-                seek it out; these options are presented by default and
-                information about how data is being used it proactively shared
-              </p>
-
-              <p>
-                While the number of people using apple devices is much small
-                portion of the market (16.14% august); it{" "}
-              </p>
-              <p>Large percent of mobile devices (stat)</p>
-
-              <p>
-                Apple has announced that it will give users the ability to
-                choose to block the sharing of this unique identifier at the App
-                level. Previously, consumers had to opt-out. Now when a user
-                installs or updates the new iOS, a prompt will appear alerting
-                the user to opt-in or opt-out of the sharing of this
-                information.  
-              </p>
-              <p>
-                <b>
-                  Currently, about 70% of IOS users share their IDFA with app
-                  publ
-                </b>
-              </p>
-
-              <p>
-                Shows that people either weren’t aware of the tracking or how to
-                disable it as Now its like 5 (stat)
-              </p>
-
-              <p>Tough question </p>
-              <p>
-                One side is like mentioned this brings the awareness and control
-                of privacy{" "}
-              </p>
-
-              <p>Not only on behalf of user but rest of society</p>
               <h1 id="Maintaining Personalization">
                 Maintaining Personalization
               </h1>
-              <h2 id="Bentham argument hiding like FBI example">
-                Bentham argument hiding like FBI example{" "}
-              </h2>
-
               <h3 id="Differential Privacy and Data Anonymization">
                 Differential Privacy and Data Anonymization
               </h3>
-
               <p>
-                An effective way to protect the identity of individuals within a
-                data set. This has to go beyond just changing one or two
-                variables as (like in the case of Netflix) connections can be
-                made to reveal information. With just 3 pieces of information,
-                87 percent of Americans can be uniquely identified zip code
-                gender and birthdate. <b>…. add here</b> Introducing randomness
-                into data set allows for big data analysis to create meaningful
-                insights while preventing specific individuals from being
-                identified and targeted.{" "}
+                Despite concerns about privacy, we have gotten used to relying
+                on the convenience that the insights from big data can provide.
+                Methods of obfuscation typically serve as a disruption; but
+                steps can be taken to maintain these features while protecting
+                the users rights to privacy. ‘Differential Privacy’ and data
+                anonymization are both examples of this. By introducing a
+                calculated factor of randomness into data set, meaningful
+                insights can still be drawn from analysis while preventing
+                specific individuals from being identified or targeted. Each
+                user of Apple devices is allocated a ‘privacy budget’ for
+                different services they need to collect data on, and anonymized
+                information will only be shared until this threshold is met.
+                This improves the usability and convenience of features that
+                users may forget they rely on.{" "}
               </p>
-
-              <ul>
-                <li>
-                  Services like google Facebook create epistemic benefit from
-                  big data and by offering services for free how could this
-                  disrupt?
-                </li>
-                <li>
-                  Convenience of services like maps and autocorrect we got used
-                  to how does this work with their system
-                  <ul>
-                    <li>
-                      {" "}
-                      mention LOCAL differential privacy in regard to how they
-                      obtain and learn from the user data they do
-                    </li>
-                    <li> FIRSt transparency but still use</li>
-                  </ul>
-                </li>
-              </ul>
+              <h1 id="All things considered"> All things considered</h1>
+              <h2 id="Fecundity">Fecundity</h2>
               <p>
-                {" "}
-                <a href="https://www.apple.com/privacy/docs/Differential_Privacy_Overview.pdf">
-                  https://www.apple.com/privacy/docs/Differential_Privacy_Overview.pdf
-                </a>{" "}
-              </p>
-              <p>
-                {" "}
-                <a href="https://www.apple.com/privacy/docs/A_Day_in_the_Life_of_Your_Data.pdf">
-                  https://www.apple.com/privacy/docs/A_Day_in_the_Life_of_Your_Data.pdf
-                </a>{" "}
-              </p>
-              <ul>
-                <li> inject noise (OBSUFICATION)</li>
-                <li> Easy to find data</li>
-                <li>
-                  {" "}
-                  use data to improve their own features but not externally
-                </li>
-                <li> * QuickType suggestions</li>
-                <li> Emoji suggestions</li>
-                <li> Lookup Hints</li>
-                <li> Safari Energy Draining Domains</li>
-                <li>
-                  {" "}
-                  Safari Autoplay Intent Detection (macOS High Sierra) * Safari
-                  Crashing Domains (iOS 11)
-                </li>
-                <li> Health Type Usage (iOS 10.2)</li>
-              </ul>
-
-              <h2 id="But Why?">But Why?</h2>
-
-              <p>
-                While major tech players like Google and Facebook have a
-                business model centered around offering a range of mostly free
-                services through the use of advertising and user data; Apple has
-                a different strategy. By focusing on device and software sales
-                they are able to treat users the customer and prioritize
-                privacy.{" "}
-              </p>
-
-              <p>
-                You are paying a higher cost of entry to be able to take
-                advantage of their services, but are able to trust that they
-                have no ulterior motive with your data. The transparency and
-                control of how user’s digital information is treated has always
-                been a core value of the company,{" "}
-              </p>
-              <p>
-                <i>
-                  “I believe people are smart and some people want to share more
-                  data than other people do. Ask them. Ask them every time. Make
-                  them tell you to stop asking them if they get tired of your
-                  asking them. Let them know precisely what you’re going to do
-                  with their data.”
-                </i>
-              </p>
-              <p>
-                <i>-Steve Jobs</i>
-              </p>
-              <p>
-                but as concerns regarding big data become more prevalent and
-                controversial they have doubled down on their stance. Recent
-                software updates have introduced a variety of features intended
-                to enhance user privacy.{" "}
-              </p>
-
-              <p>
-                Come back to some of the readings in this conclusion. You might
-                have to restate, but connect to some of the bigger things you
-                have discussed in this class and you will have tied everything
-                up in a neat bow
-              </p>
-
-              <p>
-                . First, do you think that this technology (policy, institution
-              </p>
-              <p>, or practice) is a good thing all things considered</p>
-              <p>? </p>
-
-              <p>
-                Second, you used a particular epistemological theory to carry
-                out the epistemic evaluation of this technology (policy,
-                institution, or practice). Were you able to identify any
-                strengths or weaknesses of this theory as a result of carrying
-                out this evaluation?
-              </p>
-
-              <p>Tough topic to consider given debate on privacy</p>
-              <p>
-                I like bantams contradictory principles as a guideline for
-                evaluating but disagree that privacy falls outside the epistemic
-                realm.{" "}
-              </p>
-
-              <p>
-                However, there is a strong argument for privacy expanding for …
-                and apple brings to masses ………{" "}
+                However effective these practices may be; to perform a thorough
+                epistemic analysis we must consider to whom these epistemic
+                benefits are delivered, and if the diversity of this
+                distribution is problematic. Apple’s premium business model
+                means that only a segment of the population are able to afford
+                their devices, and benefit from the features they are providing.
+                A study by Forrester research found that the median household
+                income for Mac owners is $98,560 compared to $74,452 of Windows
+                PC owners, and similarly the median iPhone app user earns
+                $85,000 per year vs. $61,000 for Android phone users. This
+                distribution is certainly not ideal, and we should not overlook
+                the effects that this disparity can have; but in considering the
+                impact to the general population, I believe the Apple’s new
+                policies will have a net positive effect. The obfuscation
+                features they have introduced are not necessarily revolutionary
+                in terms of technology, but the public awareness of previous
+                solutions was low, and they typically required sacrifices in
+                terms of experience. Apples efforts to bring the capability to
+                controls to the broader public are so far unprecedented. In the
+                United States 46.9% of smartphone, and 27.3% of PC users own
+                their devices. Instead of having to seek it out; these tools are
+                presented by default and information about how data is being
+                used it proactively shown to all users of their devices. Beyond
+                this, giving such a large group of consumers the transparency
+                and choice to obfuscate the information that companies like
+                Google and Facebook rely on puts an enormous pressure on them to
+                reconsider their privacy policies and transparency with users.{" "}
               </p>
 
               <h2 id="h2"> h2</h2>
@@ -682,93 +466,676 @@ const Blog = () => {
               <h6 id="h6"> h6</h6>
 
               <div class="csl-bib-body">
-                <div class="csl-entry">
-                  <i>A Day in the Life of Your Data</i>. (n.d.). 13.
-                </div>
-                <span
-                  class="Z3988"
-                  title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=A%20Day%20in%20the%20Life%20of%20Your%20Data&amp;rft.pages=13&amp;rft.language=en"
-                ></span>
-                <div class="csl-entry">
-                  Fallis, D. (2006). Epistemic Value Theory and Social
-                  Epistemology. <i>Episteme</i>, <i>2</i>(3), 177–188.{" "}
-                  <a href="https://doi.org/10.3366/epi.2005.2.3.177">
-                    https://doi.org/10.3366/epi.2005.2.3.177
-                  </a>
-                </div>
-                <span
-                  class="Z3988"
-                  title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.3366%2Fepi.2005.2.3.177&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Epistemic%20Value%20Theory%20and%20Social%20Epistemology&amp;rft.jtitle=Episteme&amp;rft.stitle=Episteme&amp;rft.volume=2&amp;rft.issue=3&amp;rft.aufirst=Don&amp;rft.aulast=Fallis&amp;rft.au=Don%20Fallis&amp;rft.date=2006-10&amp;rft.pages=177-188&amp;rft.spage=177&amp;rft.epage=188&amp;rft.issn=1742-3600%2C%201750-0117&amp;rft.language=en"
-                ></span>
-                <div class="csl-entry">
-                  Fallis, D. (2013). PRIVACY AND LACK OF KNOWLEDGE.{" "}
-                  <i>Episteme</i>, <i>10</i>(2), 153–166.{" "}
-                  <a href="https://doi.org/10.1017/epi.2013.13">
-                    https://doi.org/10.1017/epi.2013.13
-                  </a>
-                </div>
-                <span
-                  class="Z3988"
-                  title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1017%2Fepi.2013.13&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=PRIVACY%20AND%20LACK%20OF%20KNOWLEDGE&amp;rft.jtitle=Episteme&amp;rft.stitle=Episteme&amp;rft.volume=10&amp;rft.issue=2&amp;rft.aufirst=Don&amp;rft.aulast=Fallis&amp;rft.au=Don%20Fallis&amp;rft.date=2013-06&amp;rft.pages=153-166&amp;rft.spage=153&amp;rft.epage=166&amp;rft.issn=1742-3600%2C%201750-0117&amp;rft.language=en"
-                ></span>
-                <div class="csl-entry">
-                  Goldman, A. I. (1987). Foundations of social epistemics.{" "}
-                  <i>Synthese</i>, <i>73</i>(1), 109–144.{" "}
-                  <a href="https://doi.org/10.1007/BF00485444">
-                    https://doi.org/10.1007/BF00485444
-                  </a>
-                </div>
-                <span
-                  class="Z3988"
-                  title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1007%2FBF00485444&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Foundations%20of%20social%20epistemics&amp;rft.jtitle=Synthese&amp;rft.stitle=Synthese&amp;rft.volume=73&amp;rft.issue=1&amp;rft.aufirst=Alvin%20I.&amp;rft.aulast=Goldman&amp;rft.au=Alvin%20I.%20Goldman&amp;rft.date=1987-10&amp;rft.pages=109-144&amp;rft.spage=109&amp;rft.epage=144&amp;rft.issn=0039-7857%2C%201573-0964&amp;rft.language=en"
-                ></span>
-                <div class="csl-entry">
-                  Goldman, A., &amp; O’Connor, C. (2021). Social Epistemology.
-                  In E. N. Zalta (Ed.),{" "}
-                  <i>The Stanford Encyclopedia of Philosophy</i> (Winter 2021).
-                  Metaphysics Research Lab, Stanford University.{" "}
-                  <a href="https://plato.stanford.edu/archives/win2021/entries/epistemology-social/">
-                    https://plato.stanford.edu/archives/win2021/entries/epistemology-social/
-                  </a>
-                </div>
-                <span
-                  class="Z3988"
-                  title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Social%20Epistemology&amp;rft.publisher=Metaphysics%20Research%20Lab%2C%20Stanford%20University&amp;rft.edition=Winter%202021&amp;rft.aufirst=Alvin&amp;rft.aulast=Goldman&amp;rft.au=Alvin%20Goldman&amp;rft.au=Cailin%20O%E2%80%99Connor&amp;rft.au=Edward%20N.%20Zalta&amp;rft.date=2021"
-                ></span>
-                <div class="csl-entry">
-                  Nissenbaum, F. B. &amp; H. (2017, June 29).{" "}
-                  <i>How to Obfuscate</i>. Nautilus.{" "}
-                  <a href="http://nautil.us/issue/49/the-absurd/how-to-obfuscate">
-                    http://nautil.us/issue/49/the-absurd/how-to-obfuscate
-                  </a>
-                </div>
-                <span
-                  class="Z3988"
-                  title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=How%20to%20Obfuscate&amp;rft.description=During%20World%20War%20II%2C%20a%20radar%20operator%20tracks%20an%20airplane%20over%20Hamburg%2C%20guiding%20searchlights%20and%20anti-aircraft%20guns%20in%20relation%20to%26%238230%3B&amp;rft.identifier=http%3A%2F%2Fnautil.us%2Fissue%2F49%2Fthe-absurd%2Fhow-to-obfuscate&amp;rft.aufirst=Finn%20Brunton%20%26%20Helen&amp;rft.aulast=Nissenbaum&amp;rft.au=Finn%20Brunton%20%26%20Helen%20Nissenbaum&amp;rft.date=2017-06-29"
-                ></span>
-                <div class="csl-entry">
-                  <i>Privacy</i>. (n.d.). Retrieved December 6, 2021, from{" "}
-                  <a href="https://northeastern.instructure.com/courses/88824/modules/items/5914371">
-                    https://northeastern.instructure.com/courses/88824/modules/items/5914371
-                  </a>
-                </div>
-                <span
-                  class="Z3988"
-                  title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Privacy&amp;rft.identifier=https%3A%2F%2Fnortheastern.instructure.com%2Fcourses%2F88824%2Fmodules%2Fitems%2F5914371"
-                ></span>
-                <div class="csl-entry">
-                  van den Hoven, J., Blaauw, M., Pieters, W., &amp; Warnier, M.
-                  (2020). Privacy and Information Technology. In E. N. Zalta
-                  (Ed.), <i>The Stanford Encyclopedia of Philosophy</i> (Summer
-                  2020). Metaphysics Research Lab, Stanford University.{" "}
-                  <a href="https://plato.stanford.edu/archives/sum2020/entries/it-privacy/">
-                    https://plato.stanford.edu/archives/sum2020/entries/it-privacy/
-                  </a>
-                </div>
-                <span
-                  class="Z3988"
-                  title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Privacy%20and%20Information%20Technology&amp;rft.publisher=Metaphysics%20Research%20Lab%2C%20Stanford%20University&amp;rft.edition=Summer%202020&amp;rft.aufirst=Jeroen&amp;rft.aulast=van%20den%20Hoven&amp;rft.au=Jeroen%20van%20den%20Hoven&amp;rft.au=Martijn%20Blaauw&amp;rft.au=Wolter%20Pieters&amp;rft.au=Martijn%20Warnier&amp;rft.au=Edward%20N.%20Zalta&amp;rft.date=2020"
-                ></span>
+                <ul class="report combineChildItems">
+                  <li id="item_3CSNC54A" class="item journalArticle">
+                    <h2>A Day in the Life of Your Data</h2>
+                    <table>
+                      <tr>
+                        <th>Type</th>
+                        <td>Journal Article</td>
+                      </tr>
+                      <tr>
+                        <th>Language</th>
+                        <td>en</td>
+                      </tr>
+                      <tr>
+                        <th>Library Catalog</th>
+                        <td>Zotero</td>
+                      </tr>
+                      <tr>
+                        <th>Pages</th>
+                        <td>13</td>
+                      </tr>
+                    </table>
+                    <h3 class="notes">Notes:</h3>
+                    <ul class="notes">
+                      <li id="item_AWXHG7Z4">
+                        <div>
+                          <p>
+                            Article by Apple on how a users data is treated
+                            throughout a typical day. How and how often their
+                            information is used, and what Apple is doing to
+                            allow access to these tools while protecting their
+                            user data.
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                    <h3 class="attachments">Attachments</h3>
+                    <ul class="attachments">
+                      <li id="item_8C3WEAQV">
+                        A Day in the Life of Your Data.pdf{" "}
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li id="item_2MVC8S5Z" class="item journalArticle">
+                    <h2>Epistemic Value Theory and Social Epistemology</h2>
+                    <table>
+                      <tr>
+                        <th>Type</th>
+                        <td>Journal Article</td>
+                      </tr>
+                      <tr>
+                        <th class="author">Author</th>
+                        <td>Don Fallis</td>
+                      </tr>
+                      <tr>
+                        <th>Abstract</th>
+                        <td>
+                          In order to guide the decisions of real people who
+                          want to bring about good epistemic outcomes for
+                          themselves and others, we need to understand our
+                          epistemic values. In Knowledge in a Social World,
+                          Alvin Goldman has proposed an epistemic value theory
+                          that allows us to say whether one outcome is
+                          epistemically better than another. However, it has
+                          been suggested that Goldman’s theory is not really an
+                          epistemic value theory at all because whether one
+                          outcome is epistemically better than another partly
+                          depends on our non-epistemic interests. In this paper,
+                          I argue that an epistemic value theory that serves the
+                          purposes of social epistemology must incorporate
+                          nonepistemic interests in much the way that Goldman’s
+                          theory does. In fact, I argue that Goldman’s theory
+                          does not go far enough in this direction. In
+                          particular, the epistemic value of having a particular
+                          true belief should actually be weighted by how
+                          interested we are in the topic.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Date</th>
+                        <td>10/2006</td>
+                      </tr>
+                      <tr>
+                        <th>Language</th>
+                        <td>en</td>
+                      </tr>
+                      <tr>
+                        <th>Library Catalog</th>
+                        <td>DOI.org (Crossref)</td>
+                      </tr>
+                      <tr>
+                        <th>URL</th>
+                        <td>
+                          <a href="https://www.cambridge.org/core/product/identifier/S174236000000040X/type/journal_article">
+                            https://www.cambridge.org/core/product/identifier/S174236000000040X/type/journal_article
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th>Volume</th>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <th>Pages</th>
+                        <td>177-188</td>
+                      </tr>
+                      <tr>
+                        <th>Publication</th>
+                        <td>Episteme</td>
+                      </tr>
+                      <tr>
+                        <th>DOI</th>
+                        <td>
+                          <a href="http://doi.org/10.3366/epi.2005.2.3.177">
+                            10.3366/epi.2005.2.3.177
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Issue</th>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <th>Journal Abbr</th>
+                        <td>Episteme</td>
+                      </tr>
+                      <tr>
+                        <th>ISSN</th>
+                        <td>1742-3600, 1750-0117</td>
+                      </tr>
+                    </table>
+                    <h3 class="attachments">Attachments</h3>
+                    <ul class="attachments">
+                      <li id="item_L2NTCVKT">
+                        Fallis - 2006 - Epistemic Value Theory and Social
+                        Epistemology.pdf{" "}
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li id="item_83YSTFN8" class="item journalArticle">
+                    <h2>Foundations of social epistemics</h2>
+                    <table>
+                      <tr>
+                        <th>Type</th>
+                        <td>Journal Article</td>
+                      </tr>
+                      <tr>
+                        <th class="author">Author</th>
+                        <td>Alvin I. Goldman</td>
+                      </tr>
+                      <tr>
+                        <th>Abstract</th>
+                        <td>
+                          A conception of social epistemology is articulated
+                          with links to studies of science and opinion in such
+                          disciplines as history, sociology, and political
+                          science. The conception is evaluative, though, rather
+                          than purely descriptive. Three types of evalua tive
+                          approaches are examined but rejected: relativism,
+                          consensualism, and expertism. A fourth, truth-linked,
+                          approach to intellectual evaluation is then advocated:
+                          social procedures should be appraised by their
+                          propensity to foster true belief. Standards of
+                          evaluation in social epistemics would be much the same
+                          as those in individual epis temics, only the objects
+                          of evaluation would be interpersonal patterns of
+                          judgment and communication, and institutional
+                          practices that bear on opinion formation.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Date</th>
+                        <td>10/1987</td>
+                      </tr>
+                      <tr>
+                        <th>Language</th>
+                        <td>en</td>
+                      </tr>
+                      <tr>
+                        <th>Library Catalog</th>
+                        <td>DOI.org (Crossref)</td>
+                      </tr>
+                      <tr>
+                        <th>URL</th>
+                        <td>
+                          <a href="http://link.springer.com/10.1007/BF00485444">
+                            http://link.springer.com/10.1007/BF00485444
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th>Volume</th>
+                        <td>73</td>
+                      </tr>
+                      <tr>
+                        <th>Pages</th>
+                        <td>109-144</td>
+                      </tr>
+                      <tr>
+                        <th>Publication</th>
+                        <td>Synthese</td>
+                      </tr>
+                      <tr>
+                        <th>DOI</th>
+                        <td>
+                          <a href="http://doi.org/10.1007/BF00485444">
+                            10.1007/BF00485444
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Issue</th>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <th>Journal Abbr</th>
+                        <td>Synthese</td>
+                      </tr>
+                      <tr>
+                        <th>ISSN</th>
+                        <td>0039-7857, 1573-0964</td>
+                      </tr>
+                    </table>
+                    <h3 class="notes">Notes:</h3>
+                    <ul class="notes">
+                      <li id="item_Y63XIXNY">
+                        <div>
+                          <p>
+                            Overview of Goldman's main epistemic theory; and
+                            criteria. Use to establish background about how and
+                            what we are evaluating for, as well as the different
+                            objectives of different players being considered.
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                    <h3 class="attachments">Attachments</h3>
+                    <ul class="attachments">
+                      <li id="item_L3VEMQVV">
+                        Goldman - 1987 - Foundations of social epistemics.pdf{" "}
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li id="item_YH63SXZT" class="item webpage">
+                    <h2>How to Obfuscate</h2>
+                    <table>
+                      <tr>
+                        <th>Type</th>
+                        <td>Web Page</td>
+                      </tr>
+                      <tr>
+                        <th class="author">Author</th>
+                        <td>Finn Brunton &amp; Helen Nissenbaum</td>
+                      </tr>
+                      <tr>
+                        <th>Abstract</th>
+                        <td>
+                          During World War II, a radar operator tracks an
+                          airplane over Hamburg, guiding searchlights and
+                          anti-aircraft guns in relation to&amp;#8230;
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Date</th>
+                        <td>2017-06-29</td>
+                      </tr>
+                      <tr>
+                        <th>URL</th>
+                        <td>
+                          <a href="http://nautil.us/issue/49/the-absurd/how-to-obfuscate">
+                            http://nautil.us/issue/49/the-absurd/how-to-obfuscate
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th>Website Title</th>
+                        <td>Nautilus</td>
+                      </tr>
+                    </table>
+                    <h3 class="notes">Notes:</h3>
+                    <ul class="notes">
+                      <li id="item_DFIS5LWM">
+                        <div>
+                          <p>
+                            Discusses methods of obfuscation to protect ones
+                            privacy while maintaining access to tools on the
+                            internet. Aligns well with several of the strategies
+                            Apple has used to accomplish similar goal.
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                    <h3 class="attachments">Attachments</h3>
+                    <ul class="attachments">
+                      <li id="item_EISK532A">Snapshot </li>
+                    </ul>
+                  </li>
+
+                  <li id="item_TT528Y4H" class="item webpage">
+                    <h2>Privacy</h2>
+                    <table>
+                      <tr>
+                        <th>Type</th>
+                        <td>Web Page</td>
+                      </tr>
+                      <tr>
+                        <th>URL</th>
+                        <td>
+                          <a href="https://northeastern.instructure.com/courses/88824/modules/items/5914371">
+                            https://northeastern.instructure.com/courses/88824/modules/items/5914371
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </li>
+
+                  <li id="item_W8EM9TW8" class="item bookSection">
+                    <h2>Privacy and Information Technology</h2>
+                    <table>
+                      <tr>
+                        <th>Type</th>
+                        <td>Book Section</td>
+                      </tr>
+                      <tr>
+                        <th class="author">Author</th>
+                        <td>Jeroen van den Hoven</td>
+                      </tr>
+                      <tr>
+                        <th class="author">Author</th>
+                        <td>Martijn Blaauw</td>
+                      </tr>
+                      <tr>
+                        <th class="author">Author</th>
+                        <td>Wolter Pieters</td>
+                      </tr>
+                      <tr>
+                        <th class="author">Author</th>
+                        <td>Martijn Warnier</td>
+                      </tr>
+                      <tr>
+                        <th class="editor">Editor</th>
+                        <td>Edward N. Zalta</td>
+                      </tr>
+                      <tr>
+                        <th>Abstract</th>
+                        <td>
+                          Human beings value their privacy and the protection of
+                          their personalsphere of life. They value some control
+                          over who knows what aboutthem. They certainly do not
+                          want their personal information to beaccessible to
+                          just anyone at any time. But recent advances
+                          ininformation technology threaten privacy and have
+                          reduced the amount ofcontrol over personal data and
+                          open up the possibility of a range ofnegative
+                          consequences as a result of access to personal data.
+                          In thesecond half of the 20th century data protection
+                          regimeshave been put in place as a response to
+                          increasing levels ofprocessing of personal data. The
+                          21st century has becomethe century of big data and
+                          advanced information technology (e.g.forms of deep
+                          learning), the rise of big tech companies and
+                          theplatform economy, which comes with the storage and
+                          processing ofexabytes of data., The revelations of
+                          Edward Snowden, and more recently the
+                          CambridgeAnalytica case (Cadwalladr &amp;
+                          Graham-Harrison 2018) havedemonstrated that worries
+                          about negative consequences are real. Thetechnical
+                          capabilities to collect, store and search large
+                          quantitiesof data concerning telephone conversations,
+                          internet searches andelectronic payment are now in
+                          place and are routinely used bygovernment agencies and
+                          corporate actors alike. The rise of China andthe large
+                          scale of use and spread of advanced digital
+                          technologies forsurveillance and control have only
+                          added to the concern of many. Forbusiness firms,
+                          personal data about customers and potential
+                          customersare now also a key asset. The scope and
+                          purpose of the personal datacentred business models of
+                          Big Tech (Google, Amazon, Facebook,Microsoft, Apple)
+                          has been described in detail by Shoshana Zuboff(2018)
+                          under the label “surveillance capitalism”. , At the
+                          same time, the meaning and value of privacy remains
+                          the subjectof considerable controversy. The
+                          combination of increasing power ofnew technology and
+                          the declining clarity and agreement on privacy
+                          giverise to problems concerning law, policy and
+                          ethics. Many of theseconceptual debates and issues are
+                          situated in the context ofinterpretation and analysis
+                          of the General Data Protection Regulation(GDPR) that
+                          was adopted by the EU in spring 2018 as the successor
+                          ofthe EU 1995 Directives, with application far beyond
+                          the borders of theEuropean Union., The focus of this
+                          article is on exploring the relationship
+                          betweeninformation technology and privacy. We will
+                          both illustrate thespecific threats that IT and
+                          innovations in IT pose for privacy andindicate how IT
+                          itself might be able to overcome theseprivacy concerns
+                          by being developed in ways that can be
+                          termed“privacy-sensitive”, “privacy enhancing” or
+                          “privacyrespecting”. We will also discuss the role of
+                          emerging technologiesin the debate, and account for
+                          the way in which moral debates arethemselves affected
+                          by IT.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Date</th>
+                        <td>2020</td>
+                      </tr>
+                      <tr>
+                        <th>Library Catalog</th>
+                        <td>Stanford Encyclopedia of Philosophy</td>
+                      </tr>
+                      <tr>
+                        <th>URL</th>
+                        <td>
+                          <a href="https://plato.stanford.edu/archives/sum2020/entries/it-privacy/">
+                            https://plato.stanford.edu/archives/sum2020/entries/it-privacy/
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th>Publisher</th>
+                        <td>Metaphysics Research Lab, Stanford University</td>
+                      </tr>
+                      <tr>
+                        <th>Edition</th>
+                        <td>Summer 2020</td>
+                      </tr>
+                      <tr>
+                        <th>Book Title</th>
+                        <td>The Stanford Encyclopedia of Philosophy</td>
+                      </tr>
+                    </table>
+                    <h3 class="tags">Tags:</h3>
+                    <ul class="tags">
+                      <li>computing: and moral responsibility</li>
+                      <li>ethics: search engines and</li>
+                      <li>information</li>
+                      <li>information technology: and moral values</li>
+                      <li>privacy</li>
+                      <li>social networking and ethics</li>
+                    </ul>
+                    <h3 class="notes">Notes:</h3>
+                    <ul class="notes">
+                      <li id="item_U4SL8IFG">
+                        <div>
+                          <p>
+                            <span>
+                              Helps in exploring the relationship between
+                              information technology and privacy. We will both
+                              illustrate the specific threats that IT and
+                              innovations in IT pose for privacy and indicate
+                              how IT{" "}
+                            </span>
+                            <em>itself</em>
+                            <span>
+                              {" "}
+                              might be able to overcome these privacy concerns
+                              by being developed in ways that can be termed
+                              “privacy-sensitive”, “privacy enhancing” or
+                              “privacy respecting”. We will also discuss the
+                              role of emerging technologies in the debate, and
+                              account for the way in which moral debates are
+                              themselves affected by IT.
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                    <h3 class="attachments">Attachments</h3>
+                    <ul class="attachments">
+                      <li id="item_RJCJTQS4">SEP - Snapshot </li>
+                    </ul>
+                  </li>
+
+                  <li id="item_8ASRJZUR" class="item journalArticle">
+                    <h2>PRIVACY AND LACK OF KNOWLEDGE</h2>
+                    <table>
+                      <tr>
+                        <th>Type</th>
+                        <td>Journal Article</td>
+                      </tr>
+                      <tr>
+                        <th class="author">Author</th>
+                        <td>Don Fallis</td>
+                      </tr>
+                      <tr>
+                        <th>Abstract</th>
+                        <td>
+                          Abstract Two sorts of connections between privacy and
+                          knowledge (or lack thereof) have been suggested in the
+                          philosophical literature. First, Alvin Goldman has
+                          suggested that protecting privacy typically leads to
+                          less knowledge being acquired. Second, several other
+                          philosophers (e.g. Parent, Matheson, Blaauw and Peels)
+                          have claimed that lack of knowledge is definitive of
+                          having privacy. In other words, someone not knowing
+                          something is necessary and sufficient for someone else
+                          having privacy about that thing. Or equivalently,
+                          someone knowing something is necessary and sufficient
+                          for someone else losing privacy about that thing. In
+                          this paper, I argue that both of these suggestions are
+                          incorrect. I begin by arguing, contra Goldman, that
+                          protecting privacy often leads to more knowledge being
+                          acquired. I argue in the remainder of the paper,
+                          contra the defenders of the knowledge account of
+                          privacy , that someone knowing something is not
+                          necessary for someone else losing privacy about that
+                          thing.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Date</th>
+                        <td>06/2013</td>
+                      </tr>
+                      <tr>
+                        <th>Language</th>
+                        <td>en</td>
+                      </tr>
+                      <tr>
+                        <th>Library Catalog</th>
+                        <td>DOI.org (Crossref)</td>
+                      </tr>
+                      <tr>
+                        <th>URL</th>
+                        <td>
+                          <a href="https://www.cambridge.org/core/product/identifier/S1742360013000130/type/journal_article">
+                            https://www.cambridge.org/core/product/identifier/S1742360013000130/type/journal_article
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th>Volume</th>
+                        <td>10</td>
+                      </tr>
+                      <tr>
+                        <th>Pages</th>
+                        <td>153-166</td>
+                      </tr>
+                      <tr>
+                        <th>Publication</th>
+                        <td>Episteme</td>
+                      </tr>
+                      <tr>
+                        <th>DOI</th>
+                        <td>
+                          <a href="http://doi.org/10.1017/epi.2013.13">
+                            10.1017/epi.2013.13
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Issue</th>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <th>Journal Abbr</th>
+                        <td>Episteme</td>
+                      </tr>
+                      <tr>
+                        <th>ISSN</th>
+                        <td>1742-3600, 1750-0117</td>
+                      </tr>
+                    </table>
+                    <h3 class="notes">Notes:</h3>
+                    <ul class="notes">
+                      <li id="item_C6CSEBWY">
+                        <div>
+                          <p>
+                            Fallis' paper on privacy and lack of knowledge draws
+                            important connections between privacy and the
+                            epistemic world; and provides grounds to challenge
+                            Goldman's suggestion that protecting privacy usually
+                            leads to less knowledge being acquired.
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                    <h3 class="attachments">Attachments</h3>
+                    <ul class="attachments">
+                      <li id="item_VNSGN3ZW">
+                        Fallis - 2013 - PRIVACY AND LACK OF KNOWLEDGE.pdf{" "}
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li id="item_U6KTGNVY" class="item bookSection">
+                    <h2>Social Epistemology</h2>
+                    <table>
+                      <tr>
+                        <th>Type</th>
+                        <td>Book Section</td>
+                      </tr>
+                      <tr>
+                        <th class="author">Author</th>
+                        <td>Alvin Goldman</td>
+                      </tr>
+                      <tr>
+                        <th class="author">Author</th>
+                        <td>Cailin O’Connor</td>
+                      </tr>
+                      <tr>
+                        <th class="editor">Editor</th>
+                        <td>Edward N. Zalta</td>
+                      </tr>
+                      <tr>
+                        <th>Abstract</th>
+                        <td>
+                          Until recently, epistemology—the study of knowledge
+                          andjustified belief—was heavily individualistic in
+                          focus. Theemphasis was on evaluating doxastic
+                          attitudes (beliefs and disbeliefs)of individuals in
+                          abstraction from their social environment.
+                          Socialepistemology seeks to redress this imbalance by
+                          investigating theepistemic effects of social
+                          interactions and social systems. Aftergiving an
+                          introduction, and reviewing the history of the field
+                          insections 1 and 2, we move on to discuss central
+                          topics in socialepistemology in section 3. These
+                          include testimony, peer disagreement,and judgment
+                          aggregation, among others. Section 4 turns to
+                          recentapproaches which have used formal methods to
+                          address core topics insocial epistemology, as well as
+                          wider questions about the functioningof epistemic
+                          communities like those in science. In section 5
+                          webriefly turn to questions related to social
+                          epistemology and theproper functioning of democratic
+                          societies.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Date</th>
+                        <td>2021</td>
+                      </tr>
+                      <tr>
+                        <th>Library Catalog</th>
+                        <td>Stanford Encyclopedia of Philosophy</td>
+                      </tr>
+                      <tr>
+                        <th>URL</th>
+                        <td>
+                          <a href="https://plato.stanford.edu/archives/win2021/entries/epistemology-social/">
+                            https://plato.stanford.edu/archives/win2021/entries/epistemology-social/
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th>Publisher</th>
+                        <td>Metaphysics Research Lab, Stanford University</td>
+                      </tr>
+                      <tr>
+                        <th>Edition</th>
+                        <td>Winter 2021</td>
+                      </tr>
+                      <tr>
+                        <th>Book Title</th>
+                        <td>The Stanford Encyclopedia of Philosophy</td>
+                      </tr>
+                    </table>
+                  </li>
+                </ul>
               </div>
             </div>
           }

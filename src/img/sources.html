@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Zotero Report</title>
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSB7CgliYWNrZ3JvdW5kOiB3aGl0ZTsKfQoKYSB7Cgl0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKfQoKYm9keSB7CglwYWRkaW5nOiAwOwp9Cgp1bC5yZXBvcnQgbGkuaXRlbSB7Cglib3JkZXItdG9wOiA0cHggc29saWQgIzU1NTsKCXBhZGRpbmctdG9wOiAxZW07CglwYWRkaW5nLWxlZnQ6IDFlbTsKCXBhZGRpbmctcmlnaHQ6IDFlbTsKCW1hcmdpbi1ib3R0b206IDJlbTsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7Cglmb250LXdlaWdodDogbm9ybWFsOwp9CgpoMiB7CgltYXJnaW46IDAgMCAuNWVtOwp9CgpoMi5wYXJlbnRJdGVtIHsKCWZvbnQtd2VpZ2h0OiBib2xkOwoJZm9udC1zaXplOiAxZW07CglwYWRkaW5nOiAwIDAgLjVlbTsKCWJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjOwp9CgovKiBJZiBjb21iaW5pbmcgY2hpbGRyZW4sIGRpc3BsYXkgcGFyZW50IHNsaWdodGx5IGxhcmdlciAqLwp1bC5yZXBvcnQuY29tYmluZUNoaWxkSXRlbXMgaDIucGFyZW50SXRlbSB7Cglmb250LXNpemU6IDEuMWVtOwoJcGFkZGluZy1ib3R0b206IC43NWVtOwoJbWFyZ2luLWJvdHRvbTogLjRlbTsKfQoKaDIucGFyZW50SXRlbSAudGl0bGUgewoJZm9udC13ZWlnaHQ6IG5vcm1hbDsKfQoKaDMgewoJbWFyZ2luLWJvdHRvbTogLjZlbTsKCWZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7Cglmb250LXNpemU6IDFlbTsKCWRpc3BsYXk6IGJsb2NrOwp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0aCB7Cgl2ZXJ0aWNhbC1hbGlnbjogdG9wOwoJdGV4dC1hbGlnbjogcmlnaHQ7Cgl3aWR0aDogMTUlOwoJd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKdGQgewoJcGFkZGluZy1sZWZ0OiAuNWVtOwp9CgoKdWwucmVwb3J0LCB1bC5ub3RlcywgdWwudGFncyB7CglsaXN0LXN0eWxlOiBub25lOwoJbWFyZ2luLWxlZnQ6IDA7CglwYWRkaW5nLWxlZnQ6IDA7Cn0KCi8qIFRhZ3MgKi8KaDMudGFncyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC50YWdzIHsKCWxpbmUtaGVpZ2h0OiAxLjc1ZW07CglsaXN0LXN0eWxlOiBub25lOwp9Cgp1bC50YWdzIGxpIHsKCWRpc3BsYXk6IGlubGluZTsKfQoKdWwudGFncyBsaTpub3QoOmxhc3QtY2hpbGQpOmFmdGVyIHsKCWNvbnRlbnQ6ICcsICc7Cn0KCgovKiBDaGlsZCBub3RlcyAqLwpoMy5ub3RlcyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC5ub3RlcyB7CgltYXJnaW4tYm90dG9tOiAxLjJlbTsKfQoKdWwubm90ZXMgPiBsaTpmaXJzdC1jaGlsZCBwIHsKCW1hcmdpbi10b3A6IDA7Cn0KCnVsLm5vdGVzID4gbGkgewoJcGFkZGluZzogLjdlbSAwOwp9Cgp1bC5ub3RlcyA+IGxpOm5vdCg6bGFzdC1jaGlsZCkgewoJYm9yZGVyLWJvdHRvbTogMXB4ICNjY2Mgc29saWQ7Cn0KCgp1bC5ub3RlcyA+IGxpIHA6Zmlyc3QtY2hpbGQgewoJbWFyZ2luLXRvcDogMDsKfQoKdWwubm90ZXMgPiBsaSBwOmxhc3QtY2hpbGQgewoJbWFyZ2luLWJvdHRvbTogMDsKfQoKLyogQWRkIHF1b3RhdGlvbiBtYXJrcyBhcm91bmQgYmxvY2txdW90ZSAqLwp1bC5ub3RlcyA+IGxpIGJsb2NrcXVvdGUgcDpub3QoOmVtcHR5KTpiZWZvcmUsCmxpLm5vdGUgYmxvY2txdW90ZSBwOm5vdCg6ZW1wdHkpOmJlZm9yZSB7Cgljb250ZW50OiAn4oCcJzsKfQoKdWwubm90ZXMgPiBsaSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciwKbGkubm90ZSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciB7Cgljb250ZW50OiAn4oCdJzsKfQoKLyogUHJlc2VydmUgd2hpdGVzcGFjZSBvbiBwbGFpbnRleHQgbm90ZXMgKi8KdWwubm90ZXMgbGkgcC5wbGFpbnRleHQsIGxpLm5vdGUgcC5wbGFpbnRleHQsIGRpdi5ub3RlIHAucGxhaW50ZXh0IHsKCXdoaXRlLXNwYWNlOiBwcmUtd3JhcDsKfQoKLyogRGlzcGxheSB0YWdzIHdpdGhpbiBjaGlsZCBub3RlcyBpbmxpbmUgKi8KdWwubm90ZXMgaDMudGFncyB7CglkaXNwbGF5OiBpbmxpbmU7Cglmb250LXNpemU6IDFlbTsKfQoKdWwubm90ZXMgaDMudGFnczphZnRlciB7Cgljb250ZW50OiAnICc7Cn0KCnVsLm5vdGVzIHVsLnRhZ3MgewoJZGlzcGxheTogaW5saW5lOwp9Cgp1bC5ub3RlcyB1bC50YWdzIGxpOm5vdCg6bGFzdC1jaGlsZCk6YWZ0ZXIgewoJY29udGVudDogJywgJzsKfQoKCi8qIENoaWxkIGF0dGFjaG1lbnRzICovCmgzLmF0dGFjaG1lbnRzIHsKCWZvbnQtc2l6ZTogMS4xZW07Cn0KCnVsLmF0dGFjaG1lbnRzIGxpIHsKCXBhZGRpbmctdG9wOiAuNWVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSB7CgltYXJnaW4tbGVmdDogMmVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSBwOmZpcnN0LWNoaWxkIHsKCW1hcmdpbi10b3A6IC43NWVtOwp9Cg=="/>
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="data:text/css;base64,LyogR2VuZXJpYyBzdHlsZXMgKi8KYm9keSB7Cglmb250OiA2Mi41JSBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cgl3aWR0aDogNzgwcHg7CgltYXJnaW46IDAgYXV0bzsKfQoKaDIgewoJZm9udC1zaXplOiAxLjVlbTsKCWxpbmUtaGVpZ2h0OiAxLjVlbTsKCWZvbnQtZmFtaWx5OiBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cn0KCnAgewoJbGluZS1oZWlnaHQ6IDEuNWVtOwp9CgphOmxpbmssIGE6dmlzaXRlZCB7Cgljb2xvcjogIzkwMDsKfQoKYTpob3ZlciwgYTphY3RpdmUgewoJY29sb3I6ICM3Nzc7Cn0KCgp1bC5yZXBvcnQgewoJZm9udC1zaXplOiAxLjRlbTsKCXdpZHRoOiA2ODBweDsKCW1hcmdpbjogMCBhdXRvOwoJcGFkZGluZzogMjBweCAyMHB4Owp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0YWJsZSB7Cglib3JkZXI6IDFweCAjY2NjIHNvbGlkOwoJb3ZlcmZsb3c6IGF1dG87Cgl3aWR0aDogMTAwJTsKCW1hcmdpbjogLjFlbSBhdXRvIC43NWVtOwoJcGFkZGluZzogMC41ZW07Cn0K"/>
+		<link rel="stylesheet" type="text/css" media="print" href="data:text/css;base64,Ym9keSB7Cglmb250OiAxMnB0ICJUaW1lcyBOZXcgUm9tYW4iLCBUaW1lcywgR2VvcmdpYSwgc2VyaWY7CgltYXJnaW46IDA7Cgl3aWR0aDogYXV0bzsKCWNvbG9yOiBibGFjazsKfQoKLyogUGFnZSBCcmVha3MgKHBhZ2UtYnJlYWstaW5zaWRlIG9ubHkgcmVjb2duaXplZCBieSBPcGVyYSkgKi8KaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CglwYWdlLWJyZWFrLWFmdGVyOiBhdm9pZDsKCXBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKfQoKdWwsIG9sLCBkbCB7CglwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7Cgljb2xvci1hZGp1c3Q6IGV4YWN0Owp9CgpoMiB7Cglmb250LXNpemU6IDEuM2VtOwoJbGluZS1oZWlnaHQ6IDEuM2VtOwp9CgphIHsKCWNvbG9yOiAjMDAwOwoJdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg=="/>
+	</head>
+	<body>
+		<ul class="report combineChildItems">
+			<li id="item_3CSNC54A" class="item journalArticle">
+			<h2>A Day in the Life of Your Data</h2>
+				<table>
+					<tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>13</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>11/21/2021, 8:20:24 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>11/21/2021, 8:20:24 PM</td>
+					</tr>
+				</table>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_AWXHG7Z4">
+<div><p>Article by Apple on how a users data is treated throughout a typical day. How and how often their information is used, and what Apple is doing to allow access to these tools while protecting their user data.</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_8C3WEAQV">A Day in the Life of Your Data.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_2MVC8S5Z" class="item journalArticle">
+			<h2>Epistemic Value Theory and Social Epistemology</h2>
+				<table>
+					<tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Don Fallis</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>In order to guide the decisions of real people who want to bring about good epistemic outcomes for themselves and others, we need to understand our epistemic values. In Knowledge in a Social World, Alvin Goldman has proposed an epistemic value theory that allows us to say whether one outcome is epistemically better than another. However, it has been suggested that Goldman’s theory is not really an epistemic value theory at all because whether one outcome is epistemically better than another partly depends on our non-epistemic interests. In this paper, I argue that an epistemic value theory that serves the purposes of social epistemology must incorporate nonepistemic interests in much the way that Goldman’s theory does. In fact, I argue that Goldman’s theory does not go far enough in this direction. In particular, the epistemic value of having a particular true belief should actually be weighted by how interested we are in the topic.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>10/2006</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.cambridge.org/core/product/identifier/S174236000000040X/type/journal_article">https://www.cambridge.org/core/product/identifier/S174236000000040X/type/journal_article</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/21/2021, 8:07:42 PM</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>2</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>177-188</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>Episteme</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.3366/epi.2005.2.3.177">10.3366/epi.2005.2.3.177</a></td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>3</td>
+					</tr>
+					<tr>
+					<th>Journal Abbr</th>
+						<td>Episteme</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1742-3600, 1750-0117</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>11/21/2021, 8:07:42 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>11/21/2021, 8:07:43 PM</td>
+					</tr>
+				</table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_L2NTCVKT">Fallis - 2006 - Epistemic Value Theory and Social Epistemology.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_83YSTFN8" class="item journalArticle">
+			<h2>Foundations of social epistemics</h2>
+				<table>
+					<tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alvin I. Goldman</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>A conception of social epistemology is articulated with links to studies of science and opinion in such disciplines as history, sociology, and political science. The conception is evaluative, though, rather than purely descriptive. Three types of evalua tive approaches are examined but rejected: relativism, consensualism, and expertism. A fourth, truth-linked, approach to intellectual evaluation is then advocated: social procedures should be appraised by their propensity to foster true belief. Standards of evaluation in social epistemics would be much the same as those in individual epis temics, only the objects of evaluation would be interpersonal patterns of judgment and communication, and institutional practices that bear on opinion formation.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>10/1987</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://link.springer.com/10.1007/BF00485444">http://link.springer.com/10.1007/BF00485444</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/21/2021, 4:41:04 PM</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>73</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>109-144</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>Synthese</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1007/BF00485444">10.1007/BF00485444</a></td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>1</td>
+					</tr>
+					<tr>
+					<th>Journal Abbr</th>
+						<td>Synthese</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>0039-7857, 1573-0964</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>11/21/2021, 4:41:04 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>11/21/2021, 4:41:05 PM</td>
+					</tr>
+				</table>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_Y63XIXNY">
+<div><p>Overview of Goldman's main epistemic theory; and criteria. Use to establish background about how and what we are evaluating for, as well as the different objectives of different players being considered.</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_L3VEMQVV">Goldman - 1987 - Foundations of social epistemics.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_YH63SXZT" class="item webpage">
+			<h2>How to Obfuscate</h2>
+				<table>
+					<tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Finn Brunton &amp; Helen Nissenbaum</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>During World War II, a radar operator tracks an airplane over Hamburg, guiding searchlights and anti-aircraft guns in relation to&amp;#8230;</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2017-06-29</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://nautil.us/issue/49/the-absurd/how-to-obfuscate">http://nautil.us/issue/49/the-absurd/how-to-obfuscate</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/6/2021, 7:04:19 AM</td>
+					</tr>
+					<tr>
+					<th>Website Title</th>
+						<td>Nautilus</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/6/2021, 7:04:19 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/6/2021, 7:04:19 AM</td>
+					</tr>
+				</table>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_DFIS5LWM">
+<div><p>Discusses methods of obfuscation to protect ones privacy while maintaining access to tools on the internet. Aligns well with several of the strategies Apple has used to accomplish similar goal.</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_EISK532A">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_TT528Y4H" class="item webpage">
+			<h2>Privacy</h2>
+				<table>
+					<tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://northeastern.instructure.com/courses/88824/modules/items/5914371">https://northeastern.instructure.com/courses/88824/modules/items/5914371</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/6/2021, 11:59:02 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/6/2021, 11:59:02 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/6/2021, 11:59:02 AM</td>
+					</tr>
+				</table>
+			</li>
+
+
+			<li id="item_W8EM9TW8" class="item bookSection">
+			<h2>Privacy and Information Technology</h2>
+				<table>
+					<tr>
+						<th>Type</th>
+						<td>Book Section</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jeroen van den Hoven</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Martijn Blaauw</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Wolter Pieters</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Martijn Warnier</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Edward N. Zalta</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Human beings value their privacy and the protection of their personalsphere of life. They value some control over who knows what aboutthem. They certainly do not want their personal information to beaccessible to just anyone at any time. But recent advances ininformation technology threaten privacy and have reduced the amount ofcontrol over personal data and open up the possibility of a range ofnegative consequences as a result of access to personal data. In thesecond half of the 20th century data protection regimeshave been put in place as a response to increasing levels ofprocessing of personal data. The 21st century has becomethe century of big data and advanced information technology (e.g.forms of deep learning), the rise of big tech companies and theplatform economy, which comes with the storage and processing ofexabytes of data., The revelations of Edward Snowden, and more recently the CambridgeAnalytica case (Cadwalladr &amp; Graham-Harrison 2018) havedemonstrated that worries about negative consequences are real. Thetechnical capabilities to collect, store and search large quantitiesof data concerning telephone conversations, internet searches andelectronic payment are now in place and are routinely used bygovernment agencies and corporate actors alike. The rise of China andthe large scale of use and spread of advanced digital technologies forsurveillance and control have only added to the concern of many. Forbusiness firms, personal data about customers and potential customersare now also a key asset. The scope and purpose of the personal datacentred business models of Big Tech (Google, Amazon, Facebook,Microsoft, Apple) has been described in detail by Shoshana Zuboff(2018) under the label “surveillance capitalism”. , At the same time, the meaning and value of privacy remains the subjectof considerable controversy. The combination of increasing power ofnew technology and the declining clarity and agreement on privacy giverise to problems concerning law, policy and ethics. Many of theseconceptual debates and issues are situated in the context ofinterpretation and analysis of the General Data Protection Regulation(GDPR) that was adopted by the EU in spring 2018 as the successor ofthe EU 1995 Directives, with application far beyond the borders of theEuropean Union., The focus of this article is on exploring the relationship betweeninformation technology and privacy. We will both illustrate thespecific threats that IT and innovations in IT pose for privacy andindicate how IT itself might be able to overcome theseprivacy concerns by being developed in ways that can be termed“privacy-sensitive”, “privacy enhancing” or “privacyrespecting”. We will also discuss the role of emerging technologiesin the debate, and account for the way in which moral debates arethemselves affected by IT.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2020</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Stanford Encyclopedia of Philosophy</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://plato.stanford.edu/archives/sum2020/entries/it-privacy/">https://plato.stanford.edu/archives/sum2020/entries/it-privacy/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/21/2021, 8:10:14 PM</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Metaphysics Research Lab, Stanford University</td>
+					</tr>
+					<tr>
+					<th>Edition</th>
+						<td>Summer 2020</td>
+					</tr>
+					<tr>
+					<th>Book Title</th>
+						<td>The Stanford Encyclopedia of Philosophy</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>11/21/2021, 8:10:14 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>11/21/2021, 8:10:14 PM</td>
+					</tr>
+				</table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>computing: and moral responsibility</li>
+					<li>ethics: search engines and</li>
+					<li>information</li>
+					<li>information technology: and moral values</li>
+					<li>privacy</li>
+					<li>social networking and ethics</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_U4SL8IFG">
+<div><p><span style="caret-color: #1a1a1a; color: #1a1a1a; font-family: serif; font-size: 16.5px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-decoration: none; display: inline !important; float: none;">Helps in exploring the relationship between information technology and privacy. We will both illustrate the specific threats that IT and innovations in IT pose for privacy and indicate how IT </span><em style="font-style: italic; caret-color: #1a1a1a; color: #1a1a1a; font-family: serif; font-size: 16.5px; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; text-decoration: none;">itself</em><span style="caret-color: #1a1a1a; color: #1a1a1a; font-family: serif; font-size: 16.5px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-decoration: none; display: inline !important; float: none;"> might be able to overcome these privacy concerns by being developed in ways that can be termed “privacy-sensitive”, “privacy enhancing” or “privacy respecting”. We will also discuss the role of emerging technologies in the debate, and account for the way in which moral debates are themselves affected by IT.</span></p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_RJCJTQS4">SEP - Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_8ASRJZUR" class="item journalArticle">
+			<h2>PRIVACY AND LACK OF KNOWLEDGE</h2>
+				<table>
+					<tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Don Fallis</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Abstract
+            
+              Two sorts of connections between
+              privacy
+              and
+              knowledge
+              (or lack thereof) have been suggested in the philosophical literature. First, Alvin Goldman has suggested that protecting privacy typically leads to
+              less
+              knowledge being acquired. Second, several other philosophers (e.g. Parent, Matheson, Blaauw and Peels) have claimed that lack of knowledge is
+              definitive
+              of having privacy. In other words, someone
+              not knowing
+              something is necessary and sufficient for someone else
+              having privacy
+              about that thing. Or equivalently, someone
+              knowing
+              something is necessary and sufficient for someone else
+              losing privacy
+              about that thing. In this paper, I argue that both of these suggestions are incorrect. I begin by arguing, contra Goldman, that protecting privacy often leads to
+              more
+              knowledge being acquired. I argue in the remainder of the paper, contra the defenders of the
+              knowledge account of privacy
+              , that someone knowing something is
+              not
+              necessary for someone else losing privacy about that thing.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>06/2013</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.cambridge.org/core/product/identifier/S1742360013000130/type/journal_article">https://www.cambridge.org/core/product/identifier/S1742360013000130/type/journal_article</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/6/2021, 6:45:37 AM</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>10</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>153-166</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>Episteme</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1017/epi.2013.13">10.1017/epi.2013.13</a></td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>2</td>
+					</tr>
+					<tr>
+					<th>Journal Abbr</th>
+						<td>Episteme</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1742-3600, 1750-0117</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/6/2021, 6:45:37 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/6/2021, 6:45:37 AM</td>
+					</tr>
+				</table>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_C6CSEBWY">
+<div><p>Fallis' paper on privacy and lack of knowledge draws important connections between privacy and the epistemic world; and provides grounds to challenge Goldman's suggestion that protecting privacy usually leads to less knowledge being acquired.</p></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_VNSGN3ZW">Fallis - 2013 - PRIVACY AND LACK OF KNOWLEDGE.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_U6KTGNVY" class="item bookSection">
+			<h2>Social Epistemology</h2>
+				<table>
+					<tr>
+						<th>Type</th>
+						<td>Book Section</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alvin Goldman</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Cailin O’Connor</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Edward N. Zalta</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Until recently, epistemology—the study of knowledge andjustified belief—was heavily individualistic in focus. Theemphasis was on evaluating doxastic attitudes (beliefs and disbeliefs)of individuals in abstraction from their social environment. Socialepistemology seeks to redress this imbalance by investigating theepistemic effects of social interactions and social systems. Aftergiving an introduction, and reviewing the history of the field insections 1 and 2, we move on to discuss central topics in socialepistemology in section 3. These include testimony, peer disagreement,and judgment aggregation, among others. Section 4 turns to recentapproaches which have used formal methods to address core topics insocial epistemology, as well as wider questions about the functioningof epistemic communities like those in science. In section 5 webriefly turn to questions related to social epistemology and theproper functioning of democratic societies.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2021</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Stanford Encyclopedia of Philosophy</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://plato.stanford.edu/archives/win2021/entries/epistemology-social/">https://plato.stanford.edu/archives/win2021/entries/epistemology-social/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>11/21/2021, 8:02:12 PM</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Metaphysics Research Lab, Stanford University</td>
+					</tr>
+					<tr>
+					<th>Edition</th>
+						<td>Winter 2021</td>
+					</tr>
+					<tr>
+					<th>Book Title</th>
+						<td>The Stanford Encyclopedia of Philosophy</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>11/21/2021, 8:02:12 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>11/21/2021, 8:02:12 PM</td>
+					</tr>
+				</table>
+			</li>
+
+		</ul>
+	</body>
+</html>
