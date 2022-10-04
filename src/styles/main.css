@@ -1,3 +1,4 @@
+@import "./vars.css";
 /* General */
 * {
   -webkit-box-sizing: border-box;
@@ -8,7 +9,7 @@
 
 a {
   text-decoration: none;
-  color: #4e598c;
+  color: var(--text-2);
 }
 
 body {
@@ -631,7 +632,7 @@ body {
 
   border: none;
 
-  color: #4e598c;
+  color: var(--text-1);
   background: none;
   font-size: 4rem;
 

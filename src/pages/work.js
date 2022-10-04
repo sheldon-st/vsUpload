@@ -20,7 +20,14 @@ import "../styles/App.scss";
 
 import { routes } from "../App.js";
 
+import { useLocomotiveScroll } from "react-locomotive-scroll";
+
 export default function Work({ routes }) {
+  // Scroll to top on page load
+  const { scroll } = useLocomotiveScroll();
+  useEffect(() => {
+    scroll && scroll.scrollTo(0, { duration: 0.5 });
+  }, [scroll]);
   return (
     <div className="workContainer">
       <div className="logoContainerSpacer logoHeadingSpacer">
@@ -65,8 +72,7 @@ export default function Work({ routes }) {
               web
             </NavLink>
           </li>
-          
-            
+
           <li>
             <NavLink
               className="workLink"

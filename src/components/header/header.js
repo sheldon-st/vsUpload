@@ -22,7 +22,7 @@ const Header = () => {
       </NavLink>
       <div className="headerButtons">
         <NavLink
-          className="link link--elara"
+          className="link link--elara--header link--elara"
           to="/work"
           activeStyle={{
             fontWeight: "bold",
@@ -32,7 +32,7 @@ const Header = () => {
           Work
         </NavLink>
         <NavLink
-          className="link link--elara"
+          className="link link--elara link--elara--header"
           to="/about"
           exact
           activeStyle={{

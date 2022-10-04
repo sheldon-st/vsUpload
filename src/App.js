@@ -1,6 +1,8 @@
 // dependency imports
 import React, { useState, useRef, useEffect } from "react";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+import { useHistory } from "react-router-dom";
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -38,6 +40,8 @@ import Project1 from "./pages/workProjects/projects";
 
 import Social from "./components/social/social";
 
+import LocomotiveScroll from "locomotive-scroll";
+import { useLocomotiveScroll } from "react-locomotive-scroll";
 // import Work from "./pages/work";
 // import RouteWithSubRoutes from "./pages/work";
 
@@ -109,19 +113,19 @@ export const routes = [
         name: "ui",
       },
       {
-        path: "/work/web",
+        path: "/work/Frontend",
         component: WebMenu,
-        name: "Web",
+        name: "Front-end",
+      },
+      {
+        path: "/work/backend",
+        component: JavaMenu,
+        name: "Back-end",
       },
       {
         path: "/work/graphics",
         component: GraphicsMenu,
         name: "Graphics",
-      },
-      {
-        path: "/work/java",
-        component: JavaMenu,
-        name: "Java",
       },
       {
         path: "/work/photo",
@@ -232,6 +236,13 @@ const projects = [
 export default function App() {
   const containerRef = useRef(null);
 
+  const history = useHistory();
+  useEffect(() => {
+    history.listen((location) => {
+      console.log(`You changed the page to: ${location.pathname}`);
+    });
+  }, [history]);
+
   return (
     <>
       <LocomotiveScrollProvider
@@ -246,7 +257,11 @@ export default function App() {
         }
         containerRef={containerRef}
       >
-        <main data-scroll-container ref={containerRef}>
+        <main
+          data-scroll-container
+          id="data-scroll-container"
+          ref={containerRef}
+        >
           <div className="main-container" id="app">
             {/* // <AnimatedCursor /> */}
             <Header />
@@ -313,6 +328,12 @@ function Work({ routes }) {
     });
   });
 
+  // Scroll to top on page load
+  const { scroll } = useLocomotiveScroll();
+  useEffect(() => {
+    scroll && scroll.scrollTo(0, { duration: 0 });
+  }, [scroll]);
+
   // work testing
 
   return (
@@ -335,10 +356,20 @@ function Work({ routes }) {
             <NavLink
               className="workLink"
               activeClassName="activeWorkLink"
-              to="/work/web"
+              to="/work/frontend"
               id="section-item"
             >
-              web
+              frontend
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="workLink"
+              activeClassName="activeWorkLink"
+              to="/work/backend"
+              id="section-item"
+            >
+              backend
             </NavLink>
           </li>
           <li>
@@ -351,6 +382,7 @@ function Work({ routes }) {
               ui/ux
             </NavLink>
           </li>
+
           <li>
             <NavLink
               className="workLink"
@@ -359,16 +391,6 @@ function Work({ routes }) {
               id="section-item"
             >
               graphics
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className="workLink"
-              activeClassName="activeWorkLink"
-              to="/work/java"
-              id="section-item"
-            >
-              java
             </NavLink>
           </li>
           <li>
@@ -392,6 +414,7 @@ function Work({ routes }) {
         // all work list - change to featured later
         <div>
           <SectionMenu menuItems={projects} />
+          
           {/* <a href="#" class="image-hover">
             <span class="title style2" data-title="G">
               G
@@ -458,6 +481,18 @@ function WebMenu() {
       <SectionMenu
         menuItems={projects
           .filter((project) => project.topics.includes("web"))
+          .map((filteredProject) => filteredProject)}
+      />
+    </div>
+  );
+}
+
+function NetworksMenu() {
+  return (
+    <div className="sectionMenuContainer">
+      <SectionMenu
+        menuItems={projects
+          .filter((project) => project.topics.includes("networks"))
           .map((filteredProject) => filteredProject)}
       />
     </div>
