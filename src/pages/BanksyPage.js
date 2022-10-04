@@ -22,7 +22,7 @@ const BanksyPage = () => {
             <div id="headline" data-scroll-container ref={ref}>
               <h1 id="headline">Banksy</h1>
               <ul id="headline">
-                <li>ARTG 3333 Experience & Interaction</li>
+                <li>ARTG 3333 Experience & Interation</li>
                 <li>Prototyping in Adobe XD</li>
                 <li>Development in HTML\CSS\Vanilla JS</li>
               </ul>
