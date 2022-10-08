@@ -7,6 +7,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  useParams,
   NavLink,
 } from "react-router-dom";
 import gsap from "gsap";
@@ -208,26 +209,26 @@ const projects = [
   {
     h1: "portfolio",
     h2: "prototyping and development | adobe xd, reactjs (at the moment)",
-    to: "/work",
+    to: "/work/portfolio",
     topics: ["ux", "web"],
   },
 
   {
     h1: "portrait",
     h2: "some photos i've taken",
-    to: "/work",
+    to: "/work/portrait",
     topics: ["photo"],
   },
   {
     h1: "landscape",
     h2: "just for fun",
-    to: "/work",
+    to: "/work/landscape",
     topics: ["photo"],
   },
   {
     h1: "wildlife",
     h2: "from all over",
-    to: "/work",
+    to: "/work/wildlife",
     topics: ["photo"],
   },
 ];
@@ -235,15 +236,23 @@ const projects = [
 // main app component
 export default function App() {
   const containerRef = useRef(null);
+  var { asPath } = useParams();
   const { scroll } = useLocomotiveScroll();
+
+  var cursor = document.querySelector(".custom-cursor");
+  var links = document.querySelectorAll("a");
 
   const history = useHistory();
   useEffect(() => {
     history.listen((location) => {
       console.log(`You changed the page to: ${location.pathname}`);
-      scroll && scroll.scrollTo(0, { duration: 0 });
-      var cursor = document.querySelector(".custom-cursor");
-      var links = document.querySelectorAll("a");
+      asPath = location.pathname;
+
+      scroll && scroll.update();
+      scroll && scroll.scrollTo(0);
+
+      cursor = document.querySelector(".custom-cursor");
+      links = document.querySelectorAll("a");
       console.log(links);
       var initCursor = false;
 
@@ -261,8 +270,9 @@ export default function App() {
   }, [history]);
 
   document.addEventListener("DOMContentLoaded", function (event) {
-    var cursor = document.querySelector(".custom-cursor");
-    var links = document.querySelectorAll("a");
+    console.log("DOM fully loaded and parsed");
+    cursor = document.querySelector(".custom-cursor");
+    links = document.querySelectorAll("a");
     var initCursor = false;
 
     for (var i = 0; i < links.length; i++) {
@@ -309,12 +319,17 @@ export default function App() {
           smooth: true,
           // ... available Locomotive Scroll instance options
         }}
-        watch={
-          [
-            //...all the dependencies you want to watch to update the scroll
-          ]
-        }
+        watch={[
+          [asPath],
+          //...all the dependencies you want to watch to update the scroll
+        ]}
         containerRef={containerRef}
+        location={asPath}
+        onLocationChange={(scroll) => {
+          scroll.scrollTo(0, { duration: 0, disableLerp: true });
+          console.log("scrolling to top");
+        }}
+        onUpdate={() => console.log("Updated, but not on location change!")}
       >
         <main
           data-scroll-container
@@ -322,7 +337,7 @@ export default function App() {
           ref={containerRef}
         >
           <div className="main-container" id="app">
-            <div class="custom-cursor" />
+            <div className="custom-cursor" />
             <Header />
             <Social />
 
@@ -376,9 +391,8 @@ function Work({ routes }) {
   });
 
   // Scroll to top on page load
-
-  /*   useEffect(() => {
-    const { scroll } = useLocomotiveScroll();
+  const { scroll } = useLocomotiveScroll();
+  useEffect(() => {
     scroll && scroll.scrollTo(0, { duration: 0 });
     var cursor = document.querySelector(".custom-cursor");
     var links = document.querySelectorAll("a");
@@ -394,7 +408,7 @@ function Work({ routes }) {
         cursor.classList.remove("custom-cursor--link");
       });
     }
-  }, [scroll]); */
+  }, [scroll]);
 
   // work testing
 
@@ -543,18 +557,6 @@ function WebMenu() {
       <SectionMenu
         menuItems={projects
           .filter((project) => project.topics.includes("web"))
-          .map((filteredProject) => filteredProject)}
-      />
-    </div>
-  );
-}
-
-function NetworksMenu() {
-  return (
-    <div className="sectionMenuContainer">
-      <SectionMenu
-        menuItems={projects
-          .filter((project) => project.topics.includes("networks"))
           .map((filteredProject) => filteredProject)}
       />
     </div>

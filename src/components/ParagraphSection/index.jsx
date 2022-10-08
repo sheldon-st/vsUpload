@@ -85,7 +85,7 @@ export default function ParagraphSection() {
         color: "#E07A5F",
       }}
     >
-      UX
+      UX design{" "}
     </NavLink>
   );
 
@@ -134,8 +134,8 @@ export default function ParagraphSection() {
       <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
         I’m a student, designer, and developer from Boston, Massachusetts who is
         passionate about finding creative and beautiful solutions to all kinds
-        of problems. I work mostly with {uiLink} design and {frontendLink} web
-        development.
+        of problems. I have worked mostly with <br /> {uiLink} and{" "}
+        {frontendLink} web development.
       </p>
 
       <p ref={ref2} id="headline2" className={cn({ "is-reveal2": reveal2 })}>
