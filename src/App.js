@@ -235,13 +235,72 @@ const projects = [
 // main app component
 export default function App() {
   const containerRef = useRef(null);
+  const { scroll } = useLocomotiveScroll();
 
   const history = useHistory();
   useEffect(() => {
     history.listen((location) => {
       console.log(`You changed the page to: ${location.pathname}`);
+      scroll && scroll.scrollTo(0, { duration: 0 });
+      var cursor = document.querySelector(".custom-cursor");
+      var links = document.querySelectorAll("a");
+      console.log(links);
+      var initCursor = false;
+
+      for (var i = 0; i < links.length; i++) {
+        var selfLink = links[i];
+
+        selfLink.addEventListener("mouseover", function () {
+          cursor.classList.add("custom-cursor--link");
+        });
+        selfLink.addEventListener("mouseout", function () {
+          cursor.classList.remove("custom-cursor--link");
+        });
+      }
     });
   }, [history]);
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+    var cursor = document.querySelector(".custom-cursor");
+    var links = document.querySelectorAll("a");
+    var initCursor = false;
+
+    for (var i = 0; i < links.length; i++) {
+      var selfLink = links[i];
+
+      selfLink.addEventListener("mouseover", function () {
+        cursor.classList.add("custom-cursor--link");
+      });
+      selfLink.addEventListener("mouseout", function () {
+        cursor.classList.remove("custom-cursor--link");
+      });
+    }
+
+    window.onmousemove = function (e) {
+      var mouseX = e.clientX;
+      var mouseY = e.clientY;
+
+      if (!initCursor) {
+        // cursor.style.opacity = 1;
+        gsap.to(cursor, 0.3, {
+          opacity: 1,
+        });
+        initCursor = true;
+      }
+
+      gsap.to(cursor, 0, {
+        top: mouseY + "px",
+        left: mouseX + "px",
+      });
+    };
+
+    window.onmouseout = function (e) {
+      gsap.to(cursor, 0.3, {
+        opacity: 0,
+      });
+      initCursor = false;
+    };
+  });
 
   return (
     <>
@@ -263,7 +322,7 @@ export default function App() {
           ref={containerRef}
         >
           <div className="main-container" id="app">
-            {/* // <AnimatedCursor /> */}
+            <div class="custom-cursor" />
             <Header />
             <Social />
 
@@ -301,23 +360,11 @@ function Work({ routes }) {
     });
   }, []);
 
-  console.clear();
   const elApp = document.querySelector("#app");
 
   // What we need...
   // Mouse position
   // Currently hovered item
-
-  document.body.addEventListener("mousemove", (event) => {
-    console.log({
-      x: event.clientX,
-      y: event.clientY,
-    });
-
-    console.log(elApp);
-    /* elApp.style.setProperty("--x", event.clientX);
-    elApp.style.setProperty("--y", event.clientY); */
-  });
 
   // Replay animation by hiding & showing the element again
   let el = document.body;
@@ -329,10 +376,25 @@ function Work({ routes }) {
   });
 
   // Scroll to top on page load
-  const { scroll } = useLocomotiveScroll();
-  useEffect(() => {
+
+  /*   useEffect(() => {
+    const { scroll } = useLocomotiveScroll();
     scroll && scroll.scrollTo(0, { duration: 0 });
-  }, [scroll]);
+    var cursor = document.querySelector(".custom-cursor");
+    var links = document.querySelectorAll("a");
+    var initCursor = false;
+
+    for (var i = 0; i < links.length; i++) {
+      var selfLink = links[i];
+
+      selfLink.addEventListener("mouseover", function () {
+        cursor.classList.add("custom-cursor--link");
+      });
+      selfLink.addEventListener("mouseout", function () {
+        cursor.classList.remove("custom-cursor--link");
+      });
+    }
+  }, [scroll]); */
 
   // work testing
 
@@ -414,7 +476,7 @@ function Work({ routes }) {
         // all work list - change to featured later
         <div>
           <SectionMenu menuItems={projects} />
-          
+
           {/* <a href="#" class="image-hover">
             <span class="title style2" data-title="G">
               G

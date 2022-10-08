@@ -76,19 +76,71 @@ export default function ParagraphSection() {
     </NavLink>
   );
 
+  var uiLink = (
+    <NavLink
+      className="link link--elara"
+      to="/work/ux"
+      activeStyle={{
+        fontWeight: "bold",
+        color: "#E07A5F",
+      }}
+    >
+      UX
+    </NavLink>
+  );
+
+  var frontendLink = (
+    <NavLink
+      className="link link--elara"
+      to="/work/frontend"
+      activeStyle={{
+        fontWeight: "bold",
+        color: "#E07A5F",
+      }}
+    >
+      front-end
+    </NavLink>
+  );
+
+  var resumeLink = (
+    <NavLink
+      className="link link--elara"
+      to="/work/frontend"
+      activeStyle={{
+        fontWeight: "bold",
+        color: "#E07A5F",
+      }}
+    >
+      resume
+    </NavLink>
+  );
+
+  var contactLink = (
+    <a
+      className="link link--elara"
+      href="mailto:sheldon.st@northeastern.edu"
+      activeStyle={{
+        fontWeight: "bold",
+        color: "#E07A5F",
+      }}
+    >
+      get in touch{" "}
+    </a>
+  );
+
   return (
     <section data-scroll-section className="about-section">
       <h1> Hello! </h1>
       <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
         I’m a student, designer, and developer from Boston, Massachusetts who is
         passionate about finding creative and beautiful solutions to all kinds
-        of problems. I work mostly with UI/UX design and front-end web
+        of problems. I work mostly with {uiLink} design and {frontendLink} web
         development.
       </p>
 
       <p ref={ref2} id="headline2" className={cn({ "is-reveal2": reveal2 })}>
-        Here you can find {workLink}, <br /> and get in touch if you’d like to
-        work together or have any questions.
+        Here you can find {workLink}, <br /> a {resumeLink}, and {contactLink}{" "}
+        if you’d like to work together on a project or have any questions.
       </p>
     </section>
   );

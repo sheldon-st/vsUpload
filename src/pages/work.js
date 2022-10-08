@@ -43,7 +43,7 @@ export default function Work({ routes }) {
               exact
               to="/work/"
             >
-              all work
+              alsl works
             </NavLink>
           </li>
           <li>
