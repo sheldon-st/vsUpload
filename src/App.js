@@ -31,7 +31,7 @@ import Banksy from "./pages/banksy";
 import DoodlePage from "./pages/DoodlePage";
 import StudentHubPage from "./pages/StudentHubPage";
 import BanksyPage from "./pages/BanksyPage";
-import NonsenseUIPage from "./pages/NonesenseUIPage";
+import CaseStudyPage from "./pages/CaseStudyPage";
 import AlbumPage from "./pages/AlbumPage";
 import LogoPage from "./pages/LogoPage";
 import KruskalPage from "./pages/KruskalPage";
@@ -73,9 +73,9 @@ export const routes = [
     name: "DoodlePage",
   },
   {
-    path: "/nonsenseui",
-    component: NonsenseUIPage,
-    name: "Nonsense UI",
+    path: "/case-study",
+    component: CaseStudyPage,
+    name: "CaseStudyPage",
   },
   {
     path: "/studenthub",
@@ -181,9 +181,9 @@ const projects = [
   },
 
   {
-    h1: "nonsense ui",
-    h2: "prototyping | adobe xd",
-    to: "/nonsenseui",
+    h1: "Web App Design",
+    h2: "research, design & testing | Covalent",
+    to: "/case-study",
     topics: ["ux"],
   },
   {

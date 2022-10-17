@@ -15,7 +15,7 @@ import mock1 from "../img/Opt-In Form.png";
 import mock2 from "../img/Match Logic.png";
 import "../styles/main.css";
 
-const NonsenseUIPage = () => {
+const CaseStudyPage = () => {
   const ref = useRef(null);
 
   return (
@@ -90,4 +90,4 @@ const NonsenseUIPage = () => {
     </>
   );
 };
-export default NonsenseUIPage;
+export default CaseStudyPage;
