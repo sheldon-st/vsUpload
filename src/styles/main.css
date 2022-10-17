@@ -666,6 +666,7 @@ body {
 }
 .custom-cursor--link {
   transform: translate(-50%, -50%) scale(1.5);
+  pointer-events: none;
 }
 .block__title {
   margin-bottom: 1em;

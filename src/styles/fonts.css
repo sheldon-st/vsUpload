@@ -13,6 +13,15 @@
   src: url(fonts/bilingual.ttf);
 }
 
+@font-face {
+  font-family: sketched;
+  src: url(fonts/Virgil.woff2);
+}
+
+.csImage {
+  font-family: sketched;
+}
+
 .doublefont3 {
   position: relative;
   color: var(--accent-1);

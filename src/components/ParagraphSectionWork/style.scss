@@ -1,4 +1,5 @@
 @import "../../styles/vars.css";
+@import "../../styles/fonts.css";
 
 li.circle-checkmark::before {
   content: "";
@@ -36,7 +37,8 @@ li {
   top: 0;
 
   p {
-    width: auto;
+    width: 80%;
+    font-size: large;
   }
 
   .p2 {
@@ -63,19 +65,19 @@ li {
     font-size: 5vw;
     margin-top: 0;
     margin-bottom: 0rem;
-    align-self: flex-end;
+    align-self: flex-start;
   }
 
   h2 {
     align-self: flex-start;
 
-    font-size: 2vw;
+    font-size: 3vw;
     margin-bottom: 0;
     margin-top: 0.5vw;
   }
 
   h3 {
-    align-self: flex-end;
+    align-self: flex-start;
 
     font-size: 2vw;
     margin-bottom: 0;
@@ -109,8 +111,6 @@ li {
 
   img {
     align-self: flex-start;
-    width: inherit;
-    height: inherit;
   }
 
   .image-container2 {
@@ -336,4 +336,16 @@ $arrow-head-thickness: $shaft-thickness;
       position: relative;
     }
   }
+}
+
+.csH1 {
+  align-self: flex-start;
+}
+
+// SVG Image to fill width of container with font of 'sketched'
+.csImage {
+  width: 100%;
+  height: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
