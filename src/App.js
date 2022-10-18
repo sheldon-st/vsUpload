@@ -35,7 +35,7 @@ import CaseStudyPage from "./pages/CaseStudyPage";
 import AlbumPage from "./pages/AlbumPage";
 import LogoPage from "./pages/LogoPage";
 import KruskalPage from "./pages/KruskalPage";
-import FloodPage from "./pages/FloodPage";
+import ImagePage from "./pages/ImagePage";
 import CovalentMarketing from "./pages/CovalentMarketing";
 
 import Project1 from "./pages/workProjects/projects";
@@ -105,9 +105,9 @@ export const routes = [
     name: "Kruskal's Maze",
   },
   {
-    path: "/floodit",
-    component: FloodPage,
-    name: "Flood It",
+    path: "/imageprocessing",
+    component: ImagePage,
+    name: "Java Image Processing",
   },
   {
     path: "/work",
@@ -155,34 +155,34 @@ const projects = [
   // { h1: "album redesign", h2: "typography", to: "/work", topics: ["graphics"] },
   {
     h1: "web app design",
-    h2: "research, design & testing | Covalent",
+    h2: "research, design, prototyping & testing | Covalent",
     to: "/case-study",
     topics: ["ux"],
   },
   {
     h1: "marketing website",
-    h2: "research, design & testing | Covalent",
+    h2: "research, design, copy & Webflow implementation | Covalent",
     to: "covalent-marketing",
     topics: ["ux"],
   },
 
   {
-    h1: "website & brother database",
-    h2: "design & frontend (React) | pi kappa phi @ northeastern {Under Construction}",
+    h1: "fraternity website & database",
+    h2: "design & frontend (React) | Pi Kappa Phi @ northeastern {Under Construction}",
     to: "/work",
     topics: ["web"],
   },
 
   {
     h1: "logo design",
-    h2: "typography | adobe illustrator",
+    h2: "typography | artish studios ",
     to: "/logo",
     topics: ["graphics"],
   },
 
   {
     h1: "student hub 2.0",
-    h2: "prototyping | adobe xd",
+    h2: "research, design & prototyping | school",
     to: "/studenthub",
     topics: ["ux"],
   } /* 
@@ -195,7 +195,7 @@ const projects = [
 
   {
     h1: "album redesign",
-    h2: "typography | adobe illustrator",
+    h2: "typography | school",
     to: "/albumcover",
     topics: ["graphics"],
   },
@@ -208,22 +208,22 @@ const projects = [
   }, */
 
   {
-    h1: "floodIt",
-    h2: "things done",
-    to: "/floodit",
+    h1: "image processing",
+    h2: "java | school",
+    to: "/imageprocessing",
     topics: ["java"],
-  },
+  } /* 
   {
     h1: "kruskal's maze",
-    h2: "things done",
+    h2: "java | school",
     to: "/kruskal",
     topics: ["java"],
-  },
+  }, */,
 
   {
     h1: "portfolio",
-    h2: "prototyping and development | adobe xd, reactjs (at the moment)",
-    to: "/work/portfolio",
+    h2: "design and development | personal",
+    to: "/",
     topics: ["ux", "web"],
   },
 
