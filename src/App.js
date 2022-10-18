@@ -36,6 +36,7 @@ import AlbumPage from "./pages/AlbumPage";
 import LogoPage from "./pages/LogoPage";
 import KruskalPage from "./pages/KruskalPage";
 import FloodPage from "./pages/FloodPage";
+import CovalentMarketing from "./pages/CovalentMarketing";
 
 import Project1 from "./pages/workProjects/projects";
 
@@ -57,6 +58,7 @@ export const routes = [
     component: About,
     name: "About",
   },
+
   {
     path: "/banksy",
     component: BanksyPage,
@@ -76,6 +78,11 @@ export const routes = [
     path: "/case-study",
     component: CaseStudyPage,
     name: "CaseStudyPage",
+  },
+  {
+    path: "/covalent-marketing",
+    component: CovalentMarketing,
+    name: "CovalentMarketing",
   },
   {
     path: "/studenthub",
@@ -146,10 +153,22 @@ export const routes = [
 // all projects, with subititle, topic & path
 const projects = [
   // { h1: "album redesign", h2: "typography", to: "/work", topics: ["graphics"] },
+  {
+    h1: "web app design",
+    h2: "research, design & testing | Covalent",
+    to: "/case-study",
+    topics: ["ux"],
+  },
+  {
+    h1: "marketing website",
+    h2: "research, design & testing | Covalent",
+    to: "covalent-marketing",
+    topics: ["ux"],
+  },
 
   {
     h1: "website & brother database",
-    h2: "for pi kappa phi @ northeastern | next(react)js, firebase",
+    h2: "design & frontend (React) | pi kappa phi @ northeastern {Under Construction}",
     to: "/work",
     topics: ["web"],
   },
@@ -160,38 +179,33 @@ const projects = [
     to: "/logo",
     topics: ["graphics"],
   },
-  {
-    h1: "album redesign",
-    h2: "typography | adobe illustrator",
-    to: "/albumcover",
-    topics: ["graphics"],
-  },
 
   {
     h1: "student hub 2.0",
     h2: "prototyping | adobe xd",
     to: "/studenthub",
     topics: ["ux"],
-  },
+  } /* 
   {
     h1: "google doodle",
     h2: "prototypes & frontend | adobe xd, html, css, vanilla js",
     to: "/doodle",
     topics: ["ux", "web"],
-  },
+  }, */,
 
   {
-    h1: "Web App Design",
-    h2: "research, design & testing | Covalent",
-    to: "/case-study",
-    topics: ["ux"],
+    h1: "album redesign",
+    h2: "typography | adobe illustrator",
+    to: "/albumcover",
+    topics: ["graphics"],
   },
+  /* 
   {
     h1: "banksy?",
     h2: "prototypes & frontend | adobe xd, html, css, vanilla js",
     to: "/banksy",
     topics: ["ux", "web"],
-  },
+  }, */
 
   {
     h1: "floodIt",
@@ -427,7 +441,16 @@ function Work({ routes }) {
               all work
             </NavLink>
           </li>
-
+          <li>
+            <NavLink
+              className="workLink"
+              activeClassName="activeWorkLink"
+              to="/work/ux"
+              id="section-item"
+            >
+              ui/ux
+            </NavLink>
+          </li>
           <li>
             <NavLink
               className="workLink"
@@ -446,16 +469,6 @@ function Work({ routes }) {
               id="section-item"
             >
               backend
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className="workLink"
-              activeClassName="activeWorkLink"
-              to="/work/ux"
-              id="section-item"
-            >
-              ui/ux
             </NavLink>
           </li>
 
