@@ -162,7 +162,7 @@ const projects = [
   {
     h1: "marketing website",
     h2: "research, design, copy & Webflow implementation | Covalent",
-    to: "covalent-marketing",
+    to: "/covalent-marketing",
     topics: ["ux"],
   },
 
