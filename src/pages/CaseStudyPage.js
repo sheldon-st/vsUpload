@@ -36,19 +36,20 @@ const CaseStudyPage = () => {
 
               <h2 id="Mock-Ups">Background</h2>
               <p>
-                Covalent is a startup with the objective of driving attempting
-                to drive engagement for communities and teams through custom
-                email/slack based member matching and introductions. When I
-                joined the team, ; they had developed an effective strategy for
-                matching and introducing members, but still had to onboard,
-                configure and manage the engagements manually. I worked with
-                with the two company founders and another engineer to design and
-                develop a web app that would automate these processes. We
-                divided this core functionality of this into several projects
-                following the agile methodology. Below, is some of the work I
-                did for the first of these projects: "Match Logic."
-
-                Worked with product and development teams to design and develop a web app that would automate the process of matching and introducing members of a community or team. 
+                Covalent is a startup with the objective of driving engagement
+                for communities and teams through custom email/slack based
+                member matching and introductions. When I joined the team, they
+                had developed an effective strategy for matching and introducing
+                members, but still had to onboard, configure and manage the
+                engagements manually. I worked with with the two company
+                founders and another engineer to design and develop a web app
+                that would automate these processes. We divided this core
+                functionality of this into several projects following the agile
+                methodology. Below, is some of the work I did for the first of
+                these projects: "Match Logic." Worked with product and
+                development teams to design and develop a web app that would
+                automate the process of matching and introducing members of a
+                community or team.
               </p>
 
               <h2 id="Artifacts">Process + Artifacts</h2>
