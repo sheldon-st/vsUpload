@@ -59,8 +59,8 @@ export default function Hero() {
         <br />
       </h1>
       <p id="section-content">
-        creative design <br />
-        and development
+        design and <br />
+        development
       </p>
     </section>
   );
